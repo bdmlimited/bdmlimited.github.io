@@ -154,7 +154,7 @@ const BDM_DATA = {
       bengaliTag: "আলো-বাতাস ও প্রশান্তি",
       title: "Sunlit Drawing & Living Hall",
       bengaliTitle: "আলো-বাতাস পূর্ণ ড্রয়িং ও লিভিং স্পেস",
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      image: "assets/living/living.jpg",
       alt: "Spacious sunlit drawing hall with natural daylight and elegant warm finishes",
       desc: "Designed for authentic Bangladeshi family warmth and gracious hospitality. Generous corner windows invite abundant morning sunlight, creating an uplifting, serene sanctuary for daily family life and festive Eid gatherings.",
       bengaliDesc: "পরিবারের আন্তরিক সময় ও মেহমানদারির জন্য খোলামেলা স্পেস। বড় উইন্ডো ফ্রেমের মাধ্যমে পর্যাপ্ত আলো-বাতাস প্রবেশ করে, যা প্রতিটি দিনকে আনন্দময় ও সতেজ রাখে।"
@@ -165,7 +165,7 @@ const BDM_DATA = {
       bengaliTag: "দক্ষিণা বাতাস ও ছায়াঘেরা বারান্দা",
       title: "Deep Sheltered Balconies",
       bengaliTitle: "প্রশস্ত বারান্দা ও সারাদিন প্রাকৃতিক বাতাস",
-      image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+      image: "assets/living/balcony.jpg",
       alt: "Deep sheltered balcony with tranquil view and natural tropical cross-ventilation",
       desc: "Chattogram's pleasant coastal air flows naturally through three open aspects. Deep covered balconies give you a tranquil retreat for morning tea, evening breeze, or your own private green plant terrace.",
       bengaliDesc: "চট্টগ্রামের মনোরম দক্ষিণা বাতাস সহজে প্রবেশের জন্য তিন দিক খোলা রাখা হয়েছে। সকালের চা অথবা সন্ধ্যার অবসরে পরিবারের সাথে সময় কাটানোর সেরা জায়গা।"
@@ -176,7 +176,7 @@ const BDM_DATA = {
       bengaliTag: "পারিবারিক ভোজন ও বন্ধন",
       title: "Generous Family Dining & Kitchen Flow",
       bengaliTitle: "সুপরিসর ডাইনিং ও পরিপাটি কিচেন জোন",
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+      image: "assets/living/dining.jpg",
       alt: "Warm family dining space adjacent to kitchen for joyful shared meals",
       desc: "The true heart of the home. Planned centrally between drawing and kitchen zones, comfortably accommodating an 8-seater dining table with dedicated wash hand basin and cross-ventilated culinary utility.",
       bengaliDesc: "পরিবারের সবাইকে নিয়ে এক সাথে বসে খাবারের মধুর মুহূর্ত। বড় ৮ সিটের ডাইনিং টেবিল অনায়াসে রাখার স্থান, পাশে আলাদা হ্যান্ড-ওয়াশ এরিয়া এবং কিচেনের পর্যাপ্ত ভেন্টিলেশন।"
@@ -187,7 +187,7 @@ const BDM_DATA = {
       bengaliTag: "শান্তিময় শয়নকক্ষ",
       title: "Peaceful Master Bedroom Suite",
       bengaliTitle: "শান্তিময় মাস্টার বেডরুম ও প্রাইভেট স্পেস",
-      image: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
+      image: "assets/living/master.jpg",
       alt: "Peaceful master bedroom with floor-to-ceiling windows and ensuite bathroom",
       desc: "Your restful personal sanctuary after a long day in the city. Engineered with acoustic privacy away from reception areas, accompanied by an ensuite bath, walk-in wardrobe nook, and private fresh-air balcony.",
       bengaliDesc: "সারাদিনের ক্লান্তি শেষে পরম শান্তির ব্যক্তিগত ভুবন। ড্রয়িং স্পেস থেকে আলাদা প্রাইভেসিতে অবস্থিত, সাথে রয়েছে আধুনিক এটাচড বাথ এবং নিজস্ব মুক্ত বাতাসসমৃদ্ধ বারান্দা।"
@@ -288,7 +288,7 @@ const BDM_DATA = {
       bengaliTag: "আধুনিক লিফট",
       title: "High-Speed 8'x8' ARD Lift",
       bengaliTitle: "উন্নত ও নিরাপদ ৮'×৮' লিফট",
-      image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=800&q=80",
+      image: "assets/amenities/lift.jpg",
       alt: "Modern luxury passenger elevator and marble lobby",
       desc: "Spacious passenger elevator equipped with Automatic Rescue Device (ARD) and emergency battery backup to prevent entrapment during grid interruptions.",
       bengaliDesc: "স্বয়ংক্রিয় রেসকিউ ডিভাইস (ARD) এবং সার্বক্ষণিক ব্যাটারি ব্যাকআপযুক্ত সুপরিসর প্যাসেঞ্জার লিফট।"
@@ -300,7 +300,7 @@ const BDM_DATA = {
       bengaliTag: "গ্রাউন্ড পার্কিং",
       title: "Covered Ground Parking",
       bengaliTitle: "নিরাপদ গ্রাউন্ড পার্কিং বে",
-      image: "https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=800&q=80",
+      image: "assets/amenities/parking.jpg",
       alt: "Covered well-lit residential parking garage bays",
       desc: "Generous individual parking bays with smooth vehicular turning radiuses, non-skid surface flooring, drainage curbs, and 24/7 security guard post.",
       bengaliDesc: "প্রতিটি গাড়ির জন্য পর্যাপ্ত জায়গা, সহজে গাড়ি ঘোরানোর প্রশস্ত স্পেস এবং সার্বক্ষণিক সিকিউরিটি পোস্ট।"
@@ -312,7 +312,7 @@ const BDM_DATA = {
       bengaliTag: "মনোরম ছাদ বাগান",
       title: "Landscaped Rooftop (ছাদ বাগান)",
       bengaliTitle: "সবুজ ছাদ বাগান ও ওয়াকওয়ে",
-      image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=800&q=80",
+      image: "assets/amenities/rooftop.jpg",
       alt: "Landscaped rooftop terrace with pergolas and seating area",
       desc: "Communal rooftop terrace sanctuary featuring shaded pergolas, lush tropical planters, walking pavers, and unhindered Chattogram skyline vistas.",
       bengaliDesc: "বসার জন্য শেডযুক্ত পারগোলা, বাহারি গাছের টব ও শিশুদের নিরাপদে ঘুরে বেড়ানোর জন্য উন্মুক্ত মনোরম ছাদ।"
@@ -324,7 +324,7 @@ const BDM_DATA = {
       bengaliTag: "নামাজের স্থান",
       title: "Prayer Enclave & Community Space",
       bengaliTitle: "শান্তিময় নামাজের স্থান ও কমিউনিটি স্পেস",
-      image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80",
+      image: "assets/amenities/prayer.jpg",
       alt: "Serene prayer enclave and quiet community meeting space",
       desc: "A peaceful, air-conditioned prayer enclave on the ground level, paired with a versatile multi-purpose community room for building society assemblies.",
       bengaliDesc: "নিচতলায় শান্তিময় নামাজের জায়গা এবং ফ্ল্যাট মালিকদের সাধারণ সভা ও ঘরোয়া আয়োজনের জন্য কমিউনিটি রুম।"
@@ -336,7 +336,7 @@ const BDM_DATA = {
       bengaliTag: "পানির নিশ্চয়তা",
       title: "Dual Concrete Reservoirs",
       bengaliTitle: "দ্বিগুণ ধারণক্ষমতার ওয়াটার রিজার্ভার",
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+      image: "assets/amenities/reservoirs.jpg",
       alt: "Engineered reinforced concrete water reservoirs and commercial pump system",
       desc: "Massive underground water reservoir combined with reinforced overhead rooftop tanks and dual commercial booster pumps ensuring 24/7 unhindered water pressure.",
       bengaliDesc: "বিশাল আন্ডারগ্রাউন্ড ও রুফটপ ওভারহেড ওয়াটার ট্যাংক এবং উচ্চমানের ডাবল পাম্প, যা দেবে ২৪ ঘণ্টা পানির নিশ্চয়তা।"
@@ -348,7 +348,7 @@ const BDM_DATA = {
       bengaliTag: "সার্বক্ষণিক নিরাপত্তা",
       title: "24/7 CCTV & Standby Generator",
       bengaliTitle: "২৪ ঘণ্টা সিসিটিভি ও পাওয়ার ব্যাকআপ",
-      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80",
+      image: "assets/amenities/security.jpg",
       alt: "High-definition security surveillance camera and soundproof backup generator",
       desc: "HD security surveillance covering boundary perimeter, entry gate, lift lobbies, and parking bays, paired with an automatic soundproof standby generator.",
       bengaliDesc: "প্রধান গেট, লিফট ও পার্কিং জোনে ফুল এইচডি সিসিটিভি ক্যামেরা এবং লোডশেডিংয়ে স্বয়ংক্রিয় সাউন্ডপ্রুফ জেনারেটর।"

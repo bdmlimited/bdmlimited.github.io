@@ -30,7 +30,7 @@
   --margin: 4rem;
   --margin-mobile: 1.25rem;
   --max-width: 1440px;
-  --header-height: 5rem;
+  --header-height: 5.75rem;
   
   /* Motion & Easing */
   --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -327,10 +327,15 @@ button, input, select, textarea {
 }
 
 .brand-monogram img {
-  height: 2.5rem;
+  height: 3.65rem;
   width: auto;
-  max-width: 140px;
+  max-width: 220px;
   object-fit: contain;
+  transition: transform var(--transition-normal);
+}
+
+.brand-monogram:hover img {
+  transform: scale(1.02);
 }
 
 .site-header.hero-transparent .logo-light {
@@ -347,25 +352,14 @@ button, input, select, textarea {
 }
 
 .brand-title-group {
-  display: flex;
-  flex-direction: column;
+  display: none !important;
 }
 
-.brand-name {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  line-height: 1;
-}
-
-.brand-sub {
-  font-family: var(--font-body);
-  font-size: 0.58rem;
-  letter-spacing: 0.25em;
-  color: var(--color-champagne);
-  text-transform: uppercase;
-  margin-top: 3px;
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F4F0E8 35%, #DCC399 70%, #B9A27A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
 }
 
 .nav-links {
@@ -1861,7 +1855,7 @@ button, input, select, textarea {
   :root {
     --margin: 1rem;
     --margin-mobile: 1rem;
-    --header-height: 3.75rem;
+    --header-height: 4.5rem;
   }
   
   body {
@@ -1870,7 +1864,7 @@ button, input, select, textarea {
 
   /* 1. Header Precision on Mobile */
   .site-header {
-    height: 3.75rem;
+    height: 4.5rem;
   }
   .nav-container {
     padding: 0 1rem;
@@ -1879,8 +1873,8 @@ button, input, select, textarea {
     gap: 0.5rem;
   }
   .brand-monogram img {
-    height: 1.85rem;
-    max-width: 95px;
+    height: 2.85rem !important;
+    max-width: 170px !important;
   }
   .brand-title-group {
     display: none !important; /* Hide redundant text: logo image already says BDM LIMITED */

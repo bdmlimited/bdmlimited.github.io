@@ -413,11 +413,10 @@ function setLanguage(lang) {
     btnEn.classList.remove('active');
 
     // Update Hero (Sales Persuasion)
-    document.getElementById('hero-headline').innerHTML = "আগ্রাবাদ সিডিএ-তে নিজের জমির স্থায়ী ঠিকানা।<br>ফ্ল্যাট নির্মাণে ৪০% নিশ্চিত সাশ্রয়।";
+    document.getElementById('hero-headline').innerHTML = "আগ্রাবাদ সিডিএ-তে নিজের জমিতে ফ্ল্যাট।<br><span class=\"gold-gradient-text\">নির্মাণ খরচে ৪০% নিশ্চিত সাশ্রয়।</span>";
     document.getElementById('hero-subtext').textContent = "নির্মাণকাজ শুরুর পূর্বেই আপনার নামে ভূমির সরাসরি সাব-কবলা রেজিস্ট্রি। সিডিএ অনুমোদিত, ভূমিকম্প সহনশীল এবং প্রতি ফ্লোরে মাত্র ২টি ফ্ল্যাট। ডেভেলপার কোম্পানির কোনো অতিরিক্ত লাভ বা গোপন চার্জ নেই।";
     document.getElementById('hero-cta-explore').textContent = "স্বপ্নালয় প্রকল্প দেখুন (১৩৭৫ বর্গফুট)";
     document.getElementById('hero-cta-enquire').textContent = "হোয়াটসঅ্যাপে মূল্য তালিকা নিন";
-    document.getElementById('hero-eyebrow').textContent = "চট্টগ্রামের শীর্ষ ল্যান্ড-শেয়ার ডেভেলপার · আগ্রাবাদ সিডিএ";
     
     // Update Intro
     document.getElementById('intro-title').innerHTML = "ডেভেলপারকে ৪০% অতিরিক্ত মুনাফা কেন দেবেন?<br>যখন আপনি নিজেই হতে পারেন জমির রেজিস্ট্রিকৃত মালিক।";
@@ -431,11 +430,10 @@ function setLanguage(lang) {
     btnBn.classList.remove('active');
 
     // Restore English (Sales Persuasion)
-    document.getElementById('hero-headline').innerHTML = "OWN PRIME LAND IN AGRABAD CDA.<br>SAVE 40% ON YOUR DREAM RESIDENCE.";
+    document.getElementById('hero-headline').innerHTML = "OWN PRIME LAND IN AGRABAD CDA.<br><span class=\"gold-gradient-text\">SAVE 40% ON YOUR DREAM RESIDENCE.</span>";
     document.getElementById('hero-subtext').textContent = "Direct Sub-Kabala land deed registered in your name before construction starts. CDA-approved, earthquake-engineered homes with strictly 2 units per floor. Zero developer speculative markup.";
     document.getElementById('hero-cta-explore').textContent = "VIEW SHOPNALOY (1,375 SQ FT)";
     document.getElementById('hero-cta-enquire').textContent = "WHATSAPP FOR PRICE SHEET";
-    document.getElementById('hero-eyebrow').textContent = "CHATTOGRAM'S PREMIER LAND-SHARE DEVELOPER · AGRABAD CDA";
 
     // Restore Intro
     document.getElementById('intro-title').innerHTML = "WHY PAY 40% DEVELOPER MARKUPS<br>WHEN YOU CAN OWN THE LAND DIRECTLY?";

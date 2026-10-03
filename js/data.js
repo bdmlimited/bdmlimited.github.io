@@ -8,8 +8,13 @@ const BDM_DATA = {
   brand: {
     name: "BDM Limited",
     bengaliName: "বিডিএম লিমিটেড",
-    tagline: "We Shape Places That Outlive Trends",
-    bengaliTagline: "স্থায়ী স্থাপত্য ও উন্নত জীবনযাত্রার নিশ্চয়তা",
+    tagline: "Building Places. Creating Legacies.",
+    bengaliTagline: "স্থায়ী ঐতিহ্য ও উন্নত জীবনযাত্রার প্রতিশ্রুতি",
+    headline: "We Build More Than Homes. We Build a Sense of Belonging.",
+    bengaliHeadline: "আমরা শুধু ঘর বানাই না, গড়ে তুলি আপন ঠিকানা।",
+    subline: "Thoughtfully planned residences. Carefully selected land. Engineering built for generations.",
+    bengaliSubline: "পরিমিত পরিকল্পনার আবাসন। সতর্কতার সাথে নির্বাচিত জমি। প্রজন্ম ধরে টিকে থাকার প্রকৌশল।",
+    mission: "BDM Limited creates residential spaces where architecture, ownership and everyday family life come together with purpose.",
     industry: "Architectural Real Estate Development",
     territory: "Agrabad CDA Residential Area, Chattogram, Bangladesh",
     coordinates: "22.3275° N, 91.8020° E",
@@ -54,8 +59,8 @@ const BDM_DATA = {
       bengaliStatus: "নির্মাণাধীন প্রকল্প",
       statusBadge: "ACTIVE PILING & SUBSTRUCTURE",
       category: "Bespoke Residential Residences",
-      location: "Plot 727, Road 14, Agrabad CDA R/A, Chattogram",
-      bengaliLocation: "প্লট ৭২৭, রোড ১৪, আগ্রাবাদ সিডিএ আ/এ, চট্টগ্রাম",
+      location: "Plot 727 · Road 14 · Agrabad CDA · Chattogram",
+      bengaliLocation: "প্লট ৭২৭ · রোড ১৪ · আগ্রাবাদ সিডিএ · চট্টগ্রাম",
       coordinates: "22.3262° N, 91.8015° E",
       heroImage: "https://lh3.googleusercontent.com/aida/AEtjO1WhkUzRW-M_uv_oLSSma0pAy1-MUwl3PpWmINxyottfCNS2EAN6Y2vEpZhDVmcQXZ034lRFTqytDw7fzsBhzs3dVylDmjBDq9Y5Olf6idCWUscKlG9RTCFW-jc5qhOWwNyTyipTCIgSFobhfjsQvsV1sSluhtq1ISqLUK4t89jZm_9H3uR5rSV-Aq8cIk8zhy-_bM9GBxy3gJyARhGWshXtzMM6jhTDOaAHIe_6yHqNfCvczIbfY-rFEQ",
       twilightImage: "https://lh3.googleusercontent.com/aida/AEtjO1WXBYlYB3uiqXvhg51lmgmSR6p0Ck9VsnynIvs8V4aTdSbN-uKpFdw8PZRAgo-DsE8RhJKa5xetl5oBUp0ZMVYYuC_yHee6xLE6pwWmYC90iSuwuEoKJtgaVigafabOpPOTynNiDjk2-b2yOqWTsp1p3xt3c7aZpo68rcSGg5KkzrL1aeEowvRc-WbjTlRNUES1AJlsjFX13f0VM674ivDop9cIklu-6rjnETpfX46x4T_XkcDY-RYaE84",
@@ -65,19 +70,19 @@ const BDM_DATA = {
       landSize: "3.75 Katha",
       roadWidth: "40 Feet Frontage",
       floors: "G + 8 Storeys (9 Levels)",
-      totalUnits: "15 Units (Strictly 2 Units / Floor)",
-      landSharePerUnit: "164 Sq. Ft. Registered Land Deed",
-      configuration: "3 Bed, 3 Bath, 3 Balconies, Formal Living & Dining",
-      bookingShare: "5,00,000 – 10,00,000 BDT Booking Share",
+      totalUnits: "Only 15 Residences (2 Units / Floor)",
+      landSharePerUnit: "164 Sq. Ft. Deeded Land Share",
+      configuration: "3 Bed · 3 Bath · 3 Balconies",
+      bookingShare: "Booking & Land Registry Share",
       features: [
-        "40 ft broad access road in tranquil Road 14 sector",
-        "Direct registered sub-kabala land deed before superstructure starts",
-        "Earthquake-resistant Seismic Zone 2 structural frame with 72.5 grade rebar",
+        "40-foot-wide road access in peaceful Road 14 sector",
+        "Direct registered Sub-Kabala land deed before construction begins",
+        "Strictly two residences per floor for maximum privacy and ventilation",
         "8'x8' high-speed passenger lift with Automatic Rescue Device (ARD)",
         "Covered ground floor parking bays and dedicated standby generator",
         "Landscaped communal rooftop terrace garden with seating pergola"
       ],
-      description: "BDM Shopnaloy represents a rare combination of tranquil residential seclusion and immediate connectivity in Agrabad CDA. Designed with dual-unit privacy per floor, the structure harnesses daylight through generous corner apertures while offering homeowners registered fractional land ownership."
+      description: "A residential development conceived around space, privacy and a sense of permanence. Set along a 40-foot-wide road, Shopnaloy brings together only two residences per floor, creating a more private residential environment with generous natural light, airflow and outdoor space."
     },
     {
       id: "bdm-shopno-nebash",
@@ -88,21 +93,21 @@ const BDM_DATA = {
       bengaliStatus: "চলমান আবাসিক প্রকল্প",
       statusBadge: "CIVIL FRAMEWORKS & ARCHITECTURE",
       category: "Executive Family Residences",
-      location: "Plot 445, Road 11, Agrabad CDA R/A, Chattogram",
-      bengaliLocation: "প্লট ৪৪৫, রোড ১১, আগ্রাবাদ সিডিএ আ/এ, চট্টগ্রাম",
+      location: "Plot 445 · Road 11 · Agrabad CDA · Chattogram",
+      bengaliLocation: "প্লট ৪৪৫ · রোড ১১ · আগ্রাবাদ সিডিএ · চট্টগ্রাম",
       coordinates: "22.3288° N, 91.8032° E",
       heroImage: "https://lh3.googleusercontent.com/aida/AEtjO1W3xavIoRm8aEPoFUA0q5vYpvspPvqjAwz_TDOJjL57_SBQw_yqERqJYht2YAZXsGp2rQW_Q1SsXTARGneq-2jYvC4TFRVLhRSP_Bjkfyc6lAh60B6qHiH-ffrQ-uE0SCRyoZSjF4pA19zETVMzZ6PhZLhGQevoyKJYrlIcvbwLyVwx3omoXRfQppDGNBGydgaHM8RrEv801nXDETK2zjLYgNAAefEba9jVEYWhOaOwvn6CVKsFBnlAn8E",
       twilightImage: "https://lh3.googleusercontent.com/aida/AEtjO1W3xavIoRm8aEPoFUA0q5vYpvspPvqjAwz_TDOJjL57_SBQw_yqERqJYht2YAZXsGp2rQW_Q1SsXTARGneq-2jYvC4TFRVLhRSP_Bjkfyc6lAh60B6qHiH-ffrQ-uE0SCRyoZSjF4pA19zETVMzZ6PhZLhGQevoyKJYrlIcvbwLyVwx3omoXRfQppDGNBGydgaHM8RrEv801nXDETK2zjLYgNAAefEba9jVEYWhOaOwvn6CVKsFBnlAn8E",
       floorPlanImage: "https://lh3.googleusercontent.com/aida/AEtjO1Wa1myew1Uqa54-Nghj9pLcVNBEQPJOAwOYhqh9bLupkwvv3skXSzSdJui0Wa0oES0jP39QpFILxQSOaYI7q5l0Cb--7AtguIdIqwisz_j-viOHEqGs12AeVWwVp4IBJKdKwceI69gICNfr9NTGFMp_FWFTtoGXZZVJOLOW7cyYSj56bmSLyhREDzazzB-w1DL_yycveIJdpdyzHe9Vx5B3tMFHHjStjVYDmW8_QT64bj422mlZnBGcB_s",
-      planType: "Architectural CAD Blueprint (Type A & B)",
-      unitSize: "1,750 Sq. Ft. (Type A & B)",
-      landSize: "5.00 Katha (40' x 90' Rectangular Parcel)",
+      planType: "Architectural CAD Blueprint",
+      unitSize: "1,750 Sq. Ft.",
+      landSize: "5.00 Katha Rectangular Parcel",
       roadWidth: "30 Feet Frontage",
       floors: "G + 9 Storeys (10 Levels)",
-      totalUnits: "18 Units (2 Units / Floor)",
-      landSharePerUnit: "Proportionate Deeded Share (1/18th of 5 Katha)",
-      configuration: "4 Bed, 4 Bath, 3 Balconies, Drawing, Dining & Utility Area",
-      bookingShare: "Consult BDM Representative for Allocation",
+      totalUnits: "18 Residences (2 Units / Floor)",
+      landSharePerUnit: "Proportionate Deeded Land Share",
+      configuration: "4 Bed · 4 Bath · 3 Balconies",
+      bookingShare: "Consult BDM for Allocation",
       features: [
         "5.00 Katha prime rectangular plot with optimal North-South orientation",
         "Strictly 2 expansive executive apartments per floor for maximum privacy",
@@ -111,7 +116,7 @@ const BDM_DATA = {
         "Dedicated utility balconies and cross-ventilated kitchen zones",
         "Direct deed registration eliminating developer speculative risk"
       ],
-      description: "Standing 10 storeys tall on Road 11 in Agrabad CDA, BDM Shopno Nebash delivers expansive 1,750 sq. ft. residences crafted for generational family comfort. Every square foot reflects engineered spatial utility with separate drawing and dining halls, ensuite master quarters, and panoramic balconies."
+      description: "Conceived around generous family living on Road 11 in Agrabad CDA. Featuring two residences per floor, expansive four-bedroom layouts, and direct deeded land co-ownership."
     },
     {
       id: "bdm-future-parcel",
@@ -122,8 +127,8 @@ const BDM_DATA = {
       bengaliStatus: "জমি অধিগ্রহণ ও ডিজাইন পর্যালোচনা",
       statusBadge: "UPCOMING SIGNATURE DEVELOPMENT",
       category: "Future Land-Share Development",
-      location: "Agrabad CDA Residential Area, Chattogram",
-      bengaliLocation: "আগ্রাবাদ সিডিএ আ/এ, চট্টগ্রাম",
+      location: "Agrabad CDA Residential Area · Chattogram",
+      bengaliLocation: "আগ্রাবাদ সিডিএ আ/এ · চট্টগ্রাম",
       coordinates: "22.3270° N, 91.8025° E",
       heroImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuC_wqjEfCjf-XBBZrO_Co8eYot222OXwwrc51lvGW2ONzMsnM0U7rSH3jcnFKoPVqqo97SXK4mbP0OT7Qne0ik338StoEk23DAC7c9LrLgu3SmLWeHgh685jYXC606Nt39A1QBwL-hd2QZjPjoIQIu7_mqRw9XsoFRAWs1JvP9ZhH2mfeKkNuOLflmJtvKkgxJc8QzUCecdG7Qaz_I7sw-Y-jfRKj7CXw7AoaZCd8ZSi87S6FgRVf1LKbDjezwSBudgTQ",
       twilightImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuC_wqjEfCjf-XBBZrO_Co8eYot222OXwwrc51lvGW2ONzMsnM0U7rSH3jcnFKoPVqqo97SXK4mbP0OT7Qne0ik338StoEk23DAC7c9LrLgu3SmLWeHgh685jYXC606Nt39A1QBwL-hd2QZjPjoIQIu7_mqRw9XsoFRAWs1JvP9ZhH2mfeKkNuOLflmJtvKkgxJc8QzUCecdG7Qaz_I7sw-Y-jfRKj7CXw7AoaZCd8ZSi87S6FgRVf1LKbDjezwSBudgTQ",
@@ -139,7 +144,7 @@ const BDM_DATA = {
       bookingShare: "Priority Waiting List Open",
       features: [
         "Prime Agrabad CDA sector with unhindered sunlight exposure",
-        "Direct joint-venture participation under BDM's 40% cost-saving model",
+        "Direct joint-venture participation under BDM's transparent land-share model",
         "Pre-launch subscriber registrations now being received",
         "Full structural engineering vetting prior to financial drawdown"
       ],
@@ -149,48 +154,48 @@ const BDM_DATA = {
 
   homeSpaces: [
     {
-      id: "living-room",
-      tag: "LIGHT & AIR",
-      bengaliTag: "আলো-বাতাস ও প্রশান্তি",
-      title: "Sunlit Drawing & Living Hall",
-      bengaliTitle: "আলো-বাতাস পূর্ণ ড্রয়িং ও লিভিং স্পেস",
+      id: "light",
+      tag: "LIGHT",
+      bengaliTag: "প্রাকৃতিক আলো",
+      title: "Let the Day In.",
+      bengaliTitle: "দিনের আলো ঘরে প্রবেশ করতে দিন",
       image: "assets/living/living.jpg",
-      alt: "Spacious sunlit drawing hall with natural daylight and elegant warm finishes",
-      desc: "Designed for authentic Bangladeshi family warmth and gracious hospitality. Generous corner windows invite abundant morning sunlight, creating an uplifting, serene sanctuary for daily family life and festive Eid gatherings.",
-      bengaliDesc: "পরিবারের আন্তরিক সময় ও মেহমানদারির জন্য খোলামেলা স্পেস। বড় উইন্ডো ফ্রেমের মাধ্যমে পর্যাপ্ত আলো-বাতাস প্রবেশ করে, যা প্রতিটি দিনকে আনন্দময় ও সতেজ রাখে।"
+      alt: "Generous openings and natural daylight deep in luxury living spaces",
+      desc: "Generous openings and thoughtful orientation bring natural daylight deep into the living spaces, creating interiors that feel open, calm and alive.",
+      bengaliDesc: "খোলামেলা জানালা ও সঠিক দিকবিন্যাস লিভিং স্পেসের গভীরে প্রাকৃতিক আলো এনে দেয়, যা ঘরকে করে তোলে শান্ত, উজ্জ্বল ও প্রাণবন্ত।"
     },
     {
-      id: "balconies",
-      tag: "COASTAL BREEZE",
-      bengaliTag: "দক্ষিণা বাতাস ও ছায়াঘেরা বারান্দা",
-      title: "Deep Sheltered Balconies",
-      bengaliTitle: "প্রশস্ত বারান্দা ও সারাদিন প্রাকৃতিক বাতাস",
+      id: "air",
+      tag: "AIR",
+      bengaliTag: "মুক্ত বাতাস",
+      title: "Let the City Breathe Out.",
+      bengaliTitle: "চট্টগ্রামের সতেজ উপকূলীয় বাতাস",
       image: "assets/living/balcony.jpg",
-      alt: "Deep sheltered balcony with tranquil view and natural tropical cross-ventilation",
-      desc: "Chattogram's pleasant coastal air flows naturally through three open aspects. Deep covered balconies give you a tranquil retreat for morning tea, evening breeze, or your own private green plant terrace.",
-      bengaliDesc: "চট্টগ্রামের মনোরম দক্ষিণা বাতাস সহজে প্রবেশের জন্য তিন দিক খোলা রাখা হয়েছে। সকালের চা অথবা সন্ধ্যার অবসরে পরিবারের সাথে সময় কাটানোর সেরা জায়গা।"
+      alt: "Deep sheltered balcony with tranquil view and natural tropical coastal airflow",
+      desc: "Thoughtful planning and open aspects encourage natural airflow, bringing Chattogram's coastal breeze into the home.",
+      bengaliDesc: "পরিকল্পিত বিন্যাস ও উন্মুক্ত বারান্দা ভবনে প্রাকৃতিক বাতাস চলাচলে সহায়তা করে এবং ঘরের ভেতর এনে দেয় প্রশান্তির ছোঁয়া।"
     },
     {
-      id: "dining-kitchen",
-      tag: "FAMILY GATHERINGS",
-      bengaliTag: "পারিবারিক ভোজন ও বন্ধন",
-      title: "Generous Family Dining & Kitchen Flow",
-      bengaliTitle: "সুপরিসর ডাইনিং ও পরিপাটি কিচেন জোন",
-      image: "assets/living/dining.jpg",
-      alt: "Warm family dining space adjacent to kitchen for joyful shared meals",
-      desc: "The true heart of the home. Planned centrally between drawing and kitchen zones, comfortably accommodating an 8-seater dining table with dedicated wash hand basin and cross-ventilated culinary utility.",
-      bengaliDesc: "পরিবারের সবাইকে নিয়ে এক সাথে বসে খাবারের মধুর মুহূর্ত। বড় ৮ সিটের ডাইনিং টেবিল অনায়াসে রাখার স্থান, পাশে আলাদা হ্যান্ড-ওয়াশ এরিয়া এবং কিচেনের পর্যাপ্ত ভেন্টিলেশন।"
-    },
-    {
-      id: "master-bedroom",
-      tag: "QUIET SANCTUARY",
-      bengaliTag: "শান্তিময় শয়নকক্ষ",
-      title: "Peaceful Master Bedroom Suite",
-      bengaliTitle: "শান্তিময় মাস্টার বেডরুম ও প্রাইভেট স্পেস",
+      id: "privacy",
+      tag: "PRIVACY",
+      bengaliTag: "ব্যক্তিগত গোপনীয়তা",
+      title: "Space to Live Your Own Way.",
+      bengaliTitle: "নিরাপদ ও নিজস্ব ব্যক্তিগত পরিসর",
       image: "assets/living/master.jpg",
-      alt: "Peaceful master bedroom with floor-to-ceiling windows and ensuite bathroom",
-      desc: "Your restful personal sanctuary after a long day in the city. Engineered with acoustic privacy away from reception areas, accompanied by an ensuite bath, walk-in wardrobe nook, and private fresh-air balcony.",
-      bengaliDesc: "সারাদিনের ক্লান্তি শেষে পরম শান্তির ব্যক্তিগত ভুবন। ড্রয়িং স্পেস থেকে আলাদা প্রাইভেসিতে অবস্থিত, সাথে রয়েছে আধুনিক এটাচড বাথ এবং নিজস্ব মুক্ত বাতাসসমৃদ্ধ বারান্দা।"
+      alt: "Peaceful personal bedroom sanctuary designed for quiet comfort",
+      desc: "Fewer residences per floor create a quieter environment and a stronger sense of personal space.",
+      bengaliDesc: "প্রতি ফ্লোরে মাত্র দুটি ফ্ল্যাট নিশ্চিত করে নিরিবিলি পরিবেশ এবং পরিবারের সদস্যদের জন্য একান্ত নিজস্ব স্বাচ্ছন্দ্য।"
+    },
+    {
+      id: "togetherness",
+      tag: "TOGETHERNESS",
+      bengaliTag: "পারিবারিক বন্ধন",
+      title: "The Heart of the Home.",
+      bengaliTitle: "পারিবারিক আনন্দ ও অন্তরঙ্গ সময়",
+      image: "assets/living/dining.jpg",
+      alt: "Generous family dining hall designed for shared meals and celebrations",
+      desc: "Living and dining spaces are designed around the moments that matter — family dinners, celebrations, conversations and ordinary evenings that become treasured memories.",
+      bengaliDesc: "লিভিং ও ডাইনিং স্পেস সাজানো হয়েছে পরিবারের সুন্দর মুহূর্তগুলোকে ঘিরে—একসাথে রাতের খাবার, ঘরোয়া আলাপ আর অগণিত স্মৃতি।"
     }
   ],
 
@@ -198,85 +203,85 @@ const BDM_DATA = {
     {
       step: "01",
       title: "LAND",
-      subtitle: "Strategic Acquisition & Clear Title",
-      bengaliTitle: "নিষ্কলঙ্ক জমি নির্বাচন",
-      desc: "We exclusively select rectangular, high-frontage parcels (30 to 40 ft road access) within planned CDA residential sectors. Every plot undergoes rigorous legal vetting (CS, SA, RS, BS porcha & non-encumbrance audit) before shareholder registration.",
-      specs: "Direct Sub-Kabala Deed · 0% Legal Risk"
+      subtitle: "Start with the Right Foundation.",
+      bengaliTitle: "সঠিক ভিত্তি থেকে শুরু",
+      desc: "We carefully evaluate location, road access, land configuration and legal documentation before development begins.",
+      specs: "Rigorous Legal Vetting · Direct Deed Access"
     },
     {
       step: "02",
       title: "ARCHITECTURE",
-      subtitle: "Bioclimatic & Dual-Unit Rigor",
-      bengaliTitle: "পরিমিত স্থাপত্য নকশা",
-      desc: "Our architectural layouts reject claustrophobic multi-unit crowding. We restrict floorplates to strictly two homes per level, unlocking unobstructed dual-aspect natural lighting, cross-ventilation, and generous private balcony apertures.",
-      specs: "Strictly 2 Units / Floor · 100% Cross Air"
+      subtitle: "Plan for People, Not Just Floor Area.",
+      bengaliTitle: "মানুষের স্বাচ্ছন্দ্যের জন্য নকশা",
+      desc: "Our layouts prioritize natural light, ventilation, privacy and practical family living.",
+      specs: "Strictly 2 Units / Floor · 100% Daylight"
     },
     {
       step: "03",
       title: "ENGINEERING",
-      subtitle: "Seismic Zone 2 Structural Calculation",
-      bengaliTitle: "ভূমিকম্প সহনশীল প্রকৌশল",
-      desc: "Calculated in partnership with Mahi Engineering Services, our structures conform to BNBC codes with 72.5-grade high-tensile TMT rebar, high-cylinder-strength concrete batches, and subterranean pile foundations engineered for coastal silt strata.",
-      specs: "72.5 Grade TMT Rebar · BNBC & CDA Compliant"
+      subtitle: "Design for the Years Ahead.",
+      bengaliTitle: "আগামীর স্থায়িত্বের নিশ্চয়তা",
+      desc: "Structural systems, materials and construction methods are selected and supervised with long-term durability in mind.",
+      specs: "BNBC & CDA Compliant · Seismic Engineering"
     },
     {
       step: "04",
       title: "CONSTRUCTION",
-      subtitle: "Open-Book Procurement & On-Site Audits",
-      bengaliTitle: "স্বচ্ছ নির্মাণ ও তত্ত্বাবধান",
-      desc: "BDM operates on transparent monthly construction billing. Homeowners inspect batch test reports, certified cement testing, and piling logs in real time. You build at procurement cost with zero speculative markup.",
-      specs: "40% Cost Savings · Live Owner Inspection"
+      subtitle: "Build with Discipline.",
+      bengaliTitle: "শৃঙ্খলার সাথে সুদৃঢ় নির্মাণ",
+      desc: "Construction progresses through structured stages, documentation and on-site supervision — keeping the process visible and accountable.",
+      specs: "On-Site Supervision · Structured Milestones"
     },
     {
       step: "05",
       title: "HANDOVER",
-      subtitle: "Turnkey Possession & Society Governance",
-      bengaliTitle: "চাবি হস্তান্তর ও স্থায়ী নিশ্চয়তা",
-      desc: "Every residence is delivered with unencumbered deed completion, certified utility connections, generator backup, and established building society bylaws ensuring enduring capital appreciation and hassle-free living.",
-      specs: "Permanent Building Warranty · Society Setup"
+      subtitle: "From Our Hands to Your Home.",
+      bengaliTitle: "আমাদের হাত থেকে আপনার ঠিকানায়",
+      desc: "The final stage is not simply handing over a key. It is delivering a place prepared for the life that comes next.",
+      specs: "Permanent Building Quality · Society Setup"
     }
   ],
 
   philosophy: [
     {
       number: "I",
-      tag: "SPATIAL PURITY",
-      bengaliTag: "পরিমিত স্থাপত্য",
-      title: "Architectural Honesty",
-      bengaliTitle: "পরিমিত স্থাপত্য ও সঠিক পরিকল্পনা",
-      desc: "No cosmetic facades concealing poor spatial logic. We design homes whose aesthetic dignity is a direct outcome of abundant interior natural light, dual-aspect cross-ventilation, and uncompromised family privacy.",
-      bengaliDesc: "বাহ্যিক চটকদার নকশার আড়ালে ত্রুটিপূর্ণ ফ্লোরপ্ল্যান নয়। প্রতিটি অ্যাপার্টমেন্টের সৌন্দর্য তার অভ্যন্তরের পর্যাপ্ত আলো-বাতাস এবং পরিবারের নিবিড় স্বাচ্ছন্দ্যের প্রতীক।",
-      guarantee: "Strictly 2 Units / Floor · 100% Daylight"
+      tag: "CAREFULLY SELECTED LAND",
+      bengaliTag: "সতর্ক জমি নির্বাচন",
+      title: "Places of Long-Term Value",
+      bengaliTitle: "স্থায়ী মূল্যের সঠিক স্থান",
+      desc: "Places chosen with long-term residential value in mind. We look beyond the plot itself — considering accessibility, surroundings, and everyday convenience.",
+      bengaliDesc: "শুধুমাত্র একটি প্লট নয়—আমরা যাচাই করি যোগাযোগ ব্যবস্থা, পারিপার্শ্বিক পরিবেশ এবং পরিবারের দৈনন্দিন স্বাচ্ছন্দ্য।",
+      guarantee: "Planned CDA Sectors · 30–40 Ft Road Access"
     },
     {
       number: "II",
-      tag: "CAPITAL PROTECTION",
-      bengaliTag: "সরাসরি মালিকানা",
-      title: "Direct Equity Ownership",
-      bengaliTitle: "প্রকৃত মালিকানা ও ৪০% সাশ্রয়",
-      desc: "Traditional developers inflate apartment prices by 40% to 60% for speculative profits and marketing overhead. BDM delivers registered Sub-Kabala land deeds upfront, allowing you to build at audited contractor procurement cost.",
-      bengaliDesc: "প্রচলিত ডেভেলপারদের অতিরিক্ত মুনাফা ও বিপণন খরচের বোঝা থেকে মুক্তি। নির্মাণকাজ শুরুর পূর্বেই সরাসরি ভূমির সাব-কবলা রেজিস্ট্রি এবং প্রকৃত নির্মাণ খরচে কাজ।",
-      guarantee: "Direct Sub-Kabala Deed · 40% Cost Savings"
+      tag: "THOUGHTFUL ARCHITECTURE",
+      bengaliTag: "পরিমিত স্থাপত্য নকশা",
+      title: "Shaped Around Real Life",
+      bengaliTitle: "বাস্তব জীবনের উপযোগী ফ্লোরপ্ল্যান",
+      desc: "Spaces designed around light, air, privacy and family life. Clean proportions and considered layouts that age gracefully without chasing fleeting trends.",
+      bengaliDesc: "আলো, বাতাস ও পারিবারিক প্রাইভেসির চমৎকার সমন্বয়। সময়ের সাথে যা তার সৌন্দর্য ও কার্যকারিতা হারায় না।",
+      guarantee: "Strictly 2 Units / Floor · Dual-Aspect Daylight"
     },
     {
       number: "III",
       tag: "ENGINEERING DISCIPLINE",
-      bengaliTag: "কাঠামোগত স্থায়িত্ব",
-      title: "Generational Resilience",
-      bengaliTitle: "ভূমিকম্প সহনশীল উপকূলীয় প্রকৌশল",
-      desc: "Chattogram's coastal soil demands engineering uncompromisingness. Supervised in partnership with Mahi Engineering Services, our structures feature deep subterranean piling and high-tensile 72.5 grade TMT rebar.",
-      bengaliDesc: "চট্টগ্রামের উপকূলীয় মাটির জন্য প্রয়োজন নিখুঁত প্রকৌশল। মাহি ইঞ্জিনিয়ারিং সার্ভিসেসের তত্ত্বাবধানে গভীর পাইলিং এবং ৭২.৫ গ্রেডের প্রিমিয়াম রড ব্যবহার।",
-      guarantee: "BNBC Seismic Zone 2 · 72.5 Grade TMT Rebar"
+      bengaliTag: "কঠোর প্রকৌশল শৃঙ্খলা",
+      title: "Built for Generations",
+      bengaliTitle: "প্রজন্মের পর প্রজন্ম টিকে থাকার নিশ্চয়তা",
+      desc: "Structural and construction decisions made with long-term performance in mind. Supervised to withstand coastal conditions and regional seismic loads.",
+      bengaliDesc: "উপকূলীয় পরিবেশ ও ভূমিকম্প সহনশীলতা মাথায় রেখে দক্ষ প্রকৌশলীদের সরাসরি তত্ত্বাবধানে প্রতিটি স্তরের নির্মাণ।",
+      guarantee: "BNBC Seismic Codes · High-Yield Tested Rebar"
     },
     {
       number: "IV",
-      tag: "CIVIC DIGNITY",
-      bengaliTag: "মার্জিত সমাজ",
-      title: "Community Tranquility",
-      bengaliTitle: "মার্জিত ও শান্তিপূর্ণ পারিবারিক পরিবেশ",
-      desc: "We exclusively develop for families who cherish peace and permanence. By capping our developments at 15 to 18 total residences per building, we foster a safe, close-knit, dignified residential community.",
-      bengaliDesc: "আমরা তৈরি করি শান্তিময় পারিবারিক আবাসন। বহুতল ভিড় এড়িয়ে প্রতিটি ভবনে মাত্র ১৫ থেকে ১৮টি পরিবার নিয়ে একটি নিরাপদ, রুচিশীল ও মার্জিত সমাজ।",
-      guarantee: "Max 15–18 Exclusive Resident Families"
+      tag: "TRANSPARENT PROCESS",
+      bengaliTag: "স্বচ্ছ প্রক্রিয়া ও সরাসরি মালিকানা",
+      title: "Direct Connection to Land",
+      bengaliTitle: "জমির সাথে সরাসরি স্থায়ী সম্পর্ক",
+      desc: "Clear information about land, construction and development. Direct registered land ownership through Sub-Kabala before construction begins.",
+      bengaliDesc: "নির্মাণ শুরু হওয়ার পূর্বেই সাব-কবলা রেজিস্ট্রি। কোনো লুকানো চার্জ ছাড়া সম্পূর্ণ স্বচ্ছ ও নির্ভরযোগ্য উন্নয়ন পদ্ধতি।",
+      guarantee: "Direct Sub-Kabala Deed · Zero Developer Margin"
     }
   ],
 

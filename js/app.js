@@ -436,59 +436,66 @@ function setLanguage(lang) {
   const btnEn = document.getElementById('btn-lang-en');
   const btnBn = document.getElementById('btn-lang-bn');
 
+  const heroHeadline = document.getElementById('hero-headline');
+  const heroSubtext = document.getElementById('hero-subtext');
+  const heroCtaExplore = document.getElementById('hero-cta-explore');
+  const heroCtaEnquire = document.getElementById('hero-cta-enquire');
+  const introTitle = document.getElementById('intro-title');
+  const introDesc1 = document.getElementById('intro-desc-1');
+  const cardLegalTitle = document.getElementById('card-legal-title');
+  const cardLegalDesc = document.getElementById('card-legal-desc');
+  const cardCostTitle = document.getElementById('card-cost-title');
+  const cardCostDesc = document.getElementById('card-cost-desc');
+  const spacesTag = document.getElementById('spaces-section-tag');
+  const spacesTitle = document.getElementById('spaces-section-title');
+  const spacesDesc = document.getElementById('spaces-section-desc');
+  const spacesCta = document.getElementById('spaces-visit-cta');
+
   if (lang === 'bn') {
-    btnBn.classList.add('active');
-    btnEn.classList.remove('active');
+    if (btnBn) btnBn.classList.add('active');
+    if (btnEn) btnEn.classList.remove('active');
 
-    // Update Hero (Sales Persuasion)
-    document.getElementById('hero-headline').innerHTML = "আগ্রাবাদ সিডিএ-তে নিজের জমিতে ফ্ল্যাট।<br><span class=\"gold-gradient-text\">নির্মাণ খরচে ৪০% নিশ্চিত সাশ্রয়।</span>";
-    document.getElementById('hero-subtext').textContent = "নির্মাণকাজ শুরুর পূর্বেই আপনার নামে ভূমির সরাসরি সাব-কবলা রেজিস্ট্রি। সিডিএ অনুমোদিত, ভূমিকম্প সহনশীল এবং প্রতি ফ্লোরে মাত্র ২টি ফ্ল্যাট। ডেভেলপার কোম্পানির কোনো অতিরিক্ত লাভ বা গোপন চার্জ নেই।";
-    document.getElementById('hero-cta-explore').textContent = "স্বপ্নালয় প্রকল্প দেখুন (১৩৭৫ বর্গফুট)";
-    document.getElementById('hero-cta-enquire').textContent = "হোয়াটসঅ্যাপে মূল্য তালিকা নিন";
+    // Hero (Bengali)
+    if (heroHeadline) heroHeadline.innerHTML = "যেখানে ভূমি হয়ে ওঠে আপনার পারিবারিক উত্তরাধিকার।";
+    if (heroSubtext) heroSubtext.innerHTML = "একটি বাড়ি কেবল কোনো ঠিকানা নয়।<br>এখানে সকালের সূচনা হয়, পরিবার একত্রিত হয়, সন্তানেরা বড় হয় এবং স্মৃতিগুলো চিরস্থায়ী হয়ে থাকে।<br><br>বিডিএম লিমিটেড-এ আমরা অনন্য দৃষ্টিভঙ্গিতে কাজ করি — সুপরিকল্পিত ভূমি, পরিশীলিত স্থাপত্য, স্বচ্ছ মালিকানা ও সুশৃঙ্খল নির্মাণ।";
+    if (heroCtaExplore) heroCtaExplore.textContent = "প্রকল্পসমূহ দেখুন";
+    if (heroCtaEnquire) heroCtaEnquire.textContent = "যোগাযোগ করুন";
     
-    // Update Intro
-    document.getElementById('intro-title').innerHTML = "ডেভেলপারকে ৪০% অতিরিক্ত মুনাফা কেন দেবেন?<br>যখন আপনি নিজেই হতে পারেন জমির রেজিস্ট্রিকৃত মালিক।";
-    document.getElementById('intro-desc-1').textContent = "চট্টগ্রামের প্রচলিত রিয়েল এস্টেটে ফ্ল্যাটের মূল্যের সাথে ৪০% থেকে ৬০% অতিরিক্ত মুনাফা, বিজ্ঞাপন ও সুদের বোঝা যুক্ত থাকে। বিডিএম লিমিটেড আপনাকে দিচ্ছে সরাসরি ল্যান্ড-শেয়ার কো-ওনারশিপের মাধ্যমে প্রকৃত নির্মাণ খরচে বিলাসবহুল ফ্ল্যাট গড়ার সুযোগ।";
-    document.getElementById('card-legal-title').textContent = "জমির সরাসরি সাব-কবলা রেজিস্ট্রি";
-    document.getElementById('card-legal-desc').textContent = "নির্মাণ কাজ শুরুর পূর্বেই ক্রেতার নামে সরাসরি ভূমির অংশ সাব-কবলা দলিল সম্পাদন ও নামজারি।";
-    document.getElementById('card-cost-title').textContent = "৪০% নির্মাণ খরচ সাশ্রয়";
-    document.getElementById('card-cost-desc').textContent = "প্রকৃত রড, সিমেন্ট ও পাইলিং খরচে কাজ—কোনো অবাস্তব ডেভেলপার প্রিমিয়াম ছাড়া।";
+    // Intro & Ownership (Bengali)
+    if (introTitle) introTitle.innerHTML = "কেবল আরেকটি ঠিকানা নয়।";
+    if (introDesc1) introDesc1.innerHTML = "আমরা বিশ্বাস করি অসাধারণ জীবনের সূচনা হয় প্রথম ইট গাঁথার বহু পূর্বে। এর সূচনা সঠিক জমি নির্বাচনের মাধ্যমে, এগিয়ে যায় সুপরিকল্পিত স্থাপত্য ও আপসহীন প্রকৌশলে, এবং সবশেষে রূপ নেয় এমন এক আশ্রয়ে যা আপনার পরিবার গর্বে নিজের বলতে পারে।";
+    if (cardLegalTitle) cardLegalTitle.textContent = "আপনার বাড়ির সূচনা হোক জমির সরাসরি মালিকানার মাধ্যমে।";
+    if (cardLegalDesc) cardLegalDesc.textContent = "প্রচলিত নিয়মে ফ্ল্যাট ক্রেতা ভূমির প্রকৃত স্বত্ব থেকে বিচ্ছিন্ন থাকেন। আমাদের ল্যান্ড-শেয়ার মডেলে নির্মাণকাজ শুরুর পূর্বেই সরাসরি সাব-কবলা রেজিস্ট্রি সম্পন্ন করা হয়, যা বাড়ি ও ভূমির মাঝে স্পষ্ট সম্পর্ক স্থাপন করে।";
+    if (cardCostTitle) cardCostTitle.textContent = "আমরা শুধু বাড়ি তৈরি করি না—আমরা একাত্মতার অনুভূতি গড়ে তুলি।";
+    if (cardCostDesc) cardCostDesc.textContent = "বিডিএম লিমিটেড চট্টগ্রামের নির্বাচিত স্থানে আবাসিক প্রকল্প গড়ে তুলছে—যেখানে ভূমির মালিকানা, উন্নত স্থাপত্য ও বাস্তবসম্মত পারিবারিক জীবন একসাথে সার্থক রূপ পায়।";
 
-    // Update Living Spaces Section (Bengali)
-    const spacesTag = document.getElementById('spaces-section-tag');
-    if (spacesTag) spacesTag.textContent = "পারিবারিক জীবন ও পরিবেশ";
-    const spacesTitle = document.getElementById('spaces-section-title');
-    if (spacesTitle) spacesTitle.innerHTML = "পারিবারিক শান্তির জন্য নির্মিত আবাস";
-    const spacesDesc = document.getElementById('spaces-section-desc');
-    if (spacesDesc) spacesDesc.textContent = "একটি বাড়ি কেবল ইট-পাথরের দেয়াল নয়; এটি আপনার পরিবারের নিশ্চিন্ত আশ্রয়। ড্রয়িং রুমে সকালের আলো, দক্ষিণা বাতাস এবং প্রতিটি সদস্যের জন্য নিরাপদ ও আরামদায়ক পরিবেশ।";
-    const spacesCta = document.getElementById('spaces-visit-cta');
-    if (spacesCta) spacesCta.textContent = "সাইট পরিদর্শনের সময় বুক করুন";
+    // Living Spaces Section (Bengali)
+    if (spacesTag) spacesTag.textContent = "পারিবারিক জীবন";
+    if (spacesTitle) spacesTitle.innerHTML = "বাস্তব জীবনের প্রয়োজনে নকশা করা আবাস";
+    if (spacesDesc) spacesDesc.textContent = "নান্দনিক স্থাপত্য তখনই সার্থক যখন তা দৈনন্দিন জীবনকে সমৃদ্ধ করে। সকালের আলো, দক্ষিণা বাতাস, সন্তানদের খেলাধুলা এবং পরিবারের একান্ত শান্তিপূর্ণ সময়ের কথা ভেবেই আমাদের প্রতিটি ফ্ল্যাটের বিন্যাস।";
+    if (spacesCta) spacesCta.textContent = "সাইট পরিদর্শনের বুকিং দিন";
   } else {
-    btnEn.classList.add('active');
-    btnBn.classList.remove('active');
+    if (btnEn) btnEn.classList.add('active');
+    if (btnBn) btnBn.classList.remove('active');
 
-    // Restore English (Sales Persuasion)
-    document.getElementById('hero-headline').innerHTML = "OWN PRIME LAND IN AGRABAD CDA.<br><span class=\"gold-gradient-text\">SAVE 40% ON YOUR DREAM RESIDENCE.</span>";
-    document.getElementById('hero-subtext').textContent = "Direct Sub-Kabala land deed registered in your name before construction starts. CDA-approved, earthquake-engineered homes with strictly 2 units per floor. Zero developer speculative markup.";
-    document.getElementById('hero-cta-explore').textContent = "VIEW SHOPNALOY (1,375 SQ FT)";
-    document.getElementById('hero-cta-enquire').textContent = "WHATSAPP FOR PRICE SHEET";
+    // Hero (English)
+    if (heroHeadline) heroHeadline.innerHTML = "WHERE LAND BECOMES LEGACY.";
+    if (heroSubtext) heroSubtext.innerHTML = "A home is more than an address.<br><br>It is where mornings begin, families gather, children grow and memories quietly become part of the walls.<br><br>At BDM Limited, we approach residential development differently — with carefully selected land, considered architecture, transparent ownership and disciplined construction.";
+    if (heroCtaExplore) heroCtaExplore.textContent = "EXPLORE OUR PROJECTS";
+    if (heroCtaEnquire) heroCtaEnquire.textContent = "START A CONVERSATION";
 
-    // Restore Intro
-    document.getElementById('intro-title').innerHTML = "WHY PAY 40% DEVELOPER MARKUPS<br>WHEN YOU CAN OWN THE LAND DIRECTLY?";
-    document.getElementById('intro-desc-1').textContent = "In traditional Chittagong real estate, developers inflate apartment prices by up to 60% for speculative margins, aggressive advertising, and financing interest. At BDM Limited, you bypass developer markups entirely through direct land-share co-ownership.";
-    document.getElementById('card-legal-title').textContent = "100% LEGAL SECURITY";
-    document.getElementById('card-legal-desc').textContent = "Direct Sub-Kabala deed registered in your name before any construction begins.";
-    document.getElementById('card-cost-title').textContent = "GUARANTEED FINANCIAL SAVING";
-    document.getElementById('card-cost-desc').textContent = "Fund construction at actual procurement rate with zero developer speculative profit.";
+    // Intro & Ownership (English)
+    if (introTitle) introTitle.innerHTML = "NOT JUST ANOTHER ADDRESS.";
+    if (introDesc1) introDesc1.innerHTML = "We believe exceptional living begins long before the first brick is placed.<br><br>It begins with choosing the right piece of land. It continues through thoughtful planning, intelligent architecture and uncompromising engineering.<br><br>And ultimately, it becomes something much more personal: <strong>a place your family can truly call its own.</strong>";
+    if (cardLegalTitle) cardLegalTitle.textContent = "YOUR HOME SHOULD BEGIN WITH YOUR OWNERSHIP OF THE LAND.";
+    if (cardLegalDesc) cardLegalDesc.textContent = "Traditional property buying often separates the buyer from the land beneath the apartment. Our land-share model takes a different approach. Where applicable, BDM buyers receive directly registered land ownership through Sub-Kabala before construction begins, creating a clearer relationship between the homeowner, the land and the residence.";
+    if (cardCostTitle) cardCostTitle.textContent = "WE BUILD MORE THAN HOMES.";
+    if (cardCostDesc) cardCostDesc.textContent = "WE BUILD A SENSE OF BELONGING. BDM Limited creates residential spaces where architecture, ownership and everyday family life come together with purpose.";
 
-    // Restore Living Spaces Section (English)
-    const spacesTag = document.getElementById('spaces-section-tag');
-    if (spacesTag) spacesTag.textContent = "RESIDENTIAL LIVING & SANCTUARY";
-    const spacesTitle = document.getElementById('spaces-section-title');
-    if (spacesTitle) spacesTitle.innerHTML = "ENGINEERED FOR FAMILY LIFE";
-    const spacesDesc = document.getElementById('spaces-section-desc');
-    if (spacesDesc) spacesDesc.textContent = "A true home in Chattogram is not merely concrete and square feet. It is morning sunlight across your drawing room, coastal breeze through deep balconies, and uncompromised privacy for your family.";
-    const spacesCta = document.getElementById('spaces-visit-cta');
+    // Living Spaces Section (English)
+    if (spacesTag) spacesTag.textContent = "LIVING";
+    if (spacesTitle) spacesTitle.innerHTML = "DESIGNED AROUND REAL LIFE.";
+    if (spacesDesc) spacesDesc.textContent = "Beautiful architecture means little if it doesn't make everyday life better. Our homes are shaped around how families actually live — where morning light enters, where conversations happen, where children play, where guests gather and where the day finally becomes quiet.";
     if (spacesCta) spacesCta.textContent = "BOOK A PRIVATE SITE VISIT";
   }
 

@@ -412,38 +412,38 @@ function setLanguage(lang) {
     btnBn.classList.add('active');
     btnEn.classList.remove('active');
 
-    // Update Hero
-    document.getElementById('hero-headline').textContent = "আমরা এমন স্থান নির্মাণ করি যা সময়ের সাথে অমলিন থাকে।";
-    document.getElementById('hero-subtext').textContent = "চট্টগ্রামের আগ্রাবাদ সিডিএ আবাসিক এলাকায় পরিকল্পিত আবাসন। দীর্ঘস্থায়ী স্থাপত্য মর্যাদা, ভূমিকম্প সহনশীল প্রকৌশল এবং ভূমির সরাসরি সাব-কবলা রেজিস্ট্রি শেয়ার।";
-    document.getElementById('hero-cta-explore').textContent = "প্রকল্পসমূহ দেখুন";
-    document.getElementById('hero-cta-enquire').textContent = "যোগাযোগ করুন";
-    document.getElementById('hero-eyebrow').textContent = "প্রকৃত ভূমির রেজিস্ট্রি শেয়ার আবাসন · বাংলাদেশ";
+    // Update Hero (Sales Persuasion)
+    document.getElementById('hero-headline').innerHTML = "আগ্রাবাদ সিডিএ-তে নিজের জমির স্থায়ী ঠিকানা।<br>ফ্ল্যাট নির্মাণে ৪০% নিশ্চিত সাশ্রয়।";
+    document.getElementById('hero-subtext').textContent = "নির্মাণকাজ শুরুর পূর্বেই আপনার নামে ভূমির সরাসরি সাব-কবলা রেজিস্ট্রি। সিডিএ অনুমোদিত, ভূমিকম্প সহনশীল এবং প্রতি ফ্লোরে মাত্র ২টি ফ্ল্যাট। ডেভেলপার কোম্পানির কোনো অতিরিক্ত লাভ বা গোপন চার্জ নেই।";
+    document.getElementById('hero-cta-explore').textContent = "স্বপ্নালয় প্রকল্প দেখুন (১৩৭৫ বর্গফুট)";
+    document.getElementById('hero-cta-enquire').textContent = "হোয়াটসঅ্যাপে মূল্য তালিকা নিন";
+    document.getElementById('hero-eyebrow').textContent = "চট্টগ্রামের শীর্ষ ল্যান্ড-শেয়ার ডেভেলপার · আগ্রাবাদ সিডিএ";
     
     // Update Intro
-    document.getElementById('intro-title').innerHTML = "শুধু অট্টালিকা নয়।<br>আমরা তৈরি করি স্থায়ী ঠিকানা।";
-    document.getElementById('intro-desc-1').textContent = "বিডিএম লিমিটেড প্রতিষ্ঠিত হয়েছে এক আপসহীন প্রত্যয়ে: বাংলাদেশে আবাসন হতে হবে স্থায়ী, প্রাকৃতিক বাতাস ও আলোসমৃদ্ধ এবং সম্পূর্ণ আর্থিক সততায় মোড়া।";
-    document.getElementById('card-legal-title').textContent = "জমির সাব-কবলা রেজিস্ট্রি";
-    document.getElementById('card-legal-desc').textContent = "নির্মাণ কাজ শুরুর পূর্বেই ক্রেতার নামে সরাসরি ভূমির অংশ সাব-কবলা দলিল সম্পাদন।";
+    document.getElementById('intro-title').innerHTML = "ডেভেলপারকে ৪০% অতিরিক্ত মুনাফা কেন দেবেন?<br>যখন আপনি নিজেই হতে পারেন জমির রেজিস্ট্রিকৃত মালিক।";
+    document.getElementById('intro-desc-1').textContent = "চট্টগ্রামের প্রচলিত রিয়েল এস্টেটে ফ্ল্যাটের মূল্যের সাথে ৪০% থেকে ৬০% অতিরিক্ত মুনাফা, বিজ্ঞাপন ও সুদের বোঝা যুক্ত থাকে। বিডিএম লিমিটেড আপনাকে দিচ্ছে সরাসরি ল্যান্ড-শেয়ার কো-ওনারশিপের মাধ্যমে প্রকৃত নির্মাণ খরচে বিলাসবহুল ফ্ল্যাট গড়ার সুযোগ।";
+    document.getElementById('card-legal-title').textContent = "জমির সরাসরি সাব-কবলা রেজিস্ট্রি";
+    document.getElementById('card-legal-desc').textContent = "নির্মাণ কাজ শুরুর পূর্বেই ক্রেতার নামে সরাসরি ভূমির অংশ সাব-কবলা দলিল সম্পাদন ও নামজারি।";
     document.getElementById('card-cost-title').textContent = "৪০% নির্মাণ খরচ সাশ্রয়";
-    document.getElementById('card-cost-desc').textContent = "ডেভেলপারের কাল্পনিক অতিরিক্ত মুনাফা ব্যতীত সরাসরি প্রকৃত খরচে ফ্ল্যাট নির্মাণের সুযোগ।";
+    document.getElementById('card-cost-desc').textContent = "প্রকৃত রড, সিমেন্ট ও পাইলিং খরচে কাজ—কোনো অবাস্তব ডেভেলপার প্রিমিয়াম ছাড়া।";
   } else {
     btnEn.classList.add('active');
     btnBn.classList.remove('active');
 
-    // Restore English
-    document.getElementById('hero-headline').textContent = "WE SHAPE PLACES THAT OUTLIVE TRENDS.";
-    document.getElementById('hero-subtext').textContent = "Thoughtfully planned residential living in Agrabad CDA, Chattogram. Delivering lasting architectural dignity, earthquake-resistant engineering, and authentic deeded land share ownership.";
-    document.getElementById('hero-cta-explore').textContent = "EXPLORE OUR PROJECTS";
-    document.getElementById('hero-cta-enquire').textContent = "MAKE AN ENQUIRY";
-    document.getElementById('hero-eyebrow').textContent = "AUTHENTIC LAND SHARE REAL ESTATE · BANGLADESH";
+    // Restore English (Sales Persuasion)
+    document.getElementById('hero-headline').innerHTML = "OWN PRIME LAND IN AGRABAD CDA.<br>SAVE 40% ON YOUR DREAM RESIDENCE.";
+    document.getElementById('hero-subtext').textContent = "Direct Sub-Kabala land deed registered in your name before construction starts. CDA-approved, earthquake-engineered homes with strictly 2 units per floor. Zero developer speculative markup.";
+    document.getElementById('hero-cta-explore').textContent = "VIEW SHOPNALOY (1,375 SQ FT)";
+    document.getElementById('hero-cta-enquire').textContent = "WHATSAPP FOR PRICE SHEET";
+    document.getElementById('hero-eyebrow').textContent = "CHATTOGRAM'S PREMIER LAND-SHARE DEVELOPER · AGRABAD CDA";
 
     // Restore Intro
-    document.getElementById('intro-title').innerHTML = "MORE THAN BUILDINGS.<br>WE CREATE ADDRESSES.";
-    document.getElementById('intro-desc-1').textContent = "BDM Limited was founded on an unapologetic architectural conviction: homes in Bangladesh should be built with permanence, authentic spatial utility, and complete financial honesty.";
-    document.getElementById('card-legal-title').textContent = "জমির সাব-কবলা রেজিস্ট্রি";
-    document.getElementById('card-legal-desc').textContent = "Direct deed registration in the buyer's name prior to superstructure mobilization.";
-    document.getElementById('card-cost-title').textContent = "৪০% নির্মাণ খরচ সাশ্রয়";
-    document.getElementById('card-cost-desc').textContent = "Cost-to-build construction with zero developer speculative margin or hidden surcharge.";
+    document.getElementById('intro-title').innerHTML = "WHY PAY 40% DEVELOPER MARKUPS<br>WHEN YOU CAN OWN THE LAND DIRECTLY?";
+    document.getElementById('intro-desc-1').textContent = "In traditional Chittagong real estate, developers inflate apartment prices by up to 60% for speculative margins, aggressive advertising, and financing interest. At BDM Limited, you bypass developer markups entirely through direct land-share co-ownership.";
+    document.getElementById('card-legal-title').textContent = "100% LEGAL SECURITY";
+    document.getElementById('card-legal-desc').textContent = "Direct Sub-Kabala deed registered in your name before any construction begins.";
+    document.getElementById('card-cost-title').textContent = "GUARANTEED FINANCIAL SAVING";
+    document.getElementById('card-cost-desc').textContent = "Fund construction at actual procurement rate with zero developer speculative profit.";
   }
 
   // Re-render project list with updated language

@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavbarScroll();
   initMobileDrawer();
   renderProjectsList();
+  renderHomeSpaces();
   renderTimelineStages();
   renderAmenities();
   renderPhilosophy();
@@ -114,7 +115,36 @@ function renderProjectsList() {
 }
 
 /* ==========================================================================
-   4. DYNAMIC RENDERING: "HOW WE BUILD" TIMELINE
+   4. DYNAMIC RENDERING: RESIDENTIAL HOME SPACES
+   ========================================================================== */
+function renderHomeSpaces() {
+  const container = document.getElementById('home-spaces-container');
+  if (!container || !BDM_DATA || !BDM_DATA.homeSpaces) return;
+
+  const isEn = currentLanguage === 'en';
+
+  container.innerHTML = BDM_DATA.homeSpaces.map((space) => {
+    const tag = isEn ? space.tag : space.bengaliTag;
+    const title = isEn ? space.title : space.bengaliTitle;
+    const desc = isEn ? space.desc : space.bengaliDesc;
+
+    return `
+      <article class="home-space-card">
+        <div class="home-space-img-box">
+          <img src="${space.image}" alt="${space.alt}" class="home-space-img" loading="lazy" width="600" height="375">
+          <span class="home-space-tag">${tag}</span>
+        </div>
+        <div class="home-space-info">
+          <h3 class="home-space-title">${title}</h3>
+          <p class="home-space-desc">${desc}</p>
+        </div>
+      </article>
+    `;
+  }).join('');
+}
+
+/* ==========================================================================
+   5. DYNAMIC RENDERING: "HOW WE BUILD" TIMELINE
    ========================================================================== */
 function renderTimelineStages() {
   const container = document.getElementById('timeline-container');
@@ -425,6 +455,16 @@ function setLanguage(lang) {
     document.getElementById('card-legal-desc').textContent = "নির্মাণ কাজ শুরুর পূর্বেই ক্রেতার নামে সরাসরি ভূমির অংশ সাব-কবলা দলিল সম্পাদন ও নামজারি।";
     document.getElementById('card-cost-title').textContent = "৪০% নির্মাণ খরচ সাশ্রয়";
     document.getElementById('card-cost-desc').textContent = "প্রকৃত রড, সিমেন্ট ও পাইলিং খরচে কাজ—কোনো অবাস্তব ডেভেলপার প্রিমিয়াম ছাড়া।";
+
+    // Update Living Spaces Section (Bengali)
+    const spacesTag = document.getElementById('spaces-section-tag');
+    if (spacesTag) spacesTag.textContent = "পারিবারিক জীবন ও পরিবেশ";
+    const spacesTitle = document.getElementById('spaces-section-title');
+    if (spacesTitle) spacesTitle.innerHTML = "পারিবারিক শান্তির জন্য নির্মিত আবাস";
+    const spacesDesc = document.getElementById('spaces-section-desc');
+    if (spacesDesc) spacesDesc.textContent = "একটি বাড়ি কেবল ইট-পাথরের দেয়াল নয়; এটি আপনার পরিবারের নিশ্চিন্ত আশ্রয়। ড্রয়িং রুমে সকালের আলো, দক্ষিণা বাতাস এবং প্রতিটি সদস্যের জন্য নিরাপদ ও আরামদায়ক পরিবেশ।";
+    const spacesCta = document.getElementById('spaces-visit-cta');
+    if (spacesCta) spacesCta.textContent = "সাইট পরিদর্শনের সময় বুক করুন";
   } else {
     btnEn.classList.add('active');
     btnBn.classList.remove('active');
@@ -442,10 +482,21 @@ function setLanguage(lang) {
     document.getElementById('card-legal-desc').textContent = "Direct Sub-Kabala deed registered in your name before any construction begins.";
     document.getElementById('card-cost-title').textContent = "GUARANTEED FINANCIAL SAVING";
     document.getElementById('card-cost-desc').textContent = "Fund construction at actual procurement rate with zero developer speculative profit.";
+
+    // Restore Living Spaces Section (English)
+    const spacesTag = document.getElementById('spaces-section-tag');
+    if (spacesTag) spacesTag.textContent = "RESIDENTIAL LIVING & SANCTUARY";
+    const spacesTitle = document.getElementById('spaces-section-title');
+    if (spacesTitle) spacesTitle.innerHTML = "ENGINEERED FOR FAMILY LIFE";
+    const spacesDesc = document.getElementById('spaces-section-desc');
+    if (spacesDesc) spacesDesc.textContent = "A true home in Chattogram is not merely concrete and square feet. It is morning sunlight across your drawing room, coastal breeze through deep balconies, and uncompromised privacy for your family.";
+    const spacesCta = document.getElementById('spaces-visit-cta');
+    if (spacesCta) spacesCta.textContent = "BOOK A PRIVATE SITE VISIT";
   }
 
-  // Re-render project list with updated language
+  // Re-render project list and home spaces with updated language
   renderProjectsList();
+  renderHomeSpaces();
 }
 
 /* ==========================================================================

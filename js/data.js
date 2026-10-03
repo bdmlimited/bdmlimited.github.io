@@ -147,6 +147,53 @@ const BDM_DATA = {
     }
   ],
 
+  homeSpaces: [
+    {
+      id: "living-room",
+      tag: "LIGHT & AIR",
+      bengaliTag: "আলো-বাতাস ও প্রশান্তি",
+      title: "Sunlit Drawing & Living Hall",
+      bengaliTitle: "আলো-বাতাস পূর্ণ ড্রয়িং ও লিভিং স্পেস",
+      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      alt: "Spacious sunlit drawing hall with natural daylight and elegant warm finishes",
+      desc: "Designed for authentic Bangladeshi family warmth and gracious hospitality. Generous corner windows invite abundant morning sunlight, creating an uplifting, serene sanctuary for daily family life and festive Eid gatherings.",
+      bengaliDesc: "পরিবারের আন্তরিক সময় ও মেহমানদারির জন্য খোলামেলা স্পেস। বড় উইন্ডো ফ্রেমের মাধ্যমে পর্যাপ্ত আলো-বাতাস প্রবেশ করে, যা প্রতিটি দিনকে আনন্দময় ও সতেজ রাখে।"
+    },
+    {
+      id: "balconies",
+      tag: "COASTAL BREEZE",
+      bengaliTag: "দক্ষিণা বাতাস ও ছায়াঘেরা বারান্দা",
+      title: "Deep Sheltered Balconies",
+      bengaliTitle: "প্রশস্ত বারান্দা ও সারাদিন প্রাকৃতিক বাতাস",
+      image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+      alt: "Deep sheltered balcony with tranquil view and natural tropical cross-ventilation",
+      desc: "Chattogram's pleasant coastal air flows naturally through three open aspects. Deep covered balconies give you a tranquil retreat for morning tea, evening breeze, or your own private green plant terrace.",
+      bengaliDesc: "চট্টগ্রামের মনোরম দক্ষিণা বাতাস সহজে প্রবেশের জন্য তিন দিক খোলা রাখা হয়েছে। সকালের চা অথবা সন্ধ্যার অবসরে পরিবারের সাথে সময় কাটানোর সেরা জায়গা।"
+    },
+    {
+      id: "dining-kitchen",
+      tag: "FAMILY GATHERINGS",
+      bengaliTag: "পারিবারিক ভোজন ও বন্ধন",
+      title: "Generous Family Dining & Kitchen Flow",
+      bengaliTitle: "সুপরিসর ডাইনিং ও পরিপাটি কিচেন জোন",
+      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+      alt: "Warm family dining space adjacent to kitchen for joyful shared meals",
+      desc: "The true heart of the home. Planned centrally between drawing and kitchen zones, comfortably accommodating an 8-seater dining table with dedicated wash hand basin and cross-ventilated culinary utility.",
+      bengaliDesc: "পরিবারের সবাইকে নিয়ে এক সাথে বসে খাবারের মধুর মুহূর্ত। বড় ৮ সিটের ডাইনিং টেবিল অনায়াসে রাখার স্থান, পাশে আলাদা হ্যান্ড-ওয়াশ এরিয়া এবং কিচেনের পর্যাপ্ত ভেন্টিলেশন।"
+    },
+    {
+      id: "master-bedroom",
+      tag: "QUIET SANCTUARY",
+      bengaliTag: "শান্তিময় শয়নকক্ষ",
+      title: "Peaceful Master Bedroom Suite",
+      bengaliTitle: "শান্তিময় মাস্টার বেডরুম ও প্রাইভেট স্পেস",
+      image: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
+      alt: "Peaceful master bedroom with floor-to-ceiling windows and ensuite bathroom",
+      desc: "Your restful personal sanctuary after a long day in the city. Engineered with acoustic privacy away from reception areas, accompanied by an ensuite bath, walk-in wardrobe nook, and private fresh-air balcony.",
+      bengaliDesc: "সারাদিনের ক্লান্তি শেষে পরম শান্তির ব্যক্তিগত ভুবন। ড্রয়িং স্পেস থেকে আলাদা প্রাইভেসিতে অবস্থিত, সাথে রয়েছে আধুনিক এটাচড বাথ এবং নিজস্ব মুক্ত বাতাসসমৃদ্ধ বারান্দা।"
+    }
+  ],
+
   howWeBuild: [
     {
       step: "01",

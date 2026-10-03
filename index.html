@@ -97,7 +97,7 @@
         <a href="#how-we-build" class="nav-link">HOW WE BUILD</a>
         <a href="#engineering" class="nav-link">ON-SITE RIGOR</a>
         <a href="#cartography" class="nav-link">CARTOGRAPHY</a>
-        <a href="#journal" class="nav-link">JOURNAL</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
       </nav>
 
       <!-- Language & CTA Actions -->
@@ -161,12 +161,8 @@
         <span class="drawer-link-title">06 CARTOGRAPHY</span>
         <span class="drawer-link-sub">AGRABAD CDA SITES</span>
       </a>
-      <a href="#journal" class="drawer-link-item" onclick="closeMobileDrawer()">
-        <span class="drawer-link-title">07 JOURNAL</span>
-        <span class="drawer-link-sub">PAPERS & INSIGHTS</span>
-      </a>
       <a href="#contact" class="drawer-link-item" onclick="closeMobileDrawer()">
-        <span class="drawer-link-title">08 CONTACT</span>
+        <span class="drawer-link-title">07 CONTACT</span>
         <span class="drawer-link-sub">HOTLINES & OFFICES</span>
       </a>
     </nav>
@@ -230,14 +226,11 @@
         </div>
       </div>
 
-      <!-- Hero Bottom Coordinate Strip & Discover Trigger -->
-      <div class="hero-footer-bar">
-        <span class="label-caps" id="hero-plot-summary">PLOT 727 (RD 14) & PLOT 445 (RD 11)</span>
-        <a href="#approach" class="hero-scroll-btn">
-          <span class="label-caps" id="hero-discover">DISCOVER BDM</span>
-          <span class="material-symbols-outlined" style="font-size: 16px;">arrow_downward</span>
-        </a>
-      </div>
+      <!-- Hero Bottom Discover Trigger -->
+      <a href="#approach" class="hero-scroll-center" aria-label="Discover BDM">
+        <span class="label-caps" id="hero-discover">DISCOVER BDM</span>
+        <span class="material-symbols-outlined" style="font-size: 16px;">arrow_downward</span>
+      </a>
     </section>
 
     <!-- ==========================================================================
@@ -572,37 +565,185 @@
             <span class="section-meta-divider">/</span>
             <span class="section-tag">EQUIPMENT & INFRASTRUCTURE</span>
           </div>
-          <h2 class="headline-xl">COMPREHENSIVE SPECIFICATIONS</h2>
-          <p class="body-md" style="max-width: 60ch; color: var(--color-charcoal-dim);">
-            Engineered for long-term residential resilience, convenience, and community in Agrabad CDA.
-          </p>
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <h2 class="headline-xl">COMPREHENSIVE SPECIFICATIONS</h2>
+              <p class="body-md" style="max-width: 60ch; color: var(--color-charcoal-dim); margin-top: 0.5rem;">
+                Engineered for long-term residential resilience, convenience, and community in Agrabad CDA.
+              </p>
+            </div>
+            <a href="https://wa.me/8801749349299?text=Hello%20BDM%20Limited%2C%20please%20send%20the%20full%20materials%20and%20amenity%20specification%20sheet." target="_blank" rel="noopener" class="btn btn-secondary">
+              <span class="material-symbols-outlined" style="font-size: 16px; color: #25D366;">chat</span>
+              <span>DOWNLOAD SPEC SHEET</span>
+            </a>
+          </div>
         </div>
 
         <div class="amenities-grid" id="amenities-container">
-          <!-- Dynamically populated from BDM_DATA.amenities via app.js -->
+          <article class="amenity-card">
+            <div class="amenity-img-box">
+              <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=800&q=80" alt="Modern luxury passenger elevator and marble lobby" class="amenity-img" loading="lazy" width="400" height="250">
+              <span class="amenity-tag-overlay">
+                <span class="material-symbols-outlined">elevator</span>
+                <span>VERTICAL TRANSPORT</span>
+              </span>
+            </div>
+            <div class="amenity-info">
+              <h3 class="amenity-title">High-Speed 8'x8' ARD Lift</h3>
+              <p class="amenity-desc">Spacious passenger elevator equipped with Automatic Rescue Device (ARD) and emergency battery backup to prevent entrapment during grid interruptions.</p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-img-box">
+              <img src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=800&q=80" alt="Covered well-lit residential parking garage bays" class="amenity-img" loading="lazy" width="400" height="250">
+              <span class="amenity-tag-overlay">
+                <span class="material-symbols-outlined">directions_car</span>
+                <span>GROUND REALM</span>
+              </span>
+            </div>
+            <div class="amenity-info">
+              <h3 class="amenity-title">Covered Ground Parking</h3>
+              <p class="amenity-desc">Generous individual parking bays with smooth vehicular turning radiuses, non-skid surface flooring, drainage curbs, and 24/7 security guard post.</p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-img-box">
+              <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=800&q=80" alt="Landscaped rooftop terrace with pergolas and seating area" class="amenity-img" loading="lazy" width="400" height="250">
+              <span class="amenity-tag-overlay">
+                <span class="material-symbols-outlined">park</span>
+                <span>COMMUNAL SKYLINE</span>
+              </span>
+            </div>
+            <div class="amenity-info">
+              <h3 class="amenity-title">Landscaped Rooftop (ছাদ বাগান)</h3>
+              <p class="amenity-desc">Communal rooftop terrace sanctuary featuring shaded pergolas, lush tropical planters, walking pavers, and unhindered Chattogram skyline vistas.</p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-img-box">
+              <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" alt="Serene prayer enclave and quiet community meeting space" class="amenity-img" loading="lazy" width="400" height="250">
+              <span class="amenity-tag-overlay">
+                <span class="material-symbols-outlined">mosque</span>
+                <span>SPIRITUAL & COMMUNITY</span>
+              </span>
+            </div>
+            <div class="amenity-info">
+              <h3 class="amenity-title">Prayer Enclave & Community Space</h3>
+              <p class="amenity-desc">A peaceful, air-conditioned prayer enclave on the ground level, paired with a versatile multi-purpose community room for building society assemblies.</p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-img-box">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Engineered reinforced concrete water reservoirs and commercial pump system" class="amenity-img" loading="lazy" width="400" height="250">
+              <span class="amenity-tag-overlay">
+                <span class="material-symbols-outlined">water_drop</span>
+                <span>WATER INFRASTRUCTURE</span>
+              </span>
+            </div>
+            <div class="amenity-info">
+              <h3 class="amenity-title">Dual Concrete Reservoirs</h3>
+              <p class="amenity-desc">Massive underground water reservoir combined with reinforced overhead rooftop tanks and dual commercial booster pumps ensuring 24/7 unhindered water pressure.</p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-img-box">
+              <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80" alt="High-definition security surveillance camera and soundproof backup generator" class="amenity-img" loading="lazy" width="400" height="250">
+              <span class="amenity-tag-overlay">
+                <span class="material-symbols-outlined">security</span>
+                <span>SAFETY & CONTINUITY</span>
+              </span>
+            </div>
+            <div class="amenity-info">
+              <h3 class="amenity-title">24/7 CCTV & Standby Generator</h3>
+              <p class="amenity-desc">HD security surveillance covering boundary perimeter, entry gate, lift lobbies, and parking bays, paired with an automatic soundproof standby generator.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         8. BDM PHILOSOPHY ("BUILT WITH PURPOSE")
+         8. BDM PHILOSOPHY ("BUILT WITH PURPOSE.")
          ========================================================================== -->
-    <section class="section" style="background-color: var(--color-ivory-light);">
+    <section class="section philosophy-section" id="philosophy">
       <div class="section-inner">
         <div class="section-header">
           <div class="section-meta">
-            <span class="section-num">08</span>
-            <span class="section-meta-divider">/</span>
-            <span class="section-tag">CORE PRINCIPLES</span>
+            <span class="section-num" style="color: var(--color-champagne);">08</span>
+            <span class="section-meta-divider" style="color: rgba(255,255,255,0.3);">/</span>
+            <span class="section-tag" style="color: var(--color-champagne);">THE BDM MANIFESTO</span>
           </div>
-          <h2 class="headline-xl">BUILT WITH PURPOSE.</h2>
-          <p class="body-md" style="max-width: 60ch; color: var(--color-charcoal-dim);">
-            Four tenets that define every blueprint, concrete pour, and homeowner partnership.
-          </p>
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <h2 class="headline-xl" style="color: var(--color-ivory);">BUILT WITH PURPOSE.</h2>
+              <p class="body-md" style="max-width: 65ch; color: rgba(244, 240, 232, 0.85); margin-top: 0.5rem;">
+                We reject speculative developer inflation. We operate under four non-negotiable architectural and financial disciplines to protect your family's lifelong peace and investment security in Chattogram.
+              </p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--color-champagne);">
+              <span class="material-symbols-outlined" style="font-size: 20px;">verified</span>
+              <span class="label-caps" style="color: var(--color-champagne);">100% TRANSPARENT CODE OF PRACTICE</span>
+            </div>
+          </div>
         </div>
 
         <div class="philosophy-grid" id="philosophy-container">
-          <!-- Dynamically populated from BDM_DATA.philosophy via app.js -->
+          <div class="philosophy-card">
+            <div class="philosophy-card-top">
+              <span class="philosophy-num">I</span>
+              <span class="philosophy-tag">SPATIAL PURITY</span>
+            </div>
+            <h3 class="philosophy-title">Architectural Honesty</h3>
+            <p class="philosophy-desc">No cosmetic facades concealing poor spatial logic. We design homes whose aesthetic dignity is a direct outcome of abundant interior natural light, dual-aspect cross-ventilation, and uncompromised family privacy.</p>
+            <div class="philosophy-guarantee">
+              <span class="material-symbols-outlined" style="font-size: 15px; color: var(--color-champagne);">verified</span>
+              <span>Strictly 2 Units / Floor · 100% Daylight</span>
+            </div>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-card-top">
+              <span class="philosophy-num">II</span>
+              <span class="philosophy-tag">CAPITAL PROTECTION</span>
+            </div>
+            <h3 class="philosophy-title">Direct Equity Ownership</h3>
+            <p class="philosophy-desc">Traditional developers inflate apartment prices by 40% to 60% for speculative profits and marketing overhead. BDM delivers registered Sub-Kabala land deeds upfront, allowing you to build at audited contractor procurement cost.</p>
+            <div class="philosophy-guarantee">
+              <span class="material-symbols-outlined" style="font-size: 15px; color: var(--color-champagne);">verified</span>
+              <span>Direct Sub-Kabala Deed · 40% Cost Savings</span>
+            </div>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-card-top">
+              <span class="philosophy-num">III</span>
+              <span class="philosophy-tag">ENGINEERING DISCIPLINE</span>
+            </div>
+            <h3 class="philosophy-title">Generational Resilience</h3>
+            <p class="philosophy-desc">Chattogram's coastal soil demands engineering uncompromisingness. Supervised in partnership with Mahi Engineering Services, our structures feature deep subterranean piling and high-tensile 72.5 grade TMT rebar.</p>
+            <div class="philosophy-guarantee">
+              <span class="material-symbols-outlined" style="font-size: 15px; color: var(--color-champagne);">verified</span>
+              <span>BNBC Seismic Zone 2 · 72.5 Grade TMT Rebar</span>
+            </div>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-card-top">
+              <span class="philosophy-num">IV</span>
+              <span class="philosophy-tag">CIVIC DIGNITY</span>
+            </div>
+            <h3 class="philosophy-title">Community Tranquility</h3>
+            <p class="philosophy-desc">We exclusively develop for families who cherish peace and permanence. By capping our developments at 15 to 18 total residences per building, we foster a safe, close-knit, dignified residential community.</p>
+            <div class="philosophy-guarantee">
+              <span class="material-symbols-outlined" style="font-size: 15px; color: var(--color-champagne);">verified</span>
+              <span>Max 15–18 Exclusive Resident Families</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -690,36 +831,13 @@
     </section>
 
     <!-- ==========================================================================
-         10. BDM JOURNAL (Editorial Insights & Architectural Papers)
-         ========================================================================== -->
-    <section class="section" id="journal" style="background-color: var(--color-ivory-light);">
-      <div class="section-inner">
-        <div class="section-header">
-          <div class="section-meta">
-            <span class="section-num">10</span>
-            <span class="section-meta-divider">/</span>
-            <span class="section-tag">PAPERS & PERSPECTIVES</span>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
-            <h2 class="headline-xl">BDM JOURNAL</h2>
-            <span class="label-caps" style="color: var(--color-charcoal-dim);">ARCHITECTURAL THEORY & URBAN REAL ESTATE</span>
-          </div>
-        </div>
-
-        <div class="journal-grid" id="journal-container">
-          <!-- Dynamically populated from BDM_DATA.journal via app.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         11. CONTACT & DIRECT ENQUIRY SUITE
+         10. CONTACT & DIRECT ENQUIRY SUITE
          ========================================================================== -->
     <section class="section contact-section" id="contact">
       <div class="section-inner">
         <div class="section-header">
           <div class="section-meta">
-            <span class="section-num">11</span>
+            <span class="section-num">10</span>
             <span class="section-meta-divider">/</span>
             <span class="section-tag" style="color: var(--color-champagne);">COMMENCE OWNERSHIP</span>
           </div>
@@ -853,11 +971,12 @@
           <h4 class="footer-col-title">NAVIGATION</h4>
           <ul class="footer-links-list">
             <li class="footer-link-item"><a href="#projects">Selected Projects</a></li>
+            <li class="footer-link-item"><a href="#living">Residential Living</a></li>
             <li class="footer-link-item"><a href="#approach">Land-Share Model</a></li>
             <li class="footer-link-item"><a href="#how-we-build">How We Build</a></li>
             <li class="footer-link-item"><a href="#engineering">On-Site Progress</a></li>
             <li class="footer-link-item"><a href="#cartography">Cartography</a></li>
-            <li class="footer-link-item"><a href="#journal">BDM Journal</a></li>
+            <li class="footer-link-item"><a href="#contact">Contact & Hotline</a></li>
           </ul>
         </div>
 

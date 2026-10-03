@@ -240,59 +240,118 @@ const BDM_DATA = {
   philosophy: [
     {
       number: "I",
-      title: "ARCHITECTURAL HONESTY",
-      desc: "No cosmetic facades concealing poor spatial logic. We design buildings whose external beauty is a direct consequence of interior comfort, natural ventilation, and structural dignity."
+      tag: "SPATIAL PURITY",
+      bengaliTag: "পরিমিত স্থাপত্য",
+      title: "Architectural Honesty",
+      bengaliTitle: "পরিমিত স্থাপত্য ও সঠিক পরিকল্পনা",
+      desc: "No cosmetic facades concealing poor spatial logic. We design homes whose aesthetic dignity is a direct outcome of abundant interior natural light, dual-aspect cross-ventilation, and uncompromised family privacy.",
+      bengaliDesc: "বাহ্যিক চটকদার নকশার আড়ালে ত্রুটিপূর্ণ ফ্লোরপ্ল্যান নয়। প্রতিটি অ্যাপার্টমেন্টের সৌন্দর্য তার অভ্যন্তরের পর্যাপ্ত আলো-বাতাস এবং পরিবারের নিবিড় স্বাচ্ছন্দ্যের প্রতীক।",
+      guarantee: "Strictly 2 Units / Floor · 100% Daylight"
     },
     {
       number: "II",
-      title: "FINANCIAL TRANSPARENCY",
-      desc: "Traditional real estate developers inflate unit prices by 40% to 60% for speculative profit. BDM's direct land-share model provides deeded equity and open-book construction invoicing."
+      tag: "CAPITAL PROTECTION",
+      bengaliTag: "সরাসরি মালিকানা",
+      title: "Direct Equity Ownership",
+      bengaliTitle: "প্রকৃত মালিকানা ও ৪০% সাশ্রয়",
+      desc: "Traditional developers inflate apartment prices by 40% to 60% for speculative profits and marketing overhead. BDM delivers registered Sub-Kabala land deeds upfront, allowing you to build at audited contractor procurement cost.",
+      bengaliDesc: "প্রচলিত ডেভেলপারদের অতিরিক্ত মুনাফা ও বিপণন খরচের বোঝা থেকে মুক্তি। নির্মাণকাজ শুরুর পূর্বেই সরাসরি ভূমির সাব-কবলা রেজিস্ট্রি এবং প্রকৃত নির্মাণ খরচে কাজ।",
+      guarantee: "Direct Sub-Kabala Deed · 40% Cost Savings"
     },
     {
       number: "III",
-      title: "STRUCTURAL LONGEVITY",
-      desc: "Chattogram's coastal soil demands engineering uncompromisingness. From deep cast-in-situ piling to corrosion-resistant rebar, our residences are built for family generations."
+      tag: "ENGINEERING DISCIPLINE",
+      bengaliTag: "কাঠামোগত স্থায়িত্ব",
+      title: "Generational Resilience",
+      bengaliTitle: "ভূমিকম্প সহনশীল উপকূলীয় প্রকৌশল",
+      desc: "Chattogram's coastal soil demands engineering uncompromisingness. Supervised in partnership with Mahi Engineering Services, our structures feature deep subterranean piling and high-tensile 72.5 grade TMT rebar.",
+      bengaliDesc: "চট্টগ্রামের উপকূলীয় মাটির জন্য প্রয়োজন নিখুঁত প্রকৌশল। মাহি ইঞ্জিনিয়ারিং সার্ভিসেসের তত্ত্বাবধানে গভীর পাইলিং এবং ৭২.৫ গ্রেডের প্রিমিয়াম রড ব্যবহার।",
+      guarantee: "BNBC Seismic Zone 2 · 72.5 Grade TMT Rebar"
     },
     {
       number: "IV",
-      title: "COMMUNITY RESTRAINT",
-      desc: "We build for discerning families who value quietude. By limiting developments to 15 to 18 total residences per building, we foster close-knit, dignified residential communities."
+      tag: "CIVIC DIGNITY",
+      bengaliTag: "মার্জিত সমাজ",
+      title: "Community Tranquility",
+      bengaliTitle: "মার্জিত ও শান্তিপূর্ণ পারিবারিক পরিবেশ",
+      desc: "We exclusively develop for families who cherish peace and permanence. By capping our developments at 15 to 18 total residences per building, we foster a safe, close-knit, dignified residential community.",
+      bengaliDesc: "আমরা তৈরি করি শান্তিময় পারিবারিক আবাসন। বহুতল ভিড় এড়িয়ে প্রতিটি ভবনে মাত্র ১৫ থেকে ১৮টি পরিবার নিয়ে একটি নিরাপদ, রুচিশীল ও মার্জিত সমাজ।",
+      guarantee: "Max 15–18 Exclusive Resident Families"
     }
   ],
 
   amenities: [
-    { icon: "elevator", title: "High-Speed 8'x8' ARD Lift", desc: "Spacious passenger elevator equipped with Automatic Rescue Device (ARD) and emergency battery backup." },
-    { icon: "directions_car", title: "Covered Ground Parking", desc: "Generous parking bays with smooth vehicular turning radiuses, drainage curbs, and security post." },
-    { icon: "park", title: "Landscaped Rooftop (ছাদ বাগান)", desc: "Communal rooftop terrace with shaded pergolas, lush planters, and panoramic Chattogram skyline views." },
-    { icon: "mosque", title: "Prayer Hall & Community Room", desc: "Peaceful dedicated prayer enclave and versatile community room for private society meetings." },
-    { icon: "water_drop", title: "Dual Concrete Reservoirs", desc: "Massive underground water reservoir paired with overhead rooftop tanks and dual commercial booster pumps." },
-    { icon: "security", title: "24/7 CCTV & Generator Backup", desc: "High-definition security perimeter, intercom systems, and automatic standby generator for uninterrupted power." }
-  ],
-
-  journal: [
     {
-      id: "land-share-model",
-      date: "OCTOBER 2026",
-      category: "FINANCIAL ARCHITECTURE",
-      title: "The Economics of Land-Share: How Direct Sub-Registry Saves 40% Capital",
-      readTime: "4 MIN READ",
-      excerpt: "Why the conventional developer margin model is giving way to transparent joint-venture land ownership in Chittagong's prime residential districts."
+      id: "lift",
+      icon: "elevator",
+      tag: "VERTICAL TRANSPORT",
+      bengaliTag: "আধুনিক লিফট",
+      title: "High-Speed 8'x8' ARD Lift",
+      bengaliTitle: "উন্নত ও নিরাপদ ৮'×৮' লিফট",
+      image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=800&q=80",
+      alt: "Modern luxury passenger elevator and marble lobby",
+      desc: "Spacious passenger elevator equipped with Automatic Rescue Device (ARD) and emergency battery backup to prevent entrapment during grid interruptions.",
+      bengaliDesc: "স্বয়ংক্রিয় রেসকিউ ডিভাইস (ARD) এবং সার্বক্ষণিক ব্যাটারি ব্যাকআপযুক্ত সুপরিসর প্যাসেঞ্জার লিফট।"
     },
     {
-      id: "coastal-engineering",
-      date: "SEPTEMBER 2026",
-      category: "STRUCTURAL RIGOR",
-      title: "Seismic Resilience in Alluvial Soil: Deep Piling Standards in Agrabad CDA",
-      readTime: "6 MIN READ",
-      excerpt: "An engineering briefing on soil load-bearing capacities, BNBC Seismic Zone 2 requirements, and high-tensile 72.5 grade TMT rebar."
+      id: "parking",
+      icon: "directions_car",
+      tag: "GROUND REALM",
+      bengaliTag: "গ্রাউন্ড পার্কিং",
+      title: "Covered Ground Parking",
+      bengaliTitle: "নিরাপদ গ্রাউন্ড পার্কিং বে",
+      image: "https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=800&q=80",
+      alt: "Covered well-lit residential parking garage bays",
+      desc: "Generous individual parking bays with smooth vehicular turning radiuses, non-skid surface flooring, drainage curbs, and 24/7 security guard post.",
+      bengaliDesc: "প্রতিটি গাড়ির জন্য পর্যাপ্ত জায়গা, সহজে গাড়ি ঘোরানোর প্রশস্ত স্পেস এবং সার্বক্ষণিক সিকিউরিটি পোস্ট।"
     },
     {
-      id: "spatial-privacy",
-      date: "AUGUST 2026",
-      category: "SPATIAL THEORY",
-      title: "Light & Air: Why Dual-Unit Floorplates Outperform High-Density Towers",
-      readTime: "3 MIN READ",
-      excerpt: "Exploring the biophilic advantages of strictly limiting building floorplates to two residences per floor in tropical urban settings."
+      id: "rooftop",
+      icon: "park",
+      tag: "COMMUNAL SKYLINE",
+      bengaliTag: "মনোরম ছাদ বাগান",
+      title: "Landscaped Rooftop (ছাদ বাগান)",
+      bengaliTitle: "সবুজ ছাদ বাগান ও ওয়াকওয়ে",
+      image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=800&q=80",
+      alt: "Landscaped rooftop terrace with pergolas and seating area",
+      desc: "Communal rooftop terrace sanctuary featuring shaded pergolas, lush tropical planters, walking pavers, and unhindered Chattogram skyline vistas.",
+      bengaliDesc: "বসার জন্য শেডযুক্ত পারগোলা, বাহারি গাছের টব ও শিশুদের নিরাপদে ঘুরে বেড়ানোর জন্য উন্মুক্ত মনোরম ছাদ।"
+    },
+    {
+      id: "prayer-hall",
+      icon: "mosque",
+      tag: "SPIRITUAL & COMMUNITY",
+      bengaliTag: "নামাজের স্থান",
+      title: "Prayer Enclave & Community Space",
+      bengaliTitle: "শান্তিময় নামাজের স্থান ও কমিউনিটি স্পেস",
+      image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80",
+      alt: "Serene prayer enclave and quiet community meeting space",
+      desc: "A peaceful, air-conditioned prayer enclave on the ground level, paired with a versatile multi-purpose community room for building society assemblies.",
+      bengaliDesc: "নিচতলায় শান্তিময় নামাজের জায়গা এবং ফ্ল্যাট মালিকদের সাধারণ সভা ও ঘরোয়া আয়োজনের জন্য কমিউনিটি রুম।"
+    },
+    {
+      id: "reservoirs",
+      icon: "water_drop",
+      tag: "WATER INFRASTRUCTURE",
+      bengaliTag: "পানির নিশ্চয়তা",
+      title: "Dual Concrete Reservoirs",
+      bengaliTitle: "দ্বিগুণ ধারণক্ষমতার ওয়াটার রিজার্ভার",
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+      alt: "Engineered reinforced concrete water reservoirs and commercial pump system",
+      desc: "Massive underground water reservoir combined with reinforced overhead rooftop tanks and dual commercial booster pumps ensuring 24/7 unhindered water pressure.",
+      bengaliDesc: "বিশাল আন্ডারগ্রাউন্ড ও রুফটপ ওভারহেড ওয়াটার ট্যাংক এবং উচ্চমানের ডাবল পাম্প, যা দেবে ২৪ ঘণ্টা পানির নিশ্চয়তা।"
+    },
+    {
+      id: "security-power",
+      icon: "security",
+      tag: "SAFETY & CONTINUITY",
+      bengaliTag: "সার্বক্ষণিক নিরাপত্তা",
+      title: "24/7 CCTV & Standby Generator",
+      bengaliTitle: "২৪ ঘণ্টা সিসিটিভি ও পাওয়ার ব্যাকআপ",
+      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80",
+      alt: "High-definition security surveillance camera and soundproof backup generator",
+      desc: "HD security surveillance covering boundary perimeter, entry gate, lift lobbies, and parking bays, paired with an automatic soundproof standby generator.",
+      bengaliDesc: "প্রধান গেট, লিফট ও পার্কিং জোনে ফুল এইচডি সিসিটিভি ক্যামেরা এবং লোডশেডিংয়ে স্বয়ংক্রিয় সাউন্ডপ্রুফ জেনারেটর।"
     }
   ]
 };

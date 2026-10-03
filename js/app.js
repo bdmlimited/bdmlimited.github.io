@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderTimelineStages();
   renderAmenities();
   renderPhilosophy();
-  renderJournal();
   initSmoothScroll();
 });
 
@@ -168,65 +167,64 @@ function renderTimelineStages() {
 }
 
 /* ==========================================================================
-   5. DYNAMIC RENDERING: AMENITIES SPECIFICATIONS
+   6. DYNAMIC RENDERING: AMENITIES SPECIFICATIONS (WITH IMAGERY)
    ========================================================================== */
 function renderAmenities() {
   const container = document.getElementById('amenities-container');
   if (!container || !BDM_DATA || !BDM_DATA.amenities) return;
 
+  const isEn = currentLanguage === 'en';
+
   container.innerHTML = BDM_DATA.amenities.map((item) => {
+    const tag = isEn ? item.tag : item.bengaliTag;
+    const title = isEn ? item.title : item.bengaliTitle;
+    const desc = isEn ? item.desc : item.bengaliDesc;
+
     return `
-      <div class="amenity-card">
-        <span class="material-symbols-outlined amenity-icon-wrapper">${item.icon}</span>
-        <h3 class="amenity-title">${item.title}</h3>
-        <p class="amenity-desc">${item.desc}</p>
-      </div>
+      <article class="amenity-card">
+        <div class="amenity-img-box">
+          <img src="${item.image}" alt="${item.alt}" class="amenity-img" loading="lazy" width="400" height="250">
+          <span class="amenity-tag-overlay">
+            <span class="material-symbols-outlined">${item.icon}</span>
+            <span>${tag}</span>
+          </span>
+        </div>
+        <div class="amenity-info">
+          <h3 class="amenity-title">${title}</h3>
+          <p class="amenity-desc">${desc}</p>
+        </div>
+      </article>
     `;
   }).join('');
 }
 
 /* ==========================================================================
-   6. DYNAMIC RENDERING: BDM PHILOSOPHY
+   7. DYNAMIC RENDERING: BDM MANIFESTO ("BUILT WITH PURPOSE")
    ========================================================================== */
 function renderPhilosophy() {
   const container = document.getElementById('philosophy-container');
   if (!container || !BDM_DATA || !BDM_DATA.philosophy) return;
 
+  const isEn = currentLanguage === 'en';
+
   container.innerHTML = BDM_DATA.philosophy.map((item) => {
+    const tag = isEn ? item.tag : item.bengaliTag;
+    const title = isEn ? item.title : item.bengaliTitle;
+    const desc = isEn ? item.desc : item.bengaliDesc;
+
     return `
       <div class="philosophy-card">
-        <span class="philosophy-num">${item.number}</span>
-        <h3 class="philosophy-title">${item.title}</h3>
-        <p class="philosophy-desc">${item.desc}</p>
-      </div>
-    `;
-  }).join('');
-}
-
-/* ==========================================================================
-   7. DYNAMIC RENDERING: JOURNAL ESSAYS
-   ========================================================================== */
-function renderJournal() {
-  const container = document.getElementById('journal-container');
-  if (!container || !BDM_DATA || !BDM_DATA.journal) return;
-
-  container.innerHTML = BDM_DATA.journal.map((art) => {
-    return `
-      <article class="journal-card">
-        <div>
-          <div class="journal-meta">
-            <span>${art.date}</span>
-            <span>${art.readTime}</span>
-          </div>
-          <span class="label-caps" style="color: var(--color-charcoal-dim); display: block; margin: 0.75rem 0 0.5rem 0;">${art.category}</span>
-          <h3 class="journal-title">${art.title}</h3>
-          <p class="journal-excerpt" style="margin-top: 1rem;">${art.excerpt}</p>
+        <div class="philosophy-card-top">
+          <span class="philosophy-num">${item.number}</span>
+          <span class="philosophy-tag">${tag}</span>
         </div>
-        <a href="#contact" class="btn btn-secondary btn-sm" onclick="requestBrochure('${art.title}')" style="align-self: flex-start;">
-          <span>READ PAPER</span>
-          <span class="material-symbols-outlined btn-arrow-icon" style="font-size: 14px;">arrow_forward</span>
-        </a>
-      </article>
+        <h3 class="philosophy-title">${title}</h3>
+        <p class="philosophy-desc">${desc}</p>
+        <div class="philosophy-guarantee">
+          <span class="material-symbols-outlined" style="font-size: 15px; color: var(--color-champagne);">verified</span>
+          <span>${item.guarantee}</span>
+        </div>
+      </div>
     `;
   }).join('');
 }
@@ -494,9 +492,11 @@ function setLanguage(lang) {
     if (spacesCta) spacesCta.textContent = "BOOK A PRIVATE SITE VISIT";
   }
 
-  // Re-render project list and home spaces with updated language
+  // Re-render project list, home spaces, amenities, and philosophy with updated language
   renderProjectsList();
   renderHomeSpaces();
+  renderAmenities();
+  renderPhilosophy();
 }
 
 /* ==========================================================================

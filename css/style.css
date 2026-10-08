@@ -597,14 +597,18 @@ button, input, select, textarea {
   overflow: hidden;
 }
 
-.hero-bg-image {
+.hero-bg-image,
+.hero-bg-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: brightness(0.70) contrast(1.08);
+}
+
+.hero-bg-image {
   transform: scale(1.05);
   transition: transform 12s ease-out;
-  filter: brightness(0.68) contrast(1.1);
 }
 
 .hero-section:hover .hero-bg-image {

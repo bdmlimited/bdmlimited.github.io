@@ -9,6 +9,7 @@ let currentModalProject = null;
 
 document.addEventListener('DOMContentLoaded', () => {
   initNavbarScroll();
+  initHeroVideo();
   initMobileDrawer();
   renderProjectsList();
   renderHomeSpaces();
@@ -17,6 +18,40 @@ document.addEventListener('DOMContentLoaded', () => {
   renderPhilosophy();
   initSmoothScroll();
 });
+
+/* ==========================================================================
+   0. HERO BACKGROUND VIDEO AUTOPLAY
+   ========================================================================== */
+function initHeroVideo() {
+  const heroVideo = document.getElementById('hero-bg');
+  if (heroVideo && heroVideo.tagName === 'VIDEO') {
+    heroVideo.muted = true;
+    heroVideo.defaultMuted = true;
+
+    // Slow down playback to 0.65x for a serene, luxurious architectural motion
+    const setSlowSpeed = () => {
+      heroVideo.playbackRate = 0.65;
+    };
+
+    setSlowSpeed();
+    heroVideo.addEventListener('loadedmetadata', setSlowSpeed);
+    heroVideo.addEventListener('play', setSlowSpeed);
+
+    const playPromise = heroVideo.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        const triggerPlay = () => {
+          setSlowSpeed();
+          heroVideo.play().catch(() => {});
+          document.removeEventListener('click', triggerPlay);
+          document.removeEventListener('touchstart', triggerPlay);
+        };
+        document.addEventListener('click', triggerPlay, { once: true });
+        document.addEventListener('touchstart', triggerPlay, { once: true });
+      });
+    }
+  }
+}
 
 /* ==========================================================================
    1. NAVIGATION SCROLL & HEADER TRANSITIONS
@@ -398,7 +433,7 @@ function selectMapLocation(locKey) {
   if (locKey === 'shopnaloy') {
     pinShopnaloy.classList.add('active');
     tagElem.textContent = "FLAGSHIP SECTOR";
-    titleElem.textContent = "BDM SHOPNALOY (PLOT 727)";
+    titleElem.textContent = "BEC SHOPNALOY (PLOT 727)";
     descElem.textContent = "Located on a generous 40-foot wide road in Road 14, Agrabad CDA. Only minutes from Agrabad Access Road, Badamtoli Mor, leading educational institutions, and healthcare centers.";
     roadElem.textContent = "40 Feet Broad Road";
     statusElem.textContent = "CDA Approved & Deeded";
@@ -407,7 +442,7 @@ function selectMapLocation(locKey) {
   } else if (locKey === 'nebash') {
     pinNebash.classList.add('active');
     tagElem.textContent = "COMPANION DEVELOPMENT";
-    titleElem.textContent = "BDM SHOPNO NEBASH (PLOT 445)";
+    titleElem.textContent = "BEC SHOPNO NEBASH (PLOT 445)";
     descElem.textContent = "Positioned on a 30-foot road in Road 11, Agrabad CDA. A quiet, green rectangular 5 Katha parcel with optimal north-south solar exposure and 4-bedroom executive units.";
     roadElem.textContent = "30 Feet Wide Road";
     statusElem.textContent = "Civil Works Ongoing";
@@ -416,7 +451,7 @@ function selectMapLocation(locKey) {
   } else if (locKey === 'hq') {
     pinHq.classList.add('active');
     tagElem.textContent = "CENTRAL ADMINISTRATION";
-    titleElem.textContent = "BDM LIMITED CORPORATE OFFICES";
+    titleElem.textContent = "BEC CORPORATE OFFICES";
     descElem.textContent = "Two strategically positioned corporate coordination suites in Halishahar (Nayabazar Port Connecting Rd) and Pahartali (Eidgah Al Helal Bhaban) serving our patrons.";
     roadElem.textContent = "Port Connecting Road";
     statusElem.textContent = "Physical Site Available";
@@ -457,7 +492,7 @@ function setLanguage(lang) {
 
     // Hero (Bengali)
     if (heroHeadline) heroHeadline.innerHTML = "যেখানে ভূমি হয়ে ওঠে আপনার পারিবারিক উত্তরাধিকার।";
-    if (heroSubtext) heroSubtext.innerHTML = "একটি বাড়ি কেবল কোনো ঠিকানা নয়।<br>এখানে সকালের সূচনা হয়, পরিবার একত্রিত হয়, সন্তানেরা বড় হয় এবং স্মৃতিগুলো চিরস্থায়ী হয়ে থাকে।<br><br>বিডিএম লিমিটেড-এ আমরা অনন্য দৃষ্টিভঙ্গিতে কাজ করি — সুপরিকল্পিত ভূমি, পরিশীলিত স্থাপত্য, স্বচ্ছ মালিকানা ও সুশৃঙ্খল নির্মাণ।";
+    if (heroSubtext) heroSubtext.innerHTML = "একটি বাড়ি কেবল কোনো ঠিকানা নয়।<br>এখানে সকালের সূচনা হয়, পরিবার একত্রিত হয়, সন্তানেরা বড় হয় এবং স্মৃতিগুলো চিরস্থায়ী হয়ে থাকে।<br><br>ব্রাদার্স ইঞ্জিনিয়ারিং অ্যান্ড কনস্ট্রাকশন (বিইসি)-এ আমরা অনন্য দৃষ্টিভঙ্গিতে কাজ করি — সুপরিকল্পিত ভূমি, পরিশীলিত স্থাপত্য, স্বচ্ছ মালিকানা ও সুশৃঙ্খল নির্মাণ।";
     if (heroCtaExplore) heroCtaExplore.textContent = "প্রকল্পসমূহ দেখুন";
     if (heroCtaEnquire) heroCtaEnquire.textContent = "যোগাযোগ করুন";
     
@@ -467,7 +502,7 @@ function setLanguage(lang) {
     if (cardLegalTitle) cardLegalTitle.textContent = "আপনার বাড়ির সূচনা হোক জমির সরাসরি মালিকানার মাধ্যমে।";
     if (cardLegalDesc) cardLegalDesc.textContent = "প্রচলিত নিয়মে ফ্ল্যাট ক্রেতা ভূমির প্রকৃত স্বত্ব থেকে বিচ্ছিন্ন থাকেন। আমাদের ল্যান্ড-শেয়ার মডেলে নির্মাণকাজ শুরুর পূর্বেই সরাসরি সাব-কবলা রেজিস্ট্রি সম্পন্ন করা হয়, যা বাড়ি ও ভূমির মাঝে স্পষ্ট সম্পর্ক স্থাপন করে।";
     if (cardCostTitle) cardCostTitle.textContent = "আমরা শুধু বাড়ি তৈরি করি না—আমরা একাত্মতার অনুভূতি গড়ে তুলি।";
-    if (cardCostDesc) cardCostDesc.textContent = "বিডিএম লিমিটেড চট্টগ্রামের নির্বাচিত স্থানে আবাসিক প্রকল্প গড়ে তুলছে—যেখানে ভূমির মালিকানা, উন্নত স্থাপত্য ও বাস্তবসম্মত পারিবারিক জীবন একসাথে সার্থক রূপ পায়।";
+    if (cardCostDesc) cardCostDesc.textContent = "ব্রাদার্স ইঞ্জিনিয়ারিং অ্যান্ড কনস্ট্রাকশন (বিইসি) চট্টগ্রামের নির্বাচিত স্থানে আবাসিক প্রকল্প গড়ে তুলছে—যেখানে ভূমির মালিকানা, উন্নত স্থাপত্য ও বাস্তবসম্মত পারিবারিক জীবন একসাথে সার্থক রূপ পায়।";
 
     // Living Spaces Section (Bengali)
     if (spacesTag) spacesTag.textContent = "পারিবারিক জীবন";
@@ -480,7 +515,7 @@ function setLanguage(lang) {
 
     // Hero (English)
     if (heroHeadline) heroHeadline.innerHTML = "WHERE LAND BECOMES LEGACY.";
-    if (heroSubtext) heroSubtext.innerHTML = "A home is more than an address.<br><br>It is where mornings begin, families gather, children grow and memories quietly become part of the walls.<br><br>At BDM Limited, we approach residential development differently — with carefully selected land, considered architecture, transparent ownership and disciplined construction.";
+    if (heroSubtext) heroSubtext.innerHTML = "A home is more than an address.<br><br>It is where mornings begin, families gather, children grow and memories quietly become part of the walls.<br><br>At Brother’s Engineering & Construction (BEC), we approach residential development differently — with carefully selected land, considered architecture, transparent ownership and disciplined construction.";
     if (heroCtaExplore) heroCtaExplore.textContent = "EXPLORE OUR PROJECTS";
     if (heroCtaEnquire) heroCtaEnquire.textContent = "START A CONVERSATION";
 
@@ -488,9 +523,9 @@ function setLanguage(lang) {
     if (introTitle) introTitle.innerHTML = "NOT JUST ANOTHER ADDRESS.";
     if (introDesc1) introDesc1.innerHTML = "We believe exceptional living begins long before the first brick is placed.<br><br>It begins with choosing the right piece of land. It continues through thoughtful planning, intelligent architecture and uncompromising engineering.<br><br>And ultimately, it becomes something much more personal: <strong>a place your family can truly call its own.</strong>";
     if (cardLegalTitle) cardLegalTitle.textContent = "YOUR HOME SHOULD BEGIN WITH YOUR OWNERSHIP OF THE LAND.";
-    if (cardLegalDesc) cardLegalDesc.textContent = "Traditional property buying often separates the buyer from the land beneath the apartment. Our land-share model takes a different approach. Where applicable, BDM buyers receive directly registered land ownership through Sub-Kabala before construction begins, creating a clearer relationship between the homeowner, the land and the residence.";
+    if (cardLegalDesc) cardLegalDesc.textContent = "Traditional property buying often separates the buyer from the land beneath the apartment. Our land-share model takes a different approach. Where applicable, BEC buyers receive directly registered land ownership through Sub-Kabala before construction begins, creating a clearer relationship between the homeowner, the land and the residence.";
     if (cardCostTitle) cardCostTitle.textContent = "WE BUILD MORE THAN HOMES.";
-    if (cardCostDesc) cardCostDesc.textContent = "WE BUILD A SENSE OF BELONGING. BDM Limited creates residential spaces where architecture, ownership and everyday family life come together with purpose.";
+    if (cardCostDesc) cardCostDesc.textContent = "WE BUILD A SENSE OF BELONGING. Brother’s Engineering & Construction (BEC) creates residential spaces where architecture, ownership and everyday family life come together with purpose.";
 
     // Living Spaces Section (English)
     if (spacesTag) spacesTag.textContent = "LIVING";

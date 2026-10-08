@@ -1,25 +1,26 @@
 /**
- * BDM LIMITED — ARCHITECTURAL DATA ARCHITECTURE
+ * BEC (BROTHER’S ENGINEERING & CONSTRUCTION) — ARCHITECTURAL DATA ARCHITECTURE
  * Clean, typed CMS-ready registry for projects, blueprints, specifications,
  * construction milestones, journal essays, and office locations.
  */
 
 const BDM_DATA = {
   brand: {
-    name: "BDM Limited",
-    bengaliName: "বিডিএম লিমিটেড",
+    name: "Brother’s Engineering & Construction",
+    shortName: "BEC",
+    bengaliName: "ব্রাদার্স ইঞ্জিনিয়ারিং অ্যান্ড কনস্ট্রাকশন",
     tagline: "Building Places. Creating Legacies.",
     bengaliTagline: "স্থায়ী ঐতিহ্য ও উন্নত জীবনযাত্রার প্রতিশ্রুতি",
     headline: "We Build More Than Homes. We Build a Sense of Belonging.",
     bengaliHeadline: "আমরা শুধু ঘর বানাই না, গড়ে তুলি আপন ঠিকানা।",
     subline: "Thoughtfully planned residences. Carefully selected land. Engineering built for generations.",
     bengaliSubline: "পরিমিত পরিকল্পনার আবাসন। সতর্কতার সাথে নির্বাচিত জমি। প্রজন্ম ধরে টিকে থাকার প্রকৌশল।",
-    mission: "BDM Limited creates residential spaces where architecture, ownership and everyday family life come together with purpose.",
+    mission: "Brother’s Engineering & Construction (BEC) creates residential spaces where architecture, ownership and everyday family life come together with purpose.",
     industry: "Architectural Real Estate Development",
     territory: "Agrabad CDA Residential Area, Chattogram, Bangladesh",
     coordinates: "22.3275° N, 91.8020° E",
     logoUrl: "assets/logo-white.png",
-    heroImage: "https://lh3.googleusercontent.com/aida/AEtjO1WhkUzRW-M_uv_oLSSma0pAy1-MUwl3PpWmINxyottfCNS2EAN6Y2vEpZhDVmcQXZ034lRFTqytDw7fzsBhzs3dVylDmjBDq9Y5Olf6idCWUscKlG9RTCFW-jc5qhOWwNyTyipTCIgSFobhfjsQvsV1sSluhtq1ISqLUK4t89jZm_9H3uR5rSV-Aq8cIk8zhy-_bM9GBxy3gJyARhGWshXtzMM6jhTDOaAHIe_6yHqNfCvczIbfY-rFEQ"
+    heroImage: "assets/projects/shopnaloy-hero.jpg"
   },
 
   hotlines: [
@@ -53,18 +54,17 @@ const BDM_DATA = {
     {
       id: "bdm-shopnaloy",
       index: "01",
-      name: "BDM Shopnaloy",
-      bengaliName: "বিডিএম স্বপ্নালয়",
+      name: "BEC Shopnaloy",
+      bengaliName: "বিইসি স্বপ্নালয়",
       status: "Active Construction",
       bengaliStatus: "নির্মাণাধীন প্রকল্প",
       statusBadge: "ACTIVE PILING & SUBSTRUCTURE",
       category: "Bespoke Residential Residences",
       location: "Plot 727 · Road 14 · Agrabad CDA · Chattogram",
       bengaliLocation: "প্লট ৭২৭ · রোড ১৪ · আগ্রাবাদ সিডিএ · চট্টগ্রাম",
-      coordinates: "22.3262° N, 91.8015° E",
-      heroImage: "https://lh3.googleusercontent.com/aida/AEtjO1WhkUzRW-M_uv_oLSSma0pAy1-MUwl3PpWmINxyottfCNS2EAN6Y2vEpZhDVmcQXZ034lRFTqytDw7fzsBhzs3dVylDmjBDq9Y5Olf6idCWUscKlG9RTCFW-jc5qhOWwNyTyipTCIgSFobhfjsQvsV1sSluhtq1ISqLUK4t89jZm_9H3uR5rSV-Aq8cIk8zhy-_bM9GBxy3gJyARhGWshXtzMM6jhTDOaAHIe_6yHqNfCvczIbfY-rFEQ",
-      twilightImage: "https://lh3.googleusercontent.com/aida/AEtjO1WXBYlYB3uiqXvhg51lmgmSR6p0Ck9VsnynIvs8V4aTdSbN-uKpFdw8PZRAgo-DsE8RhJKa5xetl5oBUp0ZMVYYuC_yHee6xLE6pwWmYC90iSuwuEoKJtgaVigafabOpPOTynNiDjk2-b2yOqWTsp1p3xt3c7aZpo68rcSGg5KkzrL1aeEowvRc-WbjTlRNUES1AJlsjFX13f0VM674ivDop9cIklu-6rjnETpfX46x4T_XkcDY-RYaE84",
-      floorPlanImage: "https://lh3.googleusercontent.com/aida/AEtjO1VrWDybYI2Clw5SevjajZH2UeqcnuW8o62SBYweYe5C99mgOuk02LzmU0oq1oAMYRd9HMF4CO5ysJILpZRmPWvHdOar8XO8Btys4hN0LxUvuHOSunSEj-NfkdXdYUZhqEvyj3BXB9nJgTgq1U-W9XiCuk_bmqAccYIFjQqdl8Ox4Zca2bXN-fMZn-0LWQzMlPpQokjX0eP0mGCbFUXN0IyL5cgjGqvnbwEobipwvfvwo3O8LyKUTyiJg3s",
+      heroImage: "assets/projects/shopnaloy-hero.jpg",
+      twilightImage: "assets/projects/shopnaloy-twilight.jpg",
+      floorPlanImage: "assets/projects/shopnaloy-plan.jpg",
       planType: "3D Isometric Unit Cutaway",
       unitSize: "1,375 Sq. Ft.",
       landSize: "3.75 Katha",
@@ -87,18 +87,17 @@ const BDM_DATA = {
     {
       id: "bdm-shopno-nebash",
       index: "02",
-      name: "BDM Shopno Nebash",
-      bengaliName: "বিডিএম স্বপ্ন নিবাস",
+      name: "BEC Shopno Nebash",
+      bengaliName: "বিইসি স্বপ্ন নিবাস",
       status: "Ongoing Development",
       bengaliStatus: "চলমান আবাসিক প্রকল্প",
       statusBadge: "CIVIL FRAMEWORKS & ARCHITECTURE",
       category: "Executive Family Residences",
       location: "Plot 445 · Road 11 · Agrabad CDA · Chattogram",
       bengaliLocation: "প্লট ৪৪৫ · রোড ১১ · আগ্রাবাদ সিডিএ · চট্টগ্রাম",
-      coordinates: "22.3288° N, 91.8032° E",
-      heroImage: "https://lh3.googleusercontent.com/aida/AEtjO1W3xavIoRm8aEPoFUA0q5vYpvspPvqjAwz_TDOJjL57_SBQw_yqERqJYht2YAZXsGp2rQW_Q1SsXTARGneq-2jYvC4TFRVLhRSP_Bjkfyc6lAh60B6qHiH-ffrQ-uE0SCRyoZSjF4pA19zETVMzZ6PhZLhGQevoyKJYrlIcvbwLyVwx3omoXRfQppDGNBGydgaHM8RrEv801nXDETK2zjLYgNAAefEba9jVEYWhOaOwvn6CVKsFBnlAn8E",
-      twilightImage: "https://lh3.googleusercontent.com/aida/AEtjO1W3xavIoRm8aEPoFUA0q5vYpvspPvqjAwz_TDOJjL57_SBQw_yqERqJYht2YAZXsGp2rQW_Q1SsXTARGneq-2jYvC4TFRVLhRSP_Bjkfyc6lAh60B6qHiH-ffrQ-uE0SCRyoZSjF4pA19zETVMzZ6PhZLhGQevoyKJYrlIcvbwLyVwx3omoXRfQppDGNBGydgaHM8RrEv801nXDETK2zjLYgNAAefEba9jVEYWhOaOwvn6CVKsFBnlAn8E",
-      floorPlanImage: "https://lh3.googleusercontent.com/aida/AEtjO1Wa1myew1Uqa54-Nghj9pLcVNBEQPJOAwOYhqh9bLupkwvv3skXSzSdJui0Wa0oES0jP39QpFILxQSOaYI7q5l0Cb--7AtguIdIqwisz_j-viOHEqGs12AeVWwVp4IBJKdKwceI69gICNfr9NTGFMp_FWFTtoGXZZVJOLOW7cyYSj56bmSLyhREDzazzB-w1DL_yycveIJdpdyzHe9Vx5B3tMFHHjStjVYDmW8_QT64bj422mlZnBGcB_s",
+      heroImage: "assets/projects/shopnonebash-hero.jpg",
+      twilightImage: "assets/projects/shopnonebash-twilight.jpg",
+      floorPlanImage: "assets/projects/shopnonebash-plan.jpg",
       planType: "Architectural CAD Blueprint",
       unitSize: "1,750 Sq. Ft.",
       landSize: "5.00 Katha Rectangular Parcel",
@@ -107,7 +106,7 @@ const BDM_DATA = {
       totalUnits: "18 Residences (2 Units / Floor)",
       landSharePerUnit: "Proportionate Deeded Land Share",
       configuration: "4 Bed · 4 Bath · 3 Balconies",
-      bookingShare: "Consult BDM for Allocation",
+      bookingShare: "Consult BEC for Allocation",
       features: [
         "5.00 Katha prime rectangular plot with optimal North-South orientation",
         "Strictly 2 expansive executive apartments per floor for maximum privacy",
@@ -129,10 +128,9 @@ const BDM_DATA = {
       category: "Future Land-Share Development",
       location: "Agrabad CDA Residential Area · Chattogram",
       bengaliLocation: "আগ্রাবাদ সিডিএ আ/এ · চট্টগ্রাম",
-      coordinates: "22.3270° N, 91.8025° E",
-      heroImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuC_wqjEfCjf-XBBZrO_Co8eYot222OXwwrc51lvGW2ONzMsnM0U7rSH3jcnFKoPVqqo97SXK4mbP0OT7Qne0ik338StoEk23DAC7c9LrLgu3SmLWeHgh685jYXC606Nt39A1QBwL-hd2QZjPjoIQIu7_mqRw9XsoFRAWs1JvP9ZhH2mfeKkNuOLflmJtvKkgxJc8QzUCecdG7Qaz_I7sw-Y-jfRKj7CXw7AoaZCd8ZSi87S6FgRVf1LKbDjezwSBudgTQ",
-      twilightImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuC_wqjEfCjf-XBBZrO_Co8eYot222OXwwrc51lvGW2ONzMsnM0U7rSH3jcnFKoPVqqo97SXK4mbP0OT7Qne0ik338StoEk23DAC7c9LrLgu3SmLWeHgh685jYXC606Nt39A1QBwL-hd2QZjPjoIQIu7_mqRw9XsoFRAWs1JvP9ZhH2mfeKkNuOLflmJtvKkgxJc8QzUCecdG7Qaz_I7sw-Y-jfRKj7CXw7AoaZCd8ZSi87S6FgRVf1LKbDjezwSBudgTQ",
-      floorPlanImage: "https://lh3.googleusercontent.com/aida/AEtjO1Wa1myew1Uqa54-Nghj9pLcVNBEQPJOAwOYhqh9bLupkwvv3skXSzSdJui0Wa0oES0jP39QpFILxQSOaYI7q5l0Cb--7AtguIdIqwisz_j-viOHEqGs12AeVWwVp4IBJKdKwceI69gICNfr9NTGFMp_FWFTtoGXZZVJOLOW7cyYSj56bmSLyhREDzazzB-w1DL_yycveIJdpdyzHe9Vx5B3tMFHHjStjVYDmW8_QT64bj422mlZnBGcB_s",
+      heroImage: "assets/projects/parcel-site.jpg",
+      twilightImage: "assets/projects/parcel-site.jpg",
+      floorPlanImage: "assets/projects/shopnonebash-plan.jpg",
       planType: "Master Site Schematic (Under CDA Review)",
       unitSize: "To Be Announced",
       landSize: "Planned 6.00+ Katha Parcel",
@@ -144,11 +142,11 @@ const BDM_DATA = {
       bookingShare: "Priority Waiting List Open",
       features: [
         "Prime Agrabad CDA sector with unhindered sunlight exposure",
-        "Direct joint-venture participation under BDM's transparent land-share model",
+        "Direct joint-venture participation under BEC's transparent land-share model",
         "Pre-launch subscriber registrations now being received",
         "Full structural engineering vetting prior to financial drawdown"
       ],
-      description: "In alignment with BDM Limited's commitment to strictly real, verifiable developments, this upcoming signature parcel is currently undergoing land due diligence and CDA architectural review. Interested patrons may pre-register for priority allocation."
+      description: "In alignment with Brother’s Engineering & Construction's commitment to strictly real, verifiable developments, this upcoming signature parcel is currently undergoing land due diligence and CDA architectural review. Interested patrons may pre-register for priority allocation."
     }
   ],
 
@@ -363,3 +361,4 @@ const BDM_DATA = {
 
 // Freeze data to guarantee immutability
 Object.freeze(BDM_DATA);
+const BEC_DATA = BDM_DATA;

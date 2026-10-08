@@ -509,7 +509,7 @@ function setLanguage(lang) {
     if (btnEn) btnEn.classList.remove('active');
 
     // Hero (Bengali)
-    if (heroHeadline) heroHeadline.innerHTML = "যেখানে ভূমি হয়ে ওঠে আপনার পারিবারিক উত্তরাধিকার।";
+    if (heroHeadline) heroHeadline.innerHTML = "যেখানে ভূমি হয়ে ওঠে আপনার <span class=\"gold-gradient-text\">পারিবারিক উত্তরাধিকার।</span>";
     if (heroSubtext) heroSubtext.innerHTML = "একটি বাড়ি কেবল কোনো ঠিকানা নয়।<br>এখানে সকালের সূচনা হয়, পরিবার একত্রিত হয়, সন্তানেরা বড় হয় এবং স্মৃতিগুলো চিরস্থায়ী হয়ে থাকে।<br><br>ব্রাদার্স ইঞ্জিনিয়ারিং অ্যান্ড কনস্ট্রাকশন (বিইসি)-এ আমরা অনন্য দৃষ্টিভঙ্গিতে কাজ করি — সুপরিকল্পিত ভূমি, পরিশীলিত স্থাপত্য, স্বচ্ছ মালিকানা ও সুশৃঙ্খল নির্মাণ।";
     if (heroCtaExplore) heroCtaExplore.textContent = "প্রকল্পসমূহ দেখুন";
     if (heroCtaEnquire) heroCtaEnquire.textContent = "যোগাযোগ করুন";
@@ -532,7 +532,7 @@ function setLanguage(lang) {
     if (btnBn) btnBn.classList.remove('active');
 
     // Hero (English)
-    if (heroHeadline) heroHeadline.innerHTML = "WHERE LAND BECOMES LEGACY.";
+    if (heroHeadline) heroHeadline.innerHTML = "WHERE LAND BECOMES <span class=\"gold-gradient-text\">LEGACY.</span>";
     if (heroSubtext) heroSubtext.innerHTML = "A home is more than an address.<br><br>It is where mornings begin, families gather, children grow and memories quietly become part of the walls.<br><br>At Brother’s Engineering & Construction (BEC), we approach residential development differently — with carefully selected land, considered architecture, transparent ownership and disciplined construction.";
     if (heroCtaExplore) heroCtaExplore.textContent = "EXPLORE OUR PROJECTS";
     if (heroCtaEnquire) heroCtaEnquire.textContent = "START A CONVERSATION";

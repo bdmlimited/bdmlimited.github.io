@@ -27,6 +27,10 @@ function initHeroVideo() {
   if (heroVideo && heroVideo.tagName === 'VIDEO') {
     heroVideo.muted = true;
     heroVideo.defaultMuted = true;
+    heroVideo.setAttribute('muted', '');
+    heroVideo.setAttribute('playsinline', '');
+    heroVideo.setAttribute('webkit-playsinline', 'true');
+    heroVideo.setAttribute('x5-playsinline', 'true');
 
     // Slow down playback to 0.65x for a serene, luxurious architectural motion
     const setSlowSpeed = () => {
@@ -37,18 +41,32 @@ function initHeroVideo() {
     heroVideo.addEventListener('loadedmetadata', setSlowSpeed);
     heroVideo.addEventListener('play', setSlowSpeed);
 
-    const playPromise = heroVideo.play();
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {
-        const triggerPlay = () => {
-          setSlowSpeed();
-          heroVideo.play().catch(() => {});
-          document.removeEventListener('click', triggerPlay);
-          document.removeEventListener('touchstart', triggerPlay);
-        };
-        document.addEventListener('click', triggerPlay, { once: true });
-        document.addEventListener('touchstart', triggerPlay, { once: true });
-      });
+    const attemptPlay = () => {
+      heroVideo.muted = true;
+      const playPromise = heroVideo.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Fallback on first mobile user interaction (touch, tap, or scroll)
+          const onUserGesture = () => {
+            heroVideo.muted = true;
+            heroVideo.playbackRate = 0.65;
+            heroVideo.play().catch(() => {});
+            ['click', 'touchstart', 'scroll', 'touchmove'].forEach(evt => {
+              window.removeEventListener(evt, onUserGesture, { passive: true });
+            });
+          };
+          ['click', 'touchstart', 'scroll', 'touchmove'].forEach(evt => {
+            window.addEventListener(evt, onUserGesture, { passive: true, once: true });
+          });
+        });
+      }
+    };
+
+    if (heroVideo.readyState >= 2) {
+      attemptPlay();
+    } else {
+      heroVideo.addEventListener('canplay', attemptPlay, { once: true });
+      attemptPlay();
     }
   }
 }

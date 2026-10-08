@@ -2038,12 +2038,47 @@ button, input, select, textarea {
   .hero-section {
     min-height: 100svh;
     height: auto;
-    padding: calc(var(--header-height) + 1.75rem) 1.25rem 4rem 1.25rem;
+    padding: calc(var(--header-height) + 1.25rem) 1.25rem 3rem 1.25rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1.25rem;
+    justify-content: flex-end;
+    gap: 1rem;
+    position: relative;
   }
+
+  .hero-background-wrapper {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .hero-bg-video,
+  .hero-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% center;
+    filter: brightness(0.78) contrast(1.06);
+    transform: none;
+  }
+
+  .hero-gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(17, 17, 15, 0.40) 0%,
+      rgba(17, 17, 15, 0.12) 30%,
+      rgba(17, 17, 15, 0.58) 65%,
+      rgba(17, 17, 15, 0.92) 100%
+    );
+  }
+
   .hero-top-bar {
     padding-top: 0;
     margin-bottom: 0.25rem;
@@ -2059,15 +2094,18 @@ button, input, select, textarea {
     display: none !important; /* Prevent clash on small screens */
   }
   .hero-content {
-    gap: 0.85rem;
+    margin-top: auto;
+    padding-top: 3.5rem;
+    gap: 0.75rem;
+    width: 100%;
   }
   .hero-eyebrow {
     font-size: 0.625rem;
     letter-spacing: 0.16em;
   }
   .hero-headline {
-    font-size: clamp(1.75rem, 6.8vw, 2.25rem);
-    line-height: 1.18;
+    font-size: clamp(1.65rem, 6.4vw, 2.15rem);
+    line-height: 1.15;
     letter-spacing: -0.015em;
     max-width: 100%;
   }
@@ -2076,34 +2114,58 @@ button, input, select, textarea {
     margin-top: 0.25rem;
   }
   .hero-subtext {
-    font-size: 0.875rem;
-    line-height: 1.6;
+    font-size: 0.825rem;
+    line-height: 1.45;
     max-width: 100%;
     color: rgba(244, 240, 232, 0.92);
   }
+  .hero-statement-badge {
+    padding: 0.3rem 0.65rem;
+    font-size: 0.58rem;
+    width: fit-content;
+  }
   .hero-trust-chips {
-    gap: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.4rem !important;
   }
   .trust-chip {
-    padding: 0.35rem 0.65rem;
-    font-size: 0.6rem;
+    padding: 0.28rem 0.55rem;
+    font-size: 0.58rem;
+    gap: 0.35rem;
   }
   .hero-actions {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
     width: 100%;
-    gap: 0.75rem;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem !important;
   }
   .hero-actions .btn {
     width: 100%;
-    height: 3.25rem;
-    font-size: 0.7rem;
-    padding: 0 1.25rem;
+    height: 2.85rem;
+    font-size: 0.68rem;
+    padding: 0 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .hero-actions .btn:nth-child(2) {
+    display: none; /* Secondary middle button hidden on mobile for clean 2-button action bar */
   }
   .hero-footer-bar,
   .hero-scroll-center {
     display: none !important; /* Hide footer elements on mobile to prevent collision */
+  }
+
+  @media (max-width: 380px) {
+    .hero-actions {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
   }
 
   /* 3. Floating WhatsApp Circular FAB */

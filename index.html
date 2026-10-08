@@ -92,12 +92,14 @@
 
       <!-- Primary Desktop Links -->
       <nav class="nav-links" aria-label="Main Navigation">
-        <a href="#projects" class="nav-link">PROJECTS</a>
-        <a href="#living" class="nav-link">LIVING</a>
-        <a href="#approach" class="nav-link">APPROACH</a>
-        <a href="#how-we-build" class="nav-link">HOW WE BUILD</a>
-        <a href="#engineering" class="nav-link">ON-SITE RIGOR</a>
-        <a href="#cartography" class="nav-link">CARTOGRAPHY</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#services" class="nav-link">SERVICES</a>
+        <a href="#design-to-build" class="nav-link">DESIGN-TO-BUILD</a>
+        <a href="#process" class="nav-link">PROCESS</a>
+        <a href="#projects" class="nav-link">SELECTED WORK</a>
+        <a href="#construction" class="nav-link">ON-SITE RIGOR</a>
+        <a href="#interiors" class="nav-link">INTERIORS</a>
+        <a href="#trust" class="nav-link">WHY BEC</a>
         <a href="#contact" class="nav-link">CONTACT</a>
       </nav>
 
@@ -112,7 +114,7 @@
 
         <!-- Enquire CTA Button -->
         <a href="#contact" class="btn btn-primary btn-sm" id="nav-enquire-btn">
-          <span>ENQUIRE</span>
+          <span>START A PROJECT</span>
           <span class="material-symbols-outlined btn-arrow-icon">arrow_forward</span>
         </a>
 
@@ -138,46 +140,54 @@
     </div>
 
     <nav class="drawer-links">
+      <a href="#about" class="drawer-link-item" onclick="closeMobileDrawer()">
+        <span class="drawer-link-title">01 ABOUT</span>
+        <span class="drawer-link-sub">BUILT ON EXPERIENCE</span>
+      </a>
+      <a href="#services" class="drawer-link-item" onclick="closeMobileDrawer()">
+        <span class="drawer-link-title">02 SERVICES</span>
+        <span class="drawer-link-sub">WHAT WE DO</span>
+      </a>
+      <a href="#design-to-build" class="drawer-link-item" onclick="closeMobileDrawer()">
+        <span class="drawer-link-title">03 DESIGN-TO-BUILD</span>
+        <span class="drawer-link-sub">CONCEPT TO COMPLETION</span>
+      </a>
+      <a href="#process" class="drawer-link-item" onclick="closeMobileDrawer()">
+        <span class="drawer-link-title">04 PROCESS</span>
+        <span class="drawer-link-sub">ONE TEAM, ONE PROCESS</span>
+      </a>
       <a href="#projects" class="drawer-link-item" onclick="closeMobileDrawer()">
-        <span class="drawer-link-title">01 PROJECTS</span>
-        <span class="drawer-link-sub">SHOPNALOY & NEBASH</span>
+        <span class="drawer-link-title">05 SELECTED WORK</span>
+        <span class="drawer-link-sub">CURRENT DEVELOPMENTS</span>
       </a>
-      <a href="#living" class="drawer-link-item" onclick="closeMobileDrawer()">
-        <span class="drawer-link-title">02 HOME LIVING</span>
-        <span class="drawer-link-sub">LIGHT, AIR & BALCONY</span>
+      <a href="#construction" class="drawer-link-item" onclick="closeMobileDrawer()">
+        <span class="drawer-link-title">06 ON-SITE RIGOR</span>
+        <span class="drawer-link-sub">EXECUTION IN ACTION</span>
       </a>
-      <a href="#approach" class="drawer-link-item" onclick="closeMobileDrawer()">
-        <span class="drawer-link-title">03 APPROACH</span>
-        <span class="drawer-link-sub">40% SAVINGS MODEL</span>
+      <a href="#interiors" class="drawer-link-item" onclick="closeMobileDrawer()">
+        <span class="drawer-link-title">07 INTERIORS</span>
+        <span class="drawer-link-sub">STRUCTURE TO SPACE</span>
       </a>
-      <a href="#how-we-build" class="drawer-link-item" onclick="closeMobileDrawer()">
-        <span class="drawer-link-title">04 HOW WE BUILD</span>
-        <span class="drawer-link-sub">5-STAGE PROCESS</span>
-      </a>
-      <a href="#engineering" class="drawer-link-item" onclick="closeMobileDrawer()">
-        <span class="drawer-link-title">05 ON-SITE RIGOR</span>
-        <span class="drawer-link-sub">VERIFIED PROGRESS</span>
-      </a>
-      <a href="#cartography" class="drawer-link-item" onclick="closeMobileDrawer()">
-        <span class="drawer-link-title">06 CARTOGRAPHY</span>
-        <span class="drawer-link-sub">AGRABAD CDA SITES</span>
+      <a href="#trust" class="drawer-link-item" onclick="closeMobileDrawer()">
+        <span class="drawer-link-title">08 WHY BEC</span>
+        <span class="drawer-link-sub">6 PILLARS OF TRUST</span>
       </a>
       <a href="#contact" class="drawer-link-item" onclick="closeMobileDrawer()">
-        <span class="drawer-link-title">07 CONTACT</span>
-        <span class="drawer-link-sub">HOTLINES & OFFICES</span>
+        <span class="drawer-link-title">09 CONTACT</span>
+        <span class="drawer-link-sub">START A PROJECT</span>
       </a>
     </nav>
 
     <div class="drawer-footer">
       <span class="label-caps" style="color: var(--color-champagne);">CHATTOGRAM HOTLINES</span>
       <span class="label-numeric" style="color: var(--color-ivory);">+880 1749-349299 | +880 1828-178962</span>
-      <span class="body-sm" style="color: rgba(244,240,232,0.6);">Official Portal: bdmdeveloper.com</span>
+      <span class="body-sm" style="color: rgba(244,240,232,0.6);">Brother’s Engineering & Construction</span>
     </div>
   </div>
 
   <main>
     <!-- ==========================================================================
-         1. HERO SECTION (Tectonic Monolith & Cinematic Facade)
+         1. HERO SECTION (Cinema Background Video + New Positioning)
          ========================================================================== -->
     <section class="hero-section" id="hero">
       <div class="hero-background-wrapper">
@@ -189,106 +199,70 @@
 
       <!-- Editorial Headline & Actions -->
       <div class="hero-content">
-        <!-- Stitch Tectonic Overhead Coordinate Stamp -->
-        <div class="hero-top-hud">
-          <div class="hero-location-beacon">
-            <span class="beacon-pulse"></span>
-            <span class="beacon-text" id="hero-hud-location">AGRABAD CDA · CHATTOGRAM</span>
-          </div>
-          <div class="hero-hud-right">
-            <span class="hero-coordinates-tag font-mono">22.3275° N, 91.8020° E</span>
-            <span class="hero-monograph-stamp font-mono">[MONOGRAPH // 2026]</span>
-          </div>
-        </div>
-
         <div class="hero-editorial-panel">
-          <!-- Monolithic Category Index from Stitch -->
+          <!-- Monolithic Category Index -->
           <div class="hero-category-row">
             <div class="hero-category-left">
-              <span class="tech-spec-code text-champagne">[INDEX_001]</span>
+              <span class="tech-spec-code text-champagne">[FULL-SERVICE]</span>
               <span class="tech-spec-line"></span>
-              <span class="hero-eyebrow" id="hero-eyebrow">LAND SHARE APARTMENTS · CDA APPROVED</span>
+              <span class="hero-eyebrow" id="hero-eyebrow">ENGINEERING • CONSTRUCTION • ARCHITECTURE • INTERIORS</span>
             </div>
-            <span class="hero-code-stamp">CDA SANCTIONED · BNBC 2020</span>
+            <span class="hero-code-stamp">CHATTOGRAM, BANGLADESH</span>
           </div>
 
-          <!-- Master Headline & Strapline (Old + New Synergy) -->
+          <!-- Master Headline & Strapline -->
           <div class="hero-headline-group">
             <h1 class="display-hero hero-headline" id="hero-headline">
-              BUILDING PLACES FOR BETTER LIVING.<br>
-              <span class="gold-gradient-text">CREATING LEGACIES.</span>
+              WE DESIGN.<br>
+              WE BUILD.<br>
+              <span class="gold-gradient-text">WE DELIVER.</span>
             </h1>
             <p class="hero-strapline" id="hero-strapline">
-              WHERE LAND BECOMES YOUR FAMILY’S HERITAGE.
+              FROM AN IDEA TO A FINISHED SPACE.
             </p>
           </div>
 
-          <!-- Editorial Narrative (Old + New Fusion) -->
+          <!-- Supporting Text -->
           <p class="body-lg hero-subtext" id="hero-subtext">
-            A home is more than an address. It is where mornings begin and memories quietly become part of the walls.<br><br>
-            At Brother’s Engineering &amp; Construction (BEC / BDM Limited), we develop thoughtfully planned residences in Agrabad CDA, Chattogram — uniting direct deeded land-share ownership, earthquake-resistant engineering, and authentic family living with 40% cost-basis savings.
+            Brother’s Engineering &amp; Construction brings together engineering, construction, architecture and interior execution under one roof — helping clients turn ideas, plans and properties into thoughtfully designed, professionally built spaces.
           </p>
 
-          <!-- Stitch-Inspired Development Strip & Quick On-Site Link -->
-          <div class="hero-plots-strip">
-            <div class="hero-plot-item">
-              <span class="plot-indicator-dot"></span>
-              <span class="plot-item-text"><strong>PLOT 727 (RD 14)</strong> · SHOPNALOY</span>
-            </div>
-            <div class="hero-plot-divider">/</div>
-            <div class="hero-plot-item">
-              <span class="plot-indicator-dot gold"></span>
-              <span class="plot-item-text"><strong>PLOT 445 (RD 11)</strong> · SHOPNO NEBASH</span>
-            </div>
-            <a href="#engineering" class="hero-onsite-link">
-              <span>ON-SITE WORKS</span>
-              <span class="material-symbols-outlined" style="font-size: 14px;">arrow_downward</span>
-            </a>
-          </div>
-
-          <!-- 4 Core Architectural Trust Badges (Stitch Pillars) -->
-          <div class="hero-trust-chips">
-            <div class="trust-chip">
-              <span class="material-symbols-outlined">gavel</span>
-              <span id="hero-pillar-1">DIRECT SUB-REGISTRY SHARE (ভূমির সাব-কবলা)</span>
-            </div>
-            <div class="trust-chip">
-              <span class="material-symbols-outlined">domain_verification</span>
-              <span id="hero-pillar-2">CDA APPROVED STRUCTURAL PLAN</span>
-            </div>
-            <div class="trust-chip">
-              <span class="material-symbols-outlined">engineering</span>
-              <span id="hero-pillar-3">SEISMIC ZONE 2 ENGINEERED</span>
-            </div>
-            <div class="trust-chip">
-              <span class="material-symbols-outlined">savings</span>
-              <span id="hero-pillar-4">SUPERVISED OWNER COST BASIS (৪০% সাশ্রয়ী)</span>
+          <!-- Experience Statement Banner -->
+          <div class="hero-experience-banner" id="hero-exp-banner">
+            <span class="material-symbols-outlined" style="color: var(--color-champagne); font-size: 22px;">verified</span>
+            <div>
+              <strong>A NEW NAME IN THE MARKET.</strong> 15+ YEARS OF PRACTICAL INDUSTRY EXPERIENCE BEHIND THE PEOPLE WHO LEAD IT.
             </div>
           </div>
 
           <!-- Hero Actions -->
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-champagne">
-              <span id="hero-cta-explore">EXPLORE SELECTED WORK</span>
+            <a href="#contact" class="btn btn-champagne">
+              <span id="hero-cta-start">START A PROJECT</span>
               <span class="material-symbols-outlined btn-arrow-icon">arrow_forward</span>
             </a>
-            <a href="https://wa.me/8801749349299?text=Hello%20BDM%20%2F%20BEC%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20Agrabad%20CDA%20residences." target="_blank" rel="noopener" class="btn btn-white hero-btn-whatsapp" id="hero-cta-conversation">
-              <span class="material-symbols-outlined" style="font-size: 19px; color: #25D366;">chat</span>
-              <span id="hero-cta-enquire">START A CONVERSATION</span>
+            <a href="#services" class="btn btn-white" id="hero-cta-services">
+              <span class="material-symbols-outlined" style="font-size: 18px;">apps</span>
+              <span>EXPLORE OUR SERVICES</span>
             </a>
+          </div>
+
+          <!-- Small Supporting Line -->
+          <div class="hero-supporting-line" id="hero-supporting-line">
+            Residential • Commercial • Construction • Design • Interior • Renovation
           </div>
         </div>
 
-        <!-- Live Micro Ticker from Stitch at bottom of Hero -->
+        <!-- Live Micro Ticker at Hero base -->
         <div class="hero-live-ticker">
           <div class="ticker-left">
-            <span class="material-symbols-outlined ticker-icon">domain</span>
-            <span class="ticker-text font-mono">ACTIVE SITES: 02 (AGRABAD CDA RD 14 & RD 11)</span>
+            <span class="material-symbols-outlined ticker-icon">engineering</span>
+            <span class="ticker-text font-mono" id="ticker-left-text">ENGINEERED TO BUILD. DESIGNED TO LAST.</span>
           </div>
-          <div class="ticker-center font-mono">
-            <span>40% OWNER COST BASIS · ZERO SPECULATIVE MARKUP</span>
+          <div class="ticker-center font-mono" id="ticker-center-text">
+            <span>YOUR VISION. OUR ENGINEERING. ONE COMPLETE BUILD.</span>
           </div>
-          <a href="#approach" class="ticker-scroll-link">
+          <a href="#about" class="ticker-scroll-link">
             <span>SCROLL TO EXPLORE</span>
             <span class="material-symbols-outlined ticker-arrow">arrow_downward</span>
           </a>
@@ -297,124 +271,82 @@
     </section>
 
     <!-- ==========================================================================
-         2. INTRODUCTION SECTION & DIRECT LAND-SHARE MODEL
+         01. ABOUT SECTION — BUILT ON EXPERIENCE. CREATED FOR WHAT’S NEXT.
          ========================================================================== -->
-    <section class="section" id="approach" style="background-color: var(--color-ivory-light);">
+    <section class="section" id="about" style="background-color: var(--color-ivory-light);">
       <div class="section-inner">
         <div class="editorial-grid">
           <div>
             <div class="section-meta">
               <span class="section-num">01</span>
               <span class="section-meta-divider">/</span>
-              <span class="section-tag" id="intro-tag">NOT JUST ANOTHER ADDRESS.</span>
+              <span class="section-tag" id="about-tag">ABOUT BROTHER’S ENGINEERING &amp; CONSTRUCTION</span>
             </div>
             
-            <h2 class="editorial-statement-title" id="intro-title">
-              WE BUILD MORE THAN HOMES.<br>
-              <span class="gold-gradient-text">WE BUILD A SENSE OF BELONGING.</span>
+            <h2 class="editorial-statement-title" id="about-title">
+              BUILT ON EXPERIENCE.<br>
+              <span class="gold-gradient-text">CREATED FOR WHAT’S NEXT.</span>
             </h2>
 
-            <p class="body-lg" style="color: var(--color-charcoal); font-weight: 500; margin-bottom: 1.25rem;">
-              Thoughtfully planned residences. Carefully selected land. Engineering built for generations.
+            <p class="body-lg" style="color: var(--color-charcoal); font-weight: 500; margin-bottom: 1.25rem;" id="about-lead">
+              Brother’s Engineering &amp; Construction is a growing engineering and construction company built around practical experience, technical knowledge and a commitment to doing construction properly.
             </p>
             
-            <p class="editorial-desc" id="intro-desc-1">
-              We believe exceptional living begins long before the first brick is placed. It begins with choosing the right piece of land. It continues through thoughtful planning, intelligent architecture and uncompromising engineering.
+            <p class="editorial-desc" id="about-desc-1">
+              While BEC is establishing its modern identity as a company, its leadership brings more than 15 years of hands-on experience across construction, engineering, project execution and the built environment.
             </p>
-            <p class="editorial-desc" id="intro-desc-2">
-              And ultimately, it becomes something much more personal: <strong>a place your family can truly call its own.</strong> Brother’s Engineering & Construction (BEC) develops residential properties in carefully selected locations of Chattogram, bringing together land ownership, architectural quality and practical family living under one considered approach.
+            <p class="editorial-desc" id="about-desc-2">
+              That experience shapes how we approach every project — from the first conversation and initial design to structural work, construction, interiors and final delivery.
             </p>
 
-            <!-- Ownership Model Box -->
-            <div class="ownership-highlight-box">
-              <span class="label-caps" style="color: var(--color-champagne);">LAND OWNERSHIP</span>
-              <h3 class="headline-md" style="margin: 0.5rem 0 0.75rem 0; color: var(--color-ivory);">
-                YOUR HOME SHOULD BEGIN WITH YOUR OWNERSHIP OF THE LAND.
-              </h3>
-              <p class="body-sm" style="color: rgba(244,240,232,0.85); line-height: 1.7;">
-                Traditional property buying often separates the buyer from the land beneath the apartment. Our land-share model takes a different approach. Where applicable, BEC buyers receive directly registered land ownership through Sub-Kabala before construction begins, creating a clearer relationship between the homeowner, the land and the residence.
+            <div class="quote-statement-banner" style="background-color: var(--color-white); border-left: 2px solid var(--color-champagne); margin: 1.5rem 0; padding: 1.25rem 1.5rem;">
+              <p class="body-sm" style="color: var(--color-charcoal); font-weight: 600; line-height: 1.7;" id="about-quote">
+                We believe clients should not have to coordinate multiple disconnected teams for every stage of a project.<br>
+                <span style="color: var(--color-champagne-dark); font-family: var(--font-mono); font-size: 0.8rem; display: block; margin-top: 0.5rem; letter-spacing: 0.05em;">
+                  ONE VISION. ONE ACCOUNTABLE TEAM. ONE COMPLETE JOURNEY FROM DESIGN TO BUILD.
+                </span>
               </p>
-              <div class="quote-statement-banner" style="background-color: rgba(255,255,255,0.06); margin: 1rem 0;">
-                <p class="quote-statement-text" style="font-size: 0.95rem;">
-                  "LAND IS NOT AN AFTERTHOUGHT. IT IS THE FOUNDATION OF OWNERSHIP."
-                </p>
+            </div>
+
+            <!-- Visually Strong 15+ Years Experience Block -->
+            <div class="ownership-highlight-box" style="margin-top: 1.5rem;">
+              <span class="label-caps" style="color: var(--color-champagne);">PRACTICAL LEADERSHIP EXPERTISE</span>
+              <div style="display: flex; align-items: baseline; gap: 1rem; margin: 0.5rem 0;">
+                <span class="display-hero" style="font-size: 3.5rem; color: var(--color-champagne); line-height: 1;">15+</span>
+                <span class="headline-md" style="color: var(--color-ivory); margin: 0; line-height: 1.2;">
+                  YEARS OF INDUSTRY EXPERIENCE
+                </span>
               </div>
-              <div>
-                <a href="#projects" class="btn btn-champagne btn-sm">
-                  <span>DISCOVER OUR OWNERSHIP MODEL</span>
-                  <span class="material-symbols-outlined btn-arrow-icon">arrow_forward</span>
-                </a>
+              <p class="body-sm" style="color: rgba(244,240,232,0.85); line-height: 1.7;" id="about-exp-copy">
+                Experience that comes from years of working with real projects, real sites, real materials and real construction challenges.
+              </p>
+              <div class="quote-statement-banner" style="background-color: rgba(255,255,255,0.06); margin: 1rem 0 0.5rem 0;">
+                <p class="quote-statement-text" style="font-size: 0.85rem; color: var(--color-champagne);" id="about-exp-sub">
+                  15+ years of industry experience within our leadership and project expertise.
+                </p>
               </div>
             </div>
           </div>
 
           <div>
             <div class="editorial-visual-frame">
-              <img src="assets/projects/shopnaloy-twilight.jpg" alt="BEC Architectural Facade Twilight" class="editorial-visual-img">
+              <img src="assets/projects/shopnaloy-twilight.jpg" alt="BEC Engineering and Construction" class="editorial-visual-img">
               <div class="editorial-tag-overlay">
-                <span class="label-caps" style="color: var(--color-champagne); display: block; margin-bottom: 4px;">ARCHITECTURAL RIGOR</span>
-                <p class="body-sm" style="color: var(--color-ivory);" id="editorial-caption">
-                  "Real estate should be a generational family sanctuary, not a speculative corporate gamble."
+                <span class="label-caps" style="color: var(--color-champagne); display: block; margin-bottom: 4px;">ENGINEERED EXECUTION</span>
+                <p class="body-sm" style="color: var(--color-ivory);" id="about-visual-caption">
+                  "Real construction knowledge applied on every site, from soil analysis to finished living spaces."
                 </p>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- TECTONIC METRIC DOSSIER (Scale & Structural Footprint from Stitch) -->
-        <div class="stitch-dossier-wrapper" style="margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--color-stone);">
-          <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
-            <div>
-              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
-                <span class="tech-spec-code text-champagne">[SEC_02]</span>
-                <span class="label-caps" style="color: var(--color-charcoal-dim);">SCALE & STRUCTURAL FOOTPRINT</span>
+            <!-- Tectonic Precision Dossier Bar -->
+            <div style="margin-top: 1.5rem; padding: 1.5rem; background: var(--color-white); border: 1px solid var(--color-stone);">
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+                <span class="material-symbols-outlined" style="color: var(--color-champagne-dark); font-size: 20px;">domain_verification</span>
+                <span class="tech-spec-code" style="color: var(--color-charcoal); font-weight: 700;">FULL PROJECT CAPABILITY</span>
               </div>
-              <h3 class="headline-lg" style="color: var(--color-charcoal); margin-top: 0.25rem;">
-                BUILT ON EXPERIENCE. DRIVEN BY PRECISION.
-              </h3>
-            </div>
-            <span class="tech-spec-code" style="color: var(--color-charcoal-dim);">MONOGRAPH RECORD // 2026</span>
-          </div>
-
-          <!-- Architectural Monospaced Metric Grid -->
-          <div class="stitch-metric-grid">
-            <div class="stitch-metric-cell">
-              <span class="tech-spec-code">[EXP_PRACTICE]</span>
-              <div>
-                <span class="stitch-metric-num">18+</span>
-                <span class="stitch-metric-label">Years of Structural Practice</span>
-              </div>
-            </div>
-            <div class="stitch-metric-cell">
-              <span class="tech-spec-code">[DELIVERED]</span>
-              <div>
-                <span class="stitch-metric-num" style="color: var(--color-champagne-dark);">42+</span>
-                <span class="stitch-metric-label">Completed Units Handed Over</span>
-              </div>
-            </div>
-            <div class="stitch-metric-cell">
-              <span class="tech-spec-code">[ONGOING_SITES]</span>
-              <div>
-                <span class="stitch-metric-num">02</span>
-                <span class="stitch-metric-label">Live Agrabad CDA Sites</span>
-              </div>
-            </div>
-            <div class="stitch-metric-cell">
-              <span class="tech-spec-code">[SAVINGS_MODEL]</span>
-              <div>
-                <span class="stitch-metric-num" style="color: var(--color-champagne-dark);">40%</span>
-                <span class="stitch-metric-label">Cost Savings via Land Share</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Technical Compliance Bar -->
-          <div class="stitch-compliance-bar" style="margin-top: 1rem;">
-            <span class="material-symbols-outlined" style="color: var(--color-champagne-dark); font-size: 22px;">verified</span>
-            <div>
-              <span class="tech-spec-code" style="color: var(--color-charcoal); font-weight: 700;">CDA SANCTIONED & BNBC SEISMIC DESIGN</span>
-              <p class="body-sm" style="color: var(--color-charcoal-dim); font-size: 0.8rem; margin-top: 2px;">
-                All structural calculations strictly adhere to the Bangladesh National Building Code (BNBC 2020) and CDA setbacks, engineered in partnership with Mahi Engineering Services.
+              <p class="body-sm" style="color: var(--color-charcoal-dim); font-size: 0.825rem; line-height: 1.6;">
+                Capable of serving individual homeowners, landowners, commercial property owners, and institutional developments across Chattogram with end-to-end responsibility.
               </p>
             </div>
           </div>
@@ -423,597 +355,339 @@
     </section>
 
     <!-- ==========================================================================
-         3. FEATURED PROJECT SHOWCASE (BEC Shopnaloy)
+         02. SERVICES SECTION — WHAT WE DO
          ========================================================================== -->
-    <section class="section" style="background-color: var(--color-ivory);">
+    <section class="section" id="services" style="background-color: var(--color-white);">
       <div class="section-inner">
         <div class="section-header">
           <div class="section-meta">
             <span class="section-num">02</span>
             <span class="section-meta-divider">/</span>
-            <span class="section-tag">FEATURED PROJECT</span>
+            <span class="section-tag" id="services-tag">CAPABILITIES &amp; SCOPE</span>
           </div>
-          <h2 class="headline-xl">A RARE ADDRESS IN AGRABAD CDA.</h2>
+          <h2 class="headline-xl" id="services-title">WHAT WE DO</h2>
+          <p class="body-lg" style="color: var(--color-champagne-dark); font-family: var(--font-mono); font-size: 0.95rem; margin-top: 0.5rem; letter-spacing: 0.08em;" id="services-subline">
+            FROM FIRST SKETCH TO FINAL HANDOVER.
+          </p>
+          <p class="body-md" style="color: var(--color-charcoal-dim); max-width: 75ch; margin-top: 0.75rem;" id="services-lead">
+            Brother’s Engineering &amp; Construction is a complete project partner. We bring together civil construction, architectural design, structural engineering, and interior execution to deliver unified spaces with seamless accountability.
+          </p>
         </div>
 
-        <div class="featured-project-container">
-          <div class="featured-project-grid">
-            <!-- Visual Pane -->
-            <div class="featured-visual-pane">
-              <img src="assets/projects/shopnaloy-hero.jpg" alt="BEC Shopnaloy Daytime Exterior" class="featured-visual-img">
-              <div class="featured-badge-overlay">
-                <span class="label-caps">ACTIVE CONSTRUCTION · G+8 STOREYS</span>
-              </div>
-            </div>
+        <!-- 8 Core Services Grid -->
+        <div class="services-grid" id="services-grid-container">
+          <!-- Dynamically populated or fallback rendered via app.js -->
+        </div>
 
-            <!-- Content Pane -->
-            <div class="featured-info-pane">
-              <div>
-                <span class="label-caps" style="color: var(--color-champagne); letter-spacing: 0.25em;">PLOT 727 · ROAD 14 · AGRABAD CDA · CHATTOGRAM</span>
-                <h3 class="display-hero" style="font-size: 2.75rem; margin: 0.75rem 0 1rem 0;">BEC SHOPNALOY</h3>
-                <p class="body-md" style="color: rgba(244,240,232,0.85); line-height: 1.7;">
-                  A residential development conceived around space, privacy and a sense of permanence. Set along a 40-foot-wide road, Shopnaloy brings together only two residences per floor, creating a more private residential environment with generous natural light, airflow and outdoor space.
-                </p>
-                <div class="quote-statement-banner" style="background-color: rgba(255,255,255,0.06); margin: 1.25rem 0; padding: 0.85rem 1.25rem;">
-                  <p class="quote-statement-text" style="font-size: 0.95rem;">
-                    ONLY 15 RESIDENCES. Designed for families who value space without unnecessary excess.
-                  </p>
-                </div>
-              </div>
-
-              <div class="featured-spec-list">
-                <div class="featured-spec-item">
-                  <span class="label-caps" style="color: var(--color-champagne);">APARTMENT SIZE</span>
-                  <span class="label-numeric" style="font-size: 1.15rem; color: var(--color-ivory);">1,375 SQ FT</span>
-                </div>
-                <div class="featured-spec-item">
-                  <span class="label-caps" style="color: var(--color-champagne);">CONFIGURATION</span>
-                  <span class="label-numeric" style="font-size: 1.15rem; color: var(--color-ivory);">3 BED · 3 BATH · 3 BALCONIES</span>
-                </div>
-                <div class="featured-spec-item">
-                  <span class="label-caps" style="color: var(--color-champagne);">DEEDED LAND SHARE</span>
-                  <span class="label-numeric" style="font-size: 1rem; color: var(--color-ivory);">164 SQ FT</span>
-                </div>
-                <div class="featured-spec-item">
-                  <span class="label-caps" style="color: var(--color-champagne);">ROAD FRONTAGE</span>
-                  <span class="label-numeric" style="font-size: 1rem; color: var(--color-ivory);">40 FT ROAD FRONTAGE</span>
-                </div>
-              </div>
-
-              <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
-                <button class="btn btn-champagne" onclick="openProjectModal('bdm-shopnaloy')">
-                  <span>DISCOVER SHOPNALOY</span>
-                  <span class="material-symbols-outlined btn-arrow-icon">arrow_forward</span>
-                </button>
-                <button class="btn btn-secondary" style="border-color: rgba(255,255,255,0.3); color: var(--color-ivory);" onclick="requestBrochure('BEC Shopnaloy')">
-                  <span>REQUEST BROCHURE</span>
-                </button>
-              </div>
-            </div>
+        <div style="margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; padding: 1.5rem; background: var(--color-ivory-light); border: 1px solid var(--color-stone);">
+          <div>
+            <span class="tech-spec-code text-champagne">[NEED ADVICE?]</span>
+            <p class="body-sm" style="color: var(--color-charcoal); font-weight: 500; margin-top: 0.25rem;">
+              Have a plot, an existing structure, or a specialized engineering requirement in Chattogram?
+            </p>
           </div>
+          <a href="#contact" class="btn btn-primary btn-sm">
+            <span>DISCUSS YOUR SERVICE REQUIREMENT</span>
+            <span class="material-symbols-outlined btn-arrow-icon">arrow_forward</span>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         4. SELECTED PROJECTS CATALOG (Interactive Editorial List)
+         03. DESIGN-TO-BUILD SECTION — YOU BRING THE IDEA. WE BUILD THE REALITY.
          ========================================================================== -->
-    <section class="section" id="projects" style="background-color: var(--color-ivory-light);">
+    <section class="section design-to-build-section" id="design-to-build">
       <div class="section-inner">
         <div class="section-header">
           <div class="section-meta">
-            <span class="section-num">03</span>
-            <span class="section-meta-divider">/</span>
-            <span class="section-tag" id="proj-section-tag">ARCHITECTURAL PORTFOLIO</span>
+            <span class="section-num" style="color: var(--color-champagne);">03</span>
+            <span class="section-meta-divider" style="color: rgba(244,240,232,0.4);">/</span>
+            <span class="section-tag" style="color: var(--color-champagne);" id="dtb-tag">THE BEC DIFFERENTIATOR</span>
           </div>
-          <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
-            <h2 class="headline-xl" id="proj-section-title">SELECTED DEVELOPMENTS</h2>
-            <span class="label-caps" style="color: var(--color-charcoal-dim);" id="proj-section-sub">AGRABAD CDA RESIDENTIAL AREA · CHATTOGRAM</span>
+          <h2 class="headline-xl" style="color: var(--color-ivory);" id="dtb-title">
+            YOU BRING THE IDEA.<br>
+            <span class="gold-gradient-text">WE BUILD THE REALITY.</span>
+          </h2>
+          <div style="max-width: 75ch; margin-top: 1rem;">
+            <p class="body-lg" style="color: rgba(244,240,232,0.9); line-height: 1.7;" id="dtb-text-1">
+              Not every client starts with a complete plan.
+            </p>
+            <p class="body-md" style="color: rgba(244,240,232,0.75); line-height: 1.8; margin-top: 0.5rem;" id="dtb-text-2">
+              Sometimes it starts with a piece of land.<br>
+              Sometimes it starts with a drawing.<br>
+              Sometimes it starts with a Pinterest image.<br>
+              Sometimes it is simply an idea of how a space should feel.
+            </p>
+            <p class="body-md" style="color: var(--color-champagne); font-weight: 600; margin-top: 0.75rem;" id="dtb-text-3">
+              That is where we come in. BEC guides each project along a clear, accountable path:
+            </p>
           </div>
         </div>
 
-        <div class="projects-list-wrapper" id="projects-list-container">
-          <!-- Dynamically populated from BDM_DATA.projects via app.js -->
+        <!-- 7-Stage Design-to-Build Visual Flow -->
+        <div class="dtb-flow-wrapper" id="dtb-steps-container">
+          <!-- Dynamically populated via app.js -->
+        </div>
+
+        <div style="margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(216,209,197,0.15);">
+          <div class="brand-positioning-pill" style="margin: 0;">
+            <span class="material-symbols-outlined" style="color: var(--color-champagne); font-size: 16px;">handshake</span>
+            <span style="color: var(--color-ivory); font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em;">
+              SINGLE CONTRACT · SINGLE ACCCOUNTABLE PARTNER
+            </span>
+          </div>
+          <a href="#contact" class="btn btn-champagne btn-sm">
+            <span>START WITH YOUR IDEA</span>
+            <span class="material-symbols-outlined btn-arrow-icon">arrow_forward</span>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         4. LIVING (DESIGNED AROUND REAL LIFE)
+         04. PROCESS SECTION — ONE TEAM. ONE PROCESS.
          ========================================================================== -->
-    <section class="section" id="living" style="background-color: var(--color-white);">
+    <section class="section" id="process" style="background-color: var(--color-ivory-light);">
       <div class="section-inner">
         <div class="section-header">
           <div class="section-meta">
             <span class="section-num">04</span>
             <span class="section-meta-divider">/</span>
-            <span class="section-tag" id="spaces-section-tag">LIVING</span>
+            <span class="section-tag" id="process-tag">METHODOLOGY</span>
           </div>
-          <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
-            <div>
-              <h2 class="headline-xl" id="spaces-section-title">DESIGNED AROUND REAL LIFE.</h2>
-              <p class="body-md" id="spaces-section-desc" style="max-width: 68ch; color: var(--color-charcoal-dim); margin-top: 0.5rem;">
-                Beautiful architecture means little if it doesn't make everyday life better. Our homes are shaped around how families actually live — where morning light enters, where conversations happen, where children play, where guests gather and where the day finally becomes quiet.
-              </p>
-            </div>
-            <a href="https://wa.me/8801749349299?text=Hello%20BEC%2C%20I%20would%20like%20to%20schedule%20a%20site%20visit%20in%20Agrabad%20CDA." target="_blank" rel="noopener" class="btn btn-secondary">
-              <span class="material-symbols-outlined" style="font-size: 16px; color: #25D366;">chat</span>
-              <span id="spaces-visit-cta">BOOK A PRIVATE SITE VISIT</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="home-spaces-grid" id="home-spaces-container">
-          <article class="home-space-card">
-            <div class="home-space-img-box">
-              <img src="assets/living/living.jpg" alt="Natural daylight in living space" class="home-space-img" loading="lazy" width="600" height="375">
-              <span class="home-space-tag">LIGHT</span>
-            </div>
-            <div class="home-space-info">
-              <h3 class="home-space-title">LET THE DAY IN.</h3>
-              <p class="home-space-desc">Generous openings and thoughtful orientation bring natural daylight deep into the living spaces, creating interiors that feel open, calm and alive.</p>
-            </div>
-          </article>
-
-          <article class="home-space-card">
-            <div class="home-space-img-box">
-              <img src="assets/living/balcony.jpg" alt="Coastal airflow deep sheltered balcony" class="home-space-img" loading="lazy" width="600" height="375">
-              <span class="home-space-tag">AIR</span>
-            </div>
-            <div class="home-space-info">
-              <h3 class="home-space-title">LET THE CITY BREATHE OUT.</h3>
-              <p class="home-space-desc">Thoughtful planning and open aspects encourage natural airflow, bringing Chattogram's coastal breeze into the home.</p>
-            </div>
-          </article>
-
-          <article class="home-space-card">
-            <div class="home-space-img-box">
-              <img src="assets/living/master.jpg" alt="Peaceful private master sanctuary" class="home-space-img" loading="lazy" width="600" height="375">
-              <span class="home-space-tag">PRIVACY</span>
-            </div>
-            <div class="home-space-info">
-              <h3 class="home-space-title">SPACE TO LIVE YOUR OWN WAY.</h3>
-              <p class="home-space-desc">Fewer residences per floor create a quieter environment and a stronger sense of personal space.</p>
-            </div>
-          </article>
-
-          <article class="home-space-card">
-            <div class="home-space-img-box">
-              <img src="assets/living/dining.jpg" alt="Family living and dining gathering space" class="home-space-img" loading="lazy" width="600" height="375">
-              <span class="home-space-tag">TOGETHERNESS</span>
-            </div>
-            <div class="home-space-info">
-              <h3 class="home-space-title">THE HEART OF THE HOME.</h3>
-              <p class="home-space-desc">Living and dining spaces are designed around the moments that matter — family dinners, celebrations, conversations and ordinary evenings that become treasured memories.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         5. ARCHITECTURE (QUIET ARCHITECTURE. STRONG CHARACTER.)
-         ========================================================================== -->
-    <section class="section" id="architecture" style="background-color: var(--color-ivory-light); border-top: 1px solid var(--color-stone); border-bottom: 1px solid var(--color-stone);">
-      <div class="section-inner" style="text-align: center; max-width: 920px; margin: 0 auto;">
-        <div class="section-meta" style="justify-content: center;">
-          <span class="section-num">05</span>
-          <span class="section-meta-divider">/</span>
-          <span class="section-tag">ARCHITECTURE</span>
-        </div>
-        <h2 class="display-hero" style="font-size: clamp(2rem, 3.8vw, 3.25rem); margin-top: 1rem; color: var(--color-charcoal);">
-          QUIET ARCHITECTURE. STRONG CHARACTER.
-        </h2>
-        <p class="body-lg" style="margin-top: 1.5rem; color: var(--color-charcoal-dim); font-size: 1.15rem; line-height: 1.85;">
-          We don't design buildings to chase trends. We design them to age gracefully.<br>
-          Clean proportions, considered facades, natural light and practical layouts create residences that feel contemporary today without becoming dated tomorrow.
-        </p>
-        <div class="quote-statement-banner" style="margin-top: 2.5rem;">
-          <p class="quote-statement-text">
-            "ARCHITECTURE SHOULD NOT ONLY BE SEEN. IT SHOULD BE FELT."
+          <h2 class="headline-xl" id="process-title">ONE TEAM. ONE PROCESS.</h2>
+          <p class="body-lg" style="color: var(--color-charcoal-dim); margin-top: 0.5rem;" id="process-subline">
+            A simpler way to build.
+          </p>
+          <p class="body-sm" style="color: var(--color-charcoal-dim); max-width: 70ch; margin-top: 0.25rem;">
+            From initial site discovery to keys handed over at the doorway, our disciplined 6-stage framework eliminates ambiguity and budget surprises.
           </p>
         </div>
+
+        <!-- 6 Process Stages Grid -->
+        <div class="process-stages-grid" id="process-stages-container">
+          <!-- Dynamically populated via app.js -->
+        </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         6. HOW WE BUILD (FROM LAND TO LIVING)
+         05. SELECTED WORK & PROJECTS IN PROGRESS
          ========================================================================== -->
-    <section class="section" id="how-we-build" style="background-color: var(--color-white);">
+    <section class="section" id="projects" style="background-color: var(--color-white);">
       <div class="section-inner">
         <div class="section-header">
           <div class="section-meta">
-            <span class="section-num">06</span>
+            <span class="section-num">05</span>
             <span class="section-meta-divider">/</span>
-            <span class="section-tag">HOW WE BUILD</span>
+            <span class="section-tag" id="projects-tag">SELECTED WORK</span>
           </div>
-          <h2 class="headline-xl">FROM LAND TO LIVING.</h2>
-          <p class="body-md" style="max-width: 65ch; color: var(--color-charcoal-dim); margin-top: 0.5rem;">
-            A building is only as strong as the discipline behind it. Our development process brings together land selection, legal verification, architectural planning, structural engineering, construction supervision and final handover.
+          <h2 class="headline-xl" id="projects-title">BUILDING IDEAS INTO REAL SPACES.</h2>
+          <p class="body-md" style="color: var(--color-charcoal-dim); max-width: 75ch; margin-top: 0.5rem;" id="projects-desc">
+            Explore our current construction sites, design-to-build projects, and active residential developments across Chattogram. We present verified project realities without inflated claims.
           </p>
         </div>
 
-        <div class="timeline-stages-grid" id="timeline-container">
-          <div class="timeline-stage-card">
-            <div>
-              <span class="timeline-stage-num">01</span>
-              <h3 class="timeline-stage-title">LAND</h3>
-              <p class="timeline-stage-sub">START WITH THE RIGHT FOUNDATION.</p>
-              <p class="timeline-stage-desc">We carefully evaluate location, road access, land configuration and legal documentation before development begins.</p>
-            </div>
-            <div class="timeline-stage-spec">Title Search · Sub-Kabala Verification · Soil Testing</div>
-          </div>
+        <!-- Category Filters -->
+        <div class="living-tabs" style="margin-bottom: 2rem; justify-content: flex-start; overflow-x: auto;">
+          <button class="living-tab-btn active" onclick="filterProjectsCategory('ALL')">ALL WORK</button>
+          <button class="living-tab-btn" onclick="filterProjectsCategory('RESIDENTIAL')">RESIDENTIAL</button>
+          <button class="living-tab-btn" onclick="filterProjectsCategory('COMMERCIAL')">COMMERCIAL</button>
+          <button class="living-tab-btn" onclick="filterProjectsCategory('INTERIOR')">INTERIOR</button>
+          <button class="living-tab-btn" onclick="filterProjectsCategory('RENOVATION')">RENOVATION</button>
+          <button class="living-tab-btn" onclick="filterProjectsCategory('CONSTRUCTION')">CONSTRUCTION</button>
+          <button class="living-tab-btn" onclick="filterProjectsCategory('DEVELOPMENT')">DEVELOPMENT</button>
+        </div>
 
-          <div class="timeline-stage-card">
-            <div>
-              <span class="timeline-stage-num">02</span>
-              <h3 class="timeline-stage-title">ARCHITECTURE</h3>
-              <p class="timeline-stage-sub">PLAN FOR PEOPLE, NOT JUST FLOOR AREA.</p>
-              <p class="timeline-stage-desc">Our layouts prioritize natural light, ventilation, privacy and practical family living.</p>
-            </div>
-            <div class="timeline-stage-spec">Strictly 2 Units/Floor · 3-Side Ventilation · Daylit Layouts</div>
-          </div>
+        <!-- Projects Rows List -->
+        <div class="projects-list" id="projects-list-container">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
 
-          <div class="timeline-stage-card">
-            <div>
-              <span class="timeline-stage-num">03</span>
-              <h3 class="timeline-stage-title">ENGINEERING</h3>
-              <p class="timeline-stage-sub">DESIGN FOR THE YEARS AHEAD.</p>
-              <p class="timeline-stage-desc">Structural systems, materials and construction methods are selected and supervised with long-term durability in mind.</p>
-            </div>
-            <div class="timeline-stage-spec">BNBC Seismic Design · High-Yield 72.5 Rebar · CDA Sanction</div>
+    <!-- ==========================================================================
+         06. CONSTRUCTION SECTION — GOOD DESIGN IS ONLY THE BEGINNING.
+         ========================================================================== -->
+    <section class="section evidence-section" id="construction">
+      <div class="section-inner">
+        <div class="section-header">
+          <div class="section-meta">
+            <span class="section-num" style="color: var(--color-champagne);">06</span>
+            <span class="section-meta-divider" style="color: rgba(244,240,232,0.4);">/</span>
+            <span class="section-tag" style="color: var(--color-champagne);" id="construction-tag">CONSTRUCTION RIGOR</span>
           </div>
-
-          <div class="timeline-stage-card">
-            <div>
-              <span class="timeline-stage-num">04</span>
-              <h3 class="timeline-stage-title">CONSTRUCTION</h3>
-              <p class="timeline-stage-sub">BUILD WITH DISCIPLINE.</p>
-              <p class="timeline-stage-desc">Construction progresses through structured stages, documentation and on-site supervision — keeping the process visible and accountable.</p>
-            </div>
-            <div class="timeline-stage-spec">On-Site Resident Engineer · Batch Lab Reports · Transparent Auditing</div>
+          <h2 class="headline-xl" style="color: var(--color-ivory);" id="construction-title">
+            GOOD DESIGN IS ONLY THE BEGINNING.
+          </h2>
+          <div style="max-width: 75ch; margin-top: 1rem;">
+            <p class="body-lg" style="color: rgba(244,240,232,0.9); line-height: 1.7;" id="construction-text-1">
+              A beautiful drawing is not a finished building.
+            </p>
+            <p class="body-md" style="color: rgba(244,240,232,0.75); line-height: 1.7; margin-top: 0.5rem;" id="construction-text-2">
+              The real test begins on site. Our construction approach focuses on proper execution, coordination, material quality, workmanship and attention to the details that determine how a building performs over time.
+            </p>
           </div>
+        </div>
 
-          <div class="timeline-stage-card">
-            <div>
-              <span class="timeline-stage-num">05</span>
-              <h3 class="timeline-stage-title">HANDOVER</h3>
-              <p class="timeline-stage-sub">FROM OUR HANDS TO YOUR HOME.</p>
-              <p class="timeline-stage-desc">The final stage is not simply handing over a key. It is delivering a place prepared for the life that comes next.</p>
-            </div>
-            <div class="timeline-stage-spec">Turnkey Finishing · Society Governance Formation · Perpetual Support</div>
+        <!-- Construction Flow Bar -->
+        <div class="construction-flow-bar" id="construction-flow-container">
+          <!-- Dynamically populated or rendered via app.js -->
+        </div>
+
+        <!-- Engineering Standards & On-Site Verification Grid -->
+        <div class="evidence-grid" style="margin-top: 2rem;">
+          <div class="evidence-card">
+            <span class="tech-spec-code text-champagne">[STANDARD_01]</span>
+            <h3 class="headline-sm" style="color: var(--color-ivory); margin: 0.5rem 0;">BNBC 2020 &amp; SEISMIC RESILIENCE</h3>
+            <p class="body-sm" style="color: rgba(244,240,232,0.8); line-height: 1.7;">
+              Engineered in consultation with senior structural consultants to withstand Zone 2 seismic forces and coastal wind loads according to BNBC 2020 criteria.
+            </p>
+          </div>
+          <div class="evidence-card">
+            <span class="tech-spec-code text-champagne">[STANDARD_02]</span>
+            <h3 class="headline-sm" style="color: var(--color-ivory); margin: 0.5rem 0;">MATERIALS &amp; BATCH TESTING</h3>
+            <p class="body-sm" style="color: rgba(244,240,232,0.8); line-height: 1.7;">
+              Only certified 60/72.5-grade steel rebar and tested Portland composite cement batches. Every concrete casting phase is backed by standard cylinder crush testing.
+            </p>
+          </div>
+          <div class="evidence-card">
+            <span class="tech-spec-code text-champagne">[STANDARD_03]</span>
+            <h3 class="headline-sm" style="color: var(--color-ivory); margin: 0.5rem 0;">ON-SITE SUPERVISION</h3>
+            <p class="body-sm" style="color: rgba(244,240,232,0.8); line-height: 1.7;">
+              Continuous on-site engineer presence ensures shuttering alignment, rebar spacing, vibration consolidation, and water-curing schedules are strictly enforced.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         7. ENGINEERING & ON-SITE (BEAUTY ABOVE. DISCIPLINE BENEATH.)
+         07. INTERIOR SECTION — FROM STRUCTURE TO SPACE.
          ========================================================================== -->
-    <section class="section evidence-section" id="engineering">
+    <section class="section" id="interiors" style="background-color: var(--color-ivory-light);">
       <div class="section-inner">
         <div class="section-header">
           <div class="section-meta">
             <span class="section-num">07</span>
             <span class="section-meta-divider">/</span>
-            <span class="section-tag" style="color: var(--color-champagne);">ENGINEERING</span>
+            <span class="section-tag" id="interior-tag">SPATIAL EXECUTION</span>
           </div>
-          <h2 class="headline-xl" style="color: var(--color-ivory);">BEAUTY ABOVE. DISCIPLINE BENEATH.</h2>
-          <p class="body-md" style="max-width: 65ch; color: rgba(244,240,232,0.85); margin-top: 0.5rem;">
-            Good architecture attracts the eye. Good engineering earns trust. Our developments are planned with structural performance, material quality and local environmental conditions in mind. Where applicable, projects follow relevant BNBC and CDA requirements and incorporate professionally engineered structural systems.
-          </p>
-          <div class="quote-statement-banner" style="margin-top: 1.5rem; background: rgba(255,255,255,0.06); border-left-color: var(--color-champagne);">
-            <p class="quote-statement-text" style="color: var(--color-champagne); font-size: clamp(1rem, 1.8vw, 1.35rem);">
-              "THE MOST IMPORTANT PART OF A BUILDING IS OFTEN THE PART YOU NEVER SEE."
+          <h2 class="headline-xl" id="interior-title">FROM STRUCTURE TO SPACE.</h2>
+          <div style="max-width: 75ch; margin-top: 1rem;">
+            <p class="body-lg" style="color: var(--color-charcoal); line-height: 1.7;" id="interior-text-1">
+              We believe construction and interior should not feel like two completely separate projects.
+            </p>
+            <p class="body-md" style="color: var(--color-charcoal-dim); line-height: 1.7; margin-top: 0.5rem;" id="interior-text-2">
+              Our team carries the same design thinking from the building structure into the spaces people actually experience — balancing natural lighting, custom joinery, ergonomic flow, and durable materials.
             </p>
           </div>
         </div>
 
-        <!-- ON-SITE ACCOUNTABILITY SHOWCASE -->
-        <div style="margin-top: 3rem;">
-          <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
-            <div>
-              <span class="label-caps" style="color: var(--color-champagne);">ON-SITE</span>
-              <h3 class="headline-lg" style="color: var(--color-ivory); margin-top: 0.25rem;">WHAT WE PROMISE, WE BUILD.</h3>
-              <p class="body-sm" style="color: rgba(244,240,232,0.8); max-width: 55ch; margin-top: 0.25rem;">
-                A render can show you a vision. A construction site shows you the reality. Follow the progress of our developments through actual site documentation — from foundations and structural work to finishing and handover.
-              </p>
-            </div>
-            <a href="https://wa.me/8801749349299?text=Hello%20BEC%2C%20please%20share%20the%20latest%20on-site%20construction%20progress%20documentation%20for%20Agrabad%20CDA." target="_blank" rel="noopener" class="btn btn-champagne">
-              <span class="material-symbols-outlined" style="font-size: 16px;">visibility</span>
-              <span>VIEW SITE PROGRESS</span>
-            </a>
+        <!-- 6 Interior Categories Grid -->
+        <div class="interior-cat-grid" id="interior-cat-container">
+          <!-- Dynamically populated via app.js -->
+        </div>
+
+        <div style="margin-top: 2.5rem; padding: 2rem; background: var(--color-white); border: 1px solid var(--color-stone); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+          <div>
+            <span class="tech-spec-code text-champagne">[INTERIOR CONSULTATION]</span>
+            <h3 class="headline-sm" style="color: var(--color-charcoal); margin-top: 0.25rem;">Have an existing home or office needing an overhaul?</h3>
+            <p class="body-sm" style="color: var(--color-charcoal-dim); margin-top: 0.25rem;">
+              We handle space planning, custom cabinetry, acoustic lighting, and turnkey execution.
+            </p>
           </div>
-
-          <div class="evidence-grid">
-            <!-- Verified On-site Image -->
-            <div class="evidence-photo-box">
-              <img src="assets/projects/parcel-site.jpg" alt="BEC Agrabad CDA On-Site Construction Works and Billboard">
-              <div class="evidence-caption-box">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span class="label-caps" style="color: var(--color-champagne);">REAL PROJECTS. REAL PROGRESS. REAL ACCOUNTABILITY.</span>
-                  <span class="label-numeric" style="color: rgba(244,240,232,0.6); font-size: 0.7rem;">AGRABAD CDA SITE</span>
-                </div>
-                <p class="body-sm" style="color: rgba(244,240,232,0.9); margin-top: 4px;">
-                  Sub-structure foundation works, tested structural grade rebar piles, and official BEC project site office.
-                </p>
-              </div>
-            </div>
-
-            <!-- Engineering Discipline Assurances -->
-            <div class="engineering-pillars-list">
-              <div class="engineering-pillar-item">
-                <div class="engineering-pillar-head">
-                  <span class="material-symbols-outlined engineering-pillar-icon">gavel</span>
-                  <h3 class="engineering-pillar-title">Direct Sub-Registry Share (ভূমির সাব-কবলা)</h3>
-                </div>
-                <p class="engineering-pillar-desc">
-                  Every buyer receives direct registered land deed proportion prior to superstructure expenditure, eliminating legal vulnerability.
-                </p>
-              </div>
-
-              <div class="engineering-pillar-item">
-                <div class="engineering-pillar-head">
-                  <span class="material-symbols-outlined engineering-pillar-icon">domain_verification</span>
-                  <h3 class="engineering-pillar-title">CDA Approved Structural Plan</h3>
-                </div>
-                <p class="engineering-pillar-desc">
-                  Architectural approvals in full compliance with Chittagong Development Authority (CDA) setbacks, FAR calculations, and fire safety codes.
-                </p>
-              </div>
-
-              <div class="engineering-pillar-item">
-                <div class="engineering-pillar-head">
-                  <span class="material-symbols-outlined engineering-pillar-icon">engineering</span>
-                  <h3 class="engineering-pillar-title">Seismic Zone 2 Engineered</h3>
-                </div>
-                <p class="engineering-pillar-desc">
-                  Calculated and supervised in partnership with Mahi Engineering Services using high-yield 72.5 grade TMT rebar and laboratory-tested concrete batches.
-                </p>
-              </div>
-
-              <div class="engineering-pillar-item">
-                <div class="engineering-pillar-head">
-                  <span class="material-symbols-outlined engineering-pillar-icon">savings</span>
-                  <h3 class="engineering-pillar-title">Supervised Owner Cost Basis (৪০% সাশ্রয়ী)</h3>
-                </div>
-                <p class="engineering-pillar-desc">
-                  Monthly audited construction billing without opaque corporate margins. You build at true contractor procurement rate.
-                </p>
-              </div>
-            </div>
-          </div>
+          <a href="#contact" class="btn btn-secondary btn-sm">
+            <span>REQUEST INTERIOR PORTFOLIO</span>
+            <span class="material-symbols-outlined btn-arrow-icon">arrow_forward</span>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         8. OUR STANDARD (DETAILS MATTER.)
+         08. TRUST SECTION — WHY CLIENTS CHOOSE BEC
          ========================================================================== -->
-    <section class="section" style="background-color: var(--color-ivory);">
+    <section class="section" id="trust" style="background-color: var(--color-charcoal); color: var(--color-ivory);">
       <div class="section-inner">
         <div class="section-header">
           <div class="section-meta">
-            <span class="section-num">08</span>
-            <span class="section-meta-divider">/</span>
-            <span class="section-tag">OUR STANDARD</span>
+            <span class="section-num" style="color: var(--color-champagne);">08</span>
+            <span class="section-meta-divider" style="color: rgba(244,240,232,0.4);">/</span>
+            <span class="section-tag" style="color: var(--color-champagne);" id="trust-tag">CREDIBILITY &amp; ETHOS</span>
           </div>
-          <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
-            <div>
-              <h2 class="headline-xl">DETAILS MATTER.</h2>
-              <p class="body-md" style="max-width: 65ch; color: var(--color-charcoal-dim); margin-top: 0.5rem;">
-                From the entrance you experience every day to the infrastructure that quietly works behind the scenes, we believe quality is found in the details. Thoughtful parking. Reliable vertical transportation. Water infrastructure. Power backup. Security. Common spaces. Every element contributes to the experience of living well.
-              </p>
-            </div>
-            <a href="https://wa.me/8801749349299?text=Hello%20BEC%2C%20please%20send%20the%20full%20materials%20and%20amenity%20specification%20sheet." target="_blank" rel="noopener" class="btn btn-secondary">
-              <span class="material-symbols-outlined" style="font-size: 16px; color: #25D366;">chat</span>
-              <span>DOWNLOAD SPEC SHEET</span>
-            </a>
-          </div>
+          <h2 class="headline-xl" style="color: var(--color-ivory);" id="trust-title">WHY CLIENTS CHOOSE BEC</h2>
+          <p class="body-md" style="color: rgba(244,240,232,0.75); max-width: 75ch; margin-top: 0.5rem;" id="trust-lead">
+            Credible engineering grounded in real accountability — without hyperbole, inflated claims, or contractor passing.
+          </p>
         </div>
 
-        <div class="amenities-grid" id="amenities-container">
-          <article class="amenity-card">
-            <div class="amenity-img-box">
-              <img src="assets/amenities/lift.jpg" alt="Modern luxury passenger elevator and marble lobby" class="amenity-img" loading="lazy" width="400" height="250">
-              <span class="amenity-tag-overlay">
-                <span class="material-symbols-outlined">elevator</span>
-                <span>VERTICAL TRANSPORTATION</span>
-              </span>
-            </div>
-            <div class="amenity-info">
-              <h3 class="amenity-title">High-Speed 8'x8' ARD Lift</h3>
-              <p class="amenity-desc">Spacious passenger elevator equipped with Automatic Rescue Device (ARD) and emergency battery backup to prevent entrapment during grid interruptions.</p>
-            </div>
-          </article>
-
-          <article class="amenity-card">
-            <div class="amenity-img-box">
-              <img src="assets/amenities/parking.jpg" alt="Covered well-lit residential parking garage bays" class="amenity-img" loading="lazy" width="400" height="250">
-              <span class="amenity-tag-overlay">
-                <span class="material-symbols-outlined">directions_car</span>
-                <span>THOUGHTFUL PARKING</span>
-              </span>
-            </div>
-            <div class="amenity-info">
-              <h3 class="amenity-title">Covered Ground Parking</h3>
-              <p class="amenity-desc">Generous individual parking bays with smooth vehicular turning radiuses, non-skid surface flooring, drainage curbs, and 24/7 security guard post.</p>
-            </div>
-          </article>
-
-          <article class="amenity-card">
-            <div class="amenity-img-box">
-              <img src="assets/amenities/rooftop.jpg" alt="Landscaped rooftop terrace with pergolas and seating area" class="amenity-img" loading="lazy" width="400" height="250">
-              <span class="amenity-tag-overlay">
-                <span class="material-symbols-outlined">park</span>
-                <span>COMMON SPACES</span>
-              </span>
-            </div>
-            <div class="amenity-info">
-              <h3 class="amenity-title">Landscaped Rooftop (ছাদ বাগান)</h3>
-              <p class="amenity-desc">Communal rooftop terrace sanctuary featuring shaded pergolas, lush tropical planters, walking pavers, and unhindered Chattogram skyline vistas.</p>
-            </div>
-          </article>
-
-          <article class="amenity-card">
-            <div class="amenity-img-box">
-              <img src="assets/amenities/prayer.jpg" alt="Serene prayer enclave and quiet community meeting space" class="amenity-img" loading="lazy" width="400" height="250">
-              <span class="amenity-tag-overlay">
-                <span class="material-symbols-outlined">mosque</span>
-                <span>COMMUNITY ENCLAVE</span>
-              </span>
-            </div>
-            <div class="amenity-info">
-              <h3 class="amenity-title">Prayer Enclave & Community Space</h3>
-              <p class="amenity-desc">A peaceful, air-conditioned prayer enclave on the ground level, paired with a versatile multi-purpose community room for building society assemblies.</p>
-            </div>
-          </article>
-
-          <article class="amenity-card">
-            <div class="amenity-img-box">
-              <img src="assets/amenities/reservoirs.jpg" alt="Engineered reinforced concrete water reservoirs and commercial pump system" class="amenity-img" loading="lazy" width="400" height="250">
-              <span class="amenity-tag-overlay">
-                <span class="material-symbols-outlined">water_drop</span>
-                <span>WATER INFRASTRUCTURE</span>
-              </span>
-            </div>
-            <div class="amenity-info">
-              <h3 class="amenity-title">Dual Concrete Reservoirs</h3>
-              <p class="amenity-desc">Massive underground water reservoir combined with reinforced overhead rooftop tanks and dual commercial booster pumps ensuring 24/7 unhindered water pressure.</p>
-            </div>
-          </article>
-
-          <article class="amenity-card">
-            <div class="amenity-img-box">
-              <img src="assets/amenities/security.jpg" alt="High-definition security surveillance camera and soundproof backup generator" class="amenity-img" loading="lazy" width="400" height="250">
-              <span class="amenity-tag-overlay">
-                <span class="material-symbols-outlined">security</span>
-                <span>SECURITY & POWER BACKUP</span>
-              </span>
-            </div>
-            <div class="amenity-info">
-              <h3 class="amenity-title">24/7 CCTV & Standby Generator</h3>
-              <p class="amenity-desc">HD security surveillance covering boundary perimeter, entry gate, lift lobbies, and parking bays, paired with an automatic soundproof standby generator.</p>
-            </div>
-          </article>
+        <!-- 6 Trust Pillars Grid -->
+        <div class="trust-grid" id="trust-grid-container">
+          <!-- Dynamically populated via app.js -->
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         9. COMMUNITY, PHILOSOPHY, DIFFERENCE & MANIFESTO
+         09. LEADERSHIP SECTION — EXPERIENCE BEHIND THE COMPANY.
          ========================================================================== -->
-    <section class="section philosophy-section" id="philosophy">
+    <section class="section" id="leadership" style="background-color: var(--color-white);">
       <div class="section-inner">
-        <!-- COMMUNITY HIGHLIGHT -->
-        <div style="margin-bottom: 4rem;">
+        <div class="section-header">
           <div class="section-meta">
-            <span class="section-num" style="color: var(--color-champagne);">09</span>
-            <span class="section-meta-divider" style="color: rgba(255,255,255,0.3);">/</span>
-            <span class="section-tag" style="color: var(--color-champagne);">COMMUNITY & PURPOSE</span>
+            <span class="section-num">09</span>
+            <span class="section-meta-divider">/</span>
+            <span class="section-tag" id="leadership-tag">LEADERSHIP &amp; GOVERNANCE</span>
           </div>
-          <div class="community-feature-card">
-            <h2 class="display-hero" style="font-size: clamp(1.85rem, 3.5vw, 3rem); color: var(--color-ivory);">
-              FEWER HOMES. MORE SENSE OF COMMUNITY.
-            </h2>
-            <p class="body-lg" style="color: rgba(244,240,232,0.85); max-width: 68ch; margin-top: 1rem; line-height: 1.8;">
-              A building should never feel like a crowded stack of apartments. Our residential developments are intentionally planned around a more comfortable number of families, creating a stronger sense of privacy, familiarity and community.
-            </p>
-            <div class="quote-statement-banner" style="margin-top: 1.75rem; background: rgba(0,0,0,0.25); border-left-color: var(--color-champagne);">
-              <p class="quote-statement-text" style="color: var(--color-champagne); font-size: clamp(1.05rem, 1.8vw, 1.35rem);">
-                "A GOOD ADDRESS IS NOT ONLY WHERE YOU LIVE. IT IS WHO YOU COME HOME TO."
-              </p>
-            </div>
-          </div>
+          <h2 class="headline-xl" id="leadership-title">EXPERIENCE BEHIND THE COMPANY.</h2>
         </div>
 
-        <!-- OUR PHILOSOPHY: BUILD WITH PURPOSE -->
-        <div style="margin-bottom: 4rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 3rem;">
-          <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
-            <div>
-              <span class="label-caps" style="color: var(--color-champagne);">OUR PHILOSOPHY</span>
-              <h2 class="headline-xl" style="color: var(--color-ivory); margin-top: 0.25rem;">BUILD WITH PURPOSE.</h2>
-              <p class="body-md" style="max-width: 65ch; color: rgba(244, 240, 232, 0.85); margin-top: 0.5rem;">
-                We don't believe bigger automatically means better. We believe better planning creates better living.<br>
-                Our developments are designed around the things that matter every day:
+        <div class="editorial-grid" style="align-items: center;">
+          <div>
+            <p class="body-lg" style="color: var(--color-charcoal); line-height: 1.8; margin-bottom: 1.25rem;" id="leadership-text-1">
+              BEC may be a new name in its present form, but the people behind it are not new to construction.
+            </p>
+            <p class="editorial-desc" id="leadership-text-2">
+              With more than 15 years of industry experience, the company’s leadership brings practical knowledge of construction, project execution, site realities and the decisions that turn plans into finished spaces.
+            </p>
+            <div class="quote-statement-banner" style="background-color: var(--color-ivory-light); border-left: 2px solid var(--color-champagne); margin: 1.5rem 0;">
+              <p class="body-md" style="color: var(--color-charcoal); font-weight: 500;" id="leadership-goal">
+                "The goal is simple: Build a company that combines the experience of the past with a more modern way of working."
               </p>
-              <div style="display: flex; gap: 1.25rem; flex-wrap: wrap; margin-top: 1rem;">
-                <span class="label-caps" style="color: var(--color-champagne); background: rgba(200, 169, 126, 0.15); padding: 0.35rem 0.85rem; border-radius: 2px;">LIGHT</span>
-                <span class="label-caps" style="color: var(--color-champagne); background: rgba(200, 169, 126, 0.15); padding: 0.35rem 0.85rem; border-radius: 2px;">AIR</span>
-                <span class="label-caps" style="color: var(--color-champagne); background: rgba(200, 169, 126, 0.15); padding: 0.35rem 0.85rem; border-radius: 2px;">PRIVACY</span>
-                <span class="label-caps" style="color: var(--color-champagne); background: rgba(200, 169, 126, 0.15); padding: 0.35rem 0.85rem; border-radius: 2px;">SPACE</span>
-                <span class="label-caps" style="color: var(--color-champagne); background: rgba(200, 169, 126, 0.15); padding: 0.35rem 0.85rem; border-radius: 2px;">OWNERSHIP</span>
+            </div>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+              <a href="#contact" class="btn btn-primary" id="btn-meet-team">
+                <span>MEET THE TEAM</span>
+                <span class="material-symbols-outlined btn-arrow-icon">arrow_forward</span>
+              </a>
+              <a href="https://wa.me/8801749349299" target="_blank" rel="noopener" class="btn btn-secondary">
+                <span class="material-symbols-outlined" style="font-size: 18px;">chat</span>
+                <span>DIRECT WHATSAPP</span>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div class="leadership-card">
+              <span class="tech-spec-code text-champagne">[GOVERNANCE]</span>
+              <h3 class="headline-md" style="color: var(--color-ivory); margin-top: 0.5rem;">PRACTICAL LEADERSHIP IN CHATTOGRAM</h3>
+              <p class="body-sm" style="color: rgba(244,240,232,0.8); line-height: 1.7; margin-top: 0.75rem;">
+                Direct principal involvement at every construction phase ensures that decisions are made by experienced technical builders rather than distant corporate intermediaries.
+              </p>
+              <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid rgba(216,209,197,0.2); display: flex; justify-content: space-between; align-items: center;">
+                <span class="label-caps" style="color: var(--color-champagne);">TECHNICAL INVOLVEMENT</span>
+                <span class="tech-spec-code" style="color: var(--color-ivory);">FROM SOIL TO FINISH</span>
               </div>
-              <p class="body-sm" style="color: rgba(244,240,232,0.7); margin-top: 1rem; max-width: 60ch;">
-                From the orientation of a building to the number of residences on each floor, every decision should serve the people who will eventually live there.
-              </p>
             </div>
           </div>
-        </div>
-
-        <!-- THE BEC ADVANTAGE: WHY BEC? -->
-        <div style="margin-bottom: 4rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 3rem;">
-          <div style="margin-bottom: 2rem;">
-            <span class="label-caps" style="color: var(--color-champagne);">THE BEC ADVANTAGE</span>
-            <h3 class="headline-lg" style="color: var(--color-ivory); margin-top: 0.25rem;">WHY BEC?</h3>
-            <p class="body-md" style="color: rgba(244,240,232,0.85); margin-top: 0.25rem;">
-              Because a home deserves more than a sales pitch. It deserves:
-            </p>
-          </div>
-
-          <div class="difference-grid">
-            <div class="difference-card">
-              <span class="material-symbols-outlined" style="color: var(--color-champagne); font-size: 28px;">landscape</span>
-              <h4 style="font-family: var(--font-headline); font-size: 1.15rem; color: var(--color-ivory); margin-top: 0.75rem; letter-spacing: 0.05em;">CAREFULLY SELECTED LAND</h4>
-              <p class="body-sm" style="color: rgba(244,240,232,0.75); margin-top: 0.5rem; line-height: 1.6;">Places chosen with long-term residential value in mind.</p>
-            </div>
-
-            <div class="difference-card">
-              <span class="material-symbols-outlined" style="color: var(--color-champagne); font-size: 28px;">architecture</span>
-              <h4 style="font-family: var(--font-headline); font-size: 1.15rem; color: var(--color-ivory); margin-top: 0.75rem; letter-spacing: 0.05em;">THOUGHTFUL ARCHITECTURE</h4>
-              <p class="body-sm" style="color: rgba(244,240,232,0.75); margin-top: 0.5rem; line-height: 1.6;">Spaces designed around light, air, privacy and family life.</p>
-            </div>
-
-            <div class="difference-card">
-              <span class="material-symbols-outlined" style="color: var(--color-champagne); font-size: 28px;">construction</span>
-              <h4 style="font-family: var(--font-headline); font-size: 1.15rem; color: var(--color-ivory); margin-top: 0.75rem; letter-spacing: 0.05em;">ENGINEERING DISCIPLINE</h4>
-              <p class="body-sm" style="color: rgba(244,240,232,0.75); margin-top: 0.5rem; line-height: 1.6;">Structural and construction decisions made with long-term performance in mind.</p>
-            </div>
-
-            <div class="difference-card">
-              <span class="material-symbols-outlined" style="color: var(--color-champagne); font-size: 28px;">verified_user</span>
-              <h4 style="font-family: var(--font-headline); font-size: 1.15rem; color: var(--color-ivory); margin-top: 0.75rem; letter-spacing: 0.05em;">TRANSPARENT PROCESS</h4>
-              <p class="body-sm" style="color: rgba(244,240,232,0.75); margin-top: 0.5rem; line-height: 1.6;">Clear information about land, construction and development.</p>
-            </div>
-
-            <div class="difference-card">
-              <span class="material-symbols-outlined" style="color: var(--color-champagne); font-size: 28px;">link</span>
-              <h4 style="font-family: var(--font-headline); font-size: 1.15rem; color: var(--color-ivory); margin-top: 0.75rem; letter-spacing: 0.05em;">DIRECT CONNECTION</h4>
-              <p class="body-sm" style="color: rgba(244,240,232,0.75); margin-top: 0.5rem; line-height: 1.6;">A more direct relationship between the homeowner, the land and the development process.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- MANIFESTO -->
-        <div class="manifesto-monument-box">
-          <span class="label-caps" style="color: var(--color-champagne);">MANIFESTO</span>
-          <h3 class="manifesto-monument-title">WE BELIEVE A HOME SHOULD LAST LONGER THAN A TREND.</h3>
-          <div class="manifesto-monument-body">
-            <p>• We believe land matters.</p>
-            <p>• We believe architecture should serve life.</p>
-            <p>• We believe natural light should never be treated as a luxury.</p>
-            <p>• We believe privacy is part of good design.</p>
-            <p>• We believe engineering deserves as much attention as appearance.</p>
-            <p>• We believe ownership should be clear.</p>
-            <p>• And we believe the best homes are not built simply to be sold.</p>
-          </div>
-          <p class="manifesto-climax-text">THEY ARE BUILT TO BE LIVED IN.</p>
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         10. LOCATION & AGRABAD CDA (INTERACTIVE CARTOGRAPHY)
+         10. CARTOGRAPHY & OFFICES
          ========================================================================== -->
     <section class="section" id="cartography" style="background-color: var(--color-stone-light);">
       <div class="section-inner">
@@ -1021,241 +695,198 @@
           <div class="section-meta">
             <span class="section-num">10</span>
             <span class="section-meta-divider">/</span>
-            <span class="section-tag">LOCATION & CONNECTIVITY</span>
+            <span class="section-tag" id="cartography-tag">LOCATIONS &amp; OFFICES</span>
           </div>
-          <h2 class="headline-xl">LOCATION IS MORE THAN A PIN ON A MAP.</h2>
-          <p class="body-md" style="max-width: 68ch; color: var(--color-charcoal-dim); margin-top: 0.5rem;">
-            It is the road you take home. The school your children attend. The hospital you can reach when you need it. The places where you work, shop, meet and spend your evenings. That's why we look beyond the plot itself — considering accessibility, surroundings, future relevance and everyday convenience.
+          <h2 class="headline-xl" id="cartography-title">GROUNDED IN CHATTOGRAM.</h2>
+          <p class="body-md" style="color: var(--color-charcoal-dim); max-width: 75ch; margin-top: 0.5rem;">
+            With operational hubs across Halishahar and Pahartali, and active project sites in Agrabad CDA, our engineering teams are always close to the sites we build.
           </p>
-
-          <div style="margin-top: 2rem; padding: 1.5rem; background: var(--color-ivory); border-left: 3px solid var(--color-champagne-dark); border-radius: 4px;">
-            <span class="label-caps" style="color: var(--color-champagne-dark);">ROOTED IN CHATTOGRAM.</span>
-            <h3 class="headline-sm" style="margin-top: 0.25rem;">AGRABAD CDA RESIDENTIAL AREA</h3>
-            <p class="body-sm" style="color: var(--color-charcoal-dim); margin-top: 0.5rem; max-width: 60ch;">
-              Our current residential developments are centered around the Agrabad CDA residential area — a location with established roads, connectivity and access to important parts of the city.
-            </p>
-            <p class="label-caps" style="color: var(--color-charcoal); font-weight: 700; margin-top: 0.75rem; letter-spacing: 0.08em;">
-              A PLACE TO LIVE TODAY. A LOCATION TO HOLD FOR TOMORROW.
-            </p>
-          </div>
         </div>
 
-        <div class="cartography-grid" style="margin-top: 2.5rem;">
-          <!-- Interactive Blueprint Map Canvas -->
-          <div class="cartography-map-container" id="map-container">
-            <div class="map-blueprint-grid"></div>
-            <div class="map-radar-circle"></div>
+        <div class="cartography-grid">
+          <!-- Interactive Map Container -->
+          <div class="map-view-box">
+            <div class="map-grid-overlay"></div>
+            <div class="map-axis-x"></div>
+            <div class="map-axis-y"></div>
 
-            <div style="position: relative; z-index: 10;">
-              <span class="label-caps" style="color: var(--color-champagne);">AGRABAD CDA MASTER REGISTER</span>
-              <p class="label-numeric" style="color: rgba(244,240,232,0.7); font-size: 0.75rem;">SECTOR COORDINATES · 22.3275° N, 91.8020° E</p>
+            <div class="map-pin pin-active" style="top: 38%; left: 45%;" onclick="selectMapLocation('shopnaloy')">
+              <div class="map-pin-pulse"></div>
+              <div class="map-pin-dot"></div>
+              <span class="map-pin-label">BEC SHOPNALOY · RD 14</span>
             </div>
 
-            <!-- Plot Pin 01: Shopnaloy (Road 14) -->
-            <button class="map-pin-btn active" id="pin-shopnaloy" onclick="selectMapLocation('shopnaloy')" style="top: 36%; left: 24%;">
-              <span class="material-symbols-outlined" style="font-size: 16px;">location_on</span>
-              <span>PLOT 727 · RD 14</span>
-            </button>
+            <div class="map-pin" style="top: 48%; left: 52%;" onclick="selectMapLocation('nebash')">
+              <div class="map-pin-dot"></div>
+              <span class="map-pin-label">BEC SHOPNO NEBASH · RD 11</span>
+            </div>
 
-            <!-- Plot Pin 02: Shopno Nebash (Road 11) -->
-            <button class="map-pin-btn" id="pin-nebash" onclick="selectMapLocation('nebash')" style="top: 54%; left: 56%;">
-              <span class="material-symbols-outlined" style="font-size: 16px;">location_on</span>
-              <span>PLOT 445 · RD 11</span>
-            </button>
+            <div class="map-pin" style="top: 25%; left: 62%;" onclick="selectMapLocation('hq')">
+              <div class="map-pin-dot" style="background-color: var(--color-champagne);"></div>
+              <span class="map-pin-label">BEC NAYABAZAR HQ</span>
+            </div>
 
-            <!-- Plot Pin 03: Corporate HQ -->
-            <button class="map-pin-btn" id="pin-hq" onclick="selectMapLocation('hq')" style="bottom: 18%; right: 18%;">
-              <span class="material-symbols-outlined" style="font-size: 16px;">corporate_fare</span>
-              <span>BEC HQ</span>
-            </button>
-
-            <div style="position: relative; z-index: 10; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1rem;">
-              <span class="label-caps" style="color: var(--color-ivory); font-size: 0.625rem;">SCALE 1:500 ARCHITECTURAL CAD</span>
-              <span class="label-caps" style="color: var(--color-champagne); font-size: 0.625rem;">CHATTOGRAM CITY CORPORATION</span>
+            <div class="map-legend-card">
+              <span class="label-caps" style="color: var(--color-champagne); display: block; margin-bottom: 4px;">CHATTOGRAM GRID</span>
+              <p class="body-sm" style="color: var(--color-ivory); margin: 0; font-size: 0.75rem;">
+                Agrabad CDA · Halishahar · Pahartali
+              </p>
             </div>
           </div>
 
-          <!-- Dynamic Location Details Pane -->
-          <div class="map-info-pane" id="map-info-pane">
-            <div>
-              <span class="label-caps" id="map-info-tag" style="color: var(--color-champagne);">FLAGSHIP SECTOR</span>
-              <h3 class="headline-lg" id="map-info-title" style="margin: 0.5rem 0 1rem 0;">BEC SHOPNALOY (PLOT 727)</h3>
-              <p class="body-md" id="map-info-desc" style="color: var(--color-charcoal-dim);">
-                Located on a generous 40-foot wide road in Road 14, Agrabad CDA. Only minutes from Agrabad Access Road, Badamtoli Mor, leading educational institutions, and healthcare centers.
-              </p>
+          <!-- Location Info Box -->
+          <div class="location-details-box" id="location-details">
+            <span class="label-caps text-champagne" id="loc-detail-tag">HEADQUARTERS &amp; PLANNING</span>
+            <h3 class="headline-md" style="margin: 0.5rem 0 1rem 0;" id="loc-detail-title">BEC CORPORATE OFFICES</h3>
+            <p class="body-sm" style="color: var(--color-charcoal-dim); line-height: 1.7;" id="loc-detail-desc">
+              Two physical office facilities in Chattogram to welcome clients, review architectural drawings, and coordinate construction operations.
+            </p>
+
+            <div style="margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1rem;">
+              <div style="padding: 1rem; background: var(--color-ivory); border-left: 2px solid var(--color-champagne);">
+                <strong style="font-size: 0.85rem; color: var(--color-charcoal);">OFFICE 01 (NAYABAZAR)</strong>
+                <p class="body-sm" style="color: var(--color-charcoal-dim); font-size: 0.8rem; margin-top: 4px;">
+                  2574, Port Connecting Road, Nayabazar Bishwaroad, Halishahar, Chattogram.
+                </p>
+              </div>
+              <div style="padding: 1rem; background: var(--color-ivory); border-left: 2px solid var(--color-champagne);">
+                <strong style="font-size: 0.85rem; color: var(--color-charcoal);">OFFICE 02 (EIDGAH)</strong>
+                <p class="body-sm" style="color: var(--color-charcoal-dim); font-size: 0.8rem; margin-top: 4px;">
+                  2813/C, Al Helal Bhaban, Eidgah Kacha Rasta Matha, Halishahar Road, Pahartali, Chattogram.
+                </p>
+              </div>
             </div>
 
-            <div class="map-stat-boxes">
-              <div>
-                <span class="label-caps" style="color: var(--color-charcoal-dim);">ROAD FRONTAGE</span>
-                <p class="headline-sm" id="map-info-road" style="margin-top: 4px;">40 Feet Broad Road</p>
-              </div>
-              <div>
-                <span class="label-caps" style="color: var(--color-charcoal-dim);">LEGAL STATUS</span>
-                <p class="headline-sm" id="map-info-status" style="margin-top: 4px;">CDA Approved & Deeded</p>
-              </div>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+              <a href="tel:+8801749349299" class="btn btn-primary btn-sm">
+                <span class="material-symbols-outlined" style="font-size: 16px;">call</span>
+                <span>+880 1749-349299</span>
+              </a>
+              <a href="tel:+8801828178962" class="btn btn-secondary btn-sm">
+                <span>+880 1828-178962</span>
+              </a>
             </div>
-
-            <button class="btn btn-primary" id="map-info-btn" onclick="openProjectModal('bdm-shopnaloy')">
-              <span>VIEW FULL PROJECT BLUEPRINT</span>
-              <span class="material-symbols-outlined btn-arrow-icon">arrow_forward</span>
-            </button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         11. ABOUT BEC & FINAL CTA (CONTACT & ENQUIRY)
+         11. CONTACT SECTION — LET'S BUILD SOMETHING REAL.
          ========================================================================== -->
     <section class="section contact-section" id="contact">
       <div class="section-inner">
-        <!-- ABOUT BEC BLOCK -->
-        <div class="about-bdm-block">
-          <span class="label-caps" style="color: var(--color-champagne);">ABOUT BEC</span>
-          <h2 class="headline-xl" style="color: var(--color-ivory); margin-top: 0.5rem;">
-            A DIFFERENT APPROACH TO RESIDENTIAL DEVELOPMENT.
-          </h2>
-          <p class="body-lg" style="color: rgba(244,240,232,0.85); max-width: 70ch; margin-top: 1rem; line-height: 1.8;">
-            Brother’s Engineering & Construction (BEC) is a Chattogram-based engineering and real-estate development firm focused on thoughtfully planned residential properties. Our approach combines carefully selected land, architectural planning, structural discipline and transparent development practices.
-          </p>
-          <div style="margin-top: 1.5rem; display: inline-block; padding: 0.75rem 1.5rem; background: rgba(200,169,126,0.15); border: 1px solid var(--color-champagne); border-radius: 4px;">
-            <p style="font-family: var(--font-headline); font-size: 1.15rem; color: var(--color-champagne); letter-spacing: 0.08em; margin: 0;">
-              CREATE HOMES PEOPLE ARE PROUD TO KEEP.
-            </p>
-          </div>
-        </div>
-
-        <!-- FINAL CTA -->
-        <div class="section-header" style="margin-top: 4rem;">
-          <div class="section-meta">
-            <span class="section-num">11</span>
-            <span class="section-meta-divider">/</span>
-            <span class="section-tag" style="color: var(--color-champagne);">FINAL INVITATION</span>
-          </div>
-          <h2 class="display-hero" style="font-size: clamp(2.25rem, 4.5vw, 4rem); color: var(--color-ivory);">
-            YOUR NEXT ADDRESS STARTS HERE.
-          </h2>
-          <p class="body-lg" style="max-width: 65ch; color: rgba(244,240,232,0.85); margin-top: 0.75rem;">
-            Whether you are looking for a home for your family, exploring land-share ownership or considering a new development opportunity, we would be pleased to speak with you.
-          </p>
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
-            <a href="tel:+8801749349299" class="btn btn-champagne">
-              <span class="material-symbols-outlined" style="font-size: 18px;">call</span>
-              <span>START A CONVERSATION</span>
-            </a>
-            <a href="https://wa.me/8801749349299?text=Hello%20BEC%2C%20I%20would%20like%20to%20book%20a%20private%20site%20visit%20in%20Agrabad%20CDA." target="_blank" rel="noopener" class="btn btn-secondary" style="border-color: rgba(255,255,255,0.3); color: var(--color-ivory);">
-              <span class="material-symbols-outlined" style="font-size: 18px; color: #25D366;">chat</span>
-              <span>BOOK A PRIVATE SITE VISIT</span>
-            </a>
-            <button class="btn btn-secondary" style="border-color: rgba(255,255,255,0.3); color: var(--color-ivory);" onclick="requestBrochure('BEC Shopnaloy')">
-              <span class="material-symbols-outlined" style="font-size: 18px;">description</span>
-              <span>REQUEST PROJECT DETAILS</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="contact-layout-grid" style="margin-top: 3.5rem;">
-          <!-- Direct Hotlines & Corporate Offices -->
-          <div class="contact-direct-suite">
-            <!-- Direct Hotlines Card -->
-            <div class="hotline-card">
-              <div style="display: flex; justify-content: space-between; align-items: center;">
-                <span class="label-caps" style="color: var(--color-champagne);">DIRECT HELPLINES (CHATTOGRAM)</span>
-                <span class="material-symbols-outlined" style="color: var(--color-champagne); font-size: 20px;">verified</span>
-              </div>
-
-              <div class="hotline-item">
-                <div>
-                  <span class="label-caps" style="color: rgba(244,240,232,0.6); display: block; margin-bottom: 2px;">PRIMARY & WHATSAPP</span>
-                  <a href="tel:+8801749349299" class="hotline-link">
-                    <span class="material-symbols-outlined" style="font-size: 18px;">call</span>
-                    <span>+880 1749-349299</span>
-                  </a>
-                </div>
-                <a href="https://wa.me/8801749349299" target="_blank" rel="noopener" class="btn btn-sm btn-champagne">WHATSAPP</a>
-              </div>
-
-              <div class="hotline-item">
-                <div>
-                  <span class="label-caps" style="color: rgba(244,240,232,0.6); display: block; margin-bottom: 2px;">SALES HOTLINE 02</span>
-                  <a href="tel:+8801828178962" class="hotline-link">
-                    <span class="material-symbols-outlined" style="font-size: 18px;">call</span>
-                    <span>+880 1828-178962</span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="hotline-item">
-                <div>
-                  <span class="label-caps" style="color: rgba(244,240,232,0.6); display: block; margin-bottom: 2px;">SALES HOTLINE 03</span>
-                  <a href="tel:+8801815366393" class="hotline-link">
-                    <span class="material-symbols-outlined" style="font-size: 18px;">call</span>
-                    <span>+880 1815-366393</span>
-                  </a>
-                </div>
-              </div>
+        <div class="contact-split-grid">
+          <div>
+            <div class="section-meta">
+              <span class="section-num" style="color: var(--color-champagne);">11</span>
+              <span class="section-meta-divider" style="color: rgba(244,240,232,0.4);">/</span>
+              <span class="section-tag" style="color: var(--color-champagne);" id="contact-tag">INITIATE A CONVERSATION</span>
             </div>
-
-            <!-- Two Verified Physical Offices in Chattogram -->
-            <div class="offices-display-grid">
-              <div class="office-box">
-                <span class="office-box-title">CORPORATE OFFICE 01</span>
-                <p class="body-sm" style="font-weight: 600; color: var(--color-ivory);">Halishahar / Nayabazar</p>
-                <p class="office-box-address">
-                  2574, Haji Achi Mia Bari (2nd Floor), Port Connecting Road, Nayabazar Bishwaroad, Halishahar, Chattogram.
-                </p>
-              </div>
-
-              <div class="office-box">
-                <span class="office-box-title">CORPORATE OFFICE 02</span>
-                <p class="body-sm" style="font-weight: 600; color: var(--color-ivory);">Pahartali / Eidgah</p>
-                <p class="office-box-address">
-                  2813 / C, Al Helal Bhaban, Eidgah Kacha Rasta Matha, Halishahar Road, Pahartali, Chattogram.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Interactive Enquiry Form -->
-          <div class="enquiry-form-pane">
-            <span class="label-caps" style="color: var(--color-champagne);">START A CONVERSATION</span>
             
-            <form id="enquiry-form" onsubmit="handleEnquirySubmit(event)">
+            <h2 class="display-hero" style="font-size: 3rem; margin: 1rem 0; color: var(--color-ivory);" id="contact-title">
+              LET'S BUILD<br>
+              <span class="gold-gradient-text">SOMETHING REAL.</span>
+            </h2>
+
+            <div style="margin: 1.5rem 0; max-width: 60ch;">
+              <p class="body-lg" style="color: rgba(244,240,232,0.9); line-height: 1.7;" id="contact-lead-1">
+                Have a plot, a project, an existing property or simply an idea?
+              </p>
+              <p class="body-md" style="color: var(--color-champagne); font-weight: 600; margin-top: 0.5rem;" id="contact-lead-2">
+                Talk to us.
+              </p>
+              <p class="body-sm" style="color: rgba(244,240,232,0.75); line-height: 1.8; margin-top: 0.5rem;" id="contact-lead-3">
+                Whether you need architectural design, structural engineering, construction, interior work, renovation or a complete design-to-build solution, tell us what you are planning.
+              </p>
+            </div>
+
+            <div class="contact-direct-block" style="margin-top: 2rem;">
+              <div class="contact-direct-item">
+                <span class="label-caps" style="color: var(--color-champagne);">DIRECT PROJECT DESK</span>
+                <a href="tel:+8801749349299" class="contact-direct-val">+880 1749-349299</a>
+              </div>
+              <div class="contact-direct-item">
+                <span class="label-caps" style="color: var(--color-champagne);">ENGINEERING COORDINATION</span>
+                <a href="tel:+8801828178962" class="contact-direct-val">+880 1828-178962</a>
+              </div>
+              <div class="contact-direct-item">
+                <span class="label-caps" style="color: var(--color-champagne);">WHATSAPP INQUIRY</span>
+                <a href="https://wa.me/8801749349299" target="_blank" rel="noopener" class="contact-direct-val" style="color: #25D366;">
+                  Direct WhatsApp Chat
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form with Comprehensive Services -->
+          <div class="enquiry-form-pane">
+            <h3 class="headline-md" style="color: var(--color-ivory); margin-bottom: 0.5rem;" id="form-heading">TELL US ABOUT YOUR PROJECT</h3>
+            <p class="body-sm" style="color: rgba(244,240,232,0.7); margin-bottom: 1.5rem;" id="form-subtext">
+              Share your requirements and our engineering team will get back to you promptly.
+            </p>
+
+            <form id="project-enquiry-form" onsubmit="handleEnquirySubmit(event)">
               <div class="form-group">
-                <label class="form-label" for="patron-name">FULL NAME *</label>
-                <input type="text" id="patron-name" class="form-input" placeholder="Your Full Name / আপনার নাম" required>
+                <label class="form-label" for="patron-name">YOUR FULL NAME *</label>
+                <input type="text" id="patron-name" class="form-input" placeholder="e.g. Engr. Tanvir Ahmed" required>
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="patron-phone">PHONE NUMBER *</label>
-                <input type="tel" id="patron-phone" class="form-input" placeholder="+880 17... or 018..." required>
+                <label class="form-label" for="patron-phone">PHONE NUMBER / WHATSAPP *</label>
+                <input type="tel" id="patron-phone" class="form-input" placeholder="e.g. +880 1XXXXXXXXX" required>
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="patron-project">SELECT DEVELOPMENT</label>
-                <select id="patron-project" class="form-select">
-                  <option value="BEC Shopnaloy — Plot 727, Rd 14, Agrabad CDA (1,375 Sq Ft)">BEC Shopnaloy — Plot 727, Road 14 (1,375 Sq Ft)</option>
-                  <option value="BEC Shopno Nebash — Plot 445, Rd 11, Agrabad CDA (1,750 Sq Ft)">BEC Shopno Nebash — Plot 445, Road 11 (1,750 Sq Ft)</option>
-                  <option value="Upcoming Agrabad CDA Signature Parcel III">Upcoming Agrabad CDA Signature Parcel III</option>
-                  <option value="Land Joint Venture / Landowner Consultation">Land Joint Venture / Landowner Consultation</option>
+                <label class="form-label" for="patron-service">PRIMARY SERVICE OF INTEREST *</label>
+                <select id="patron-service" class="form-select" required>
+                  <option value="Building Construction">Building Construction (Civil &amp; Structural)</option>
+                  <option value="Architectural Design">Architectural Design &amp; Planning</option>
+                  <option value="Structural Engineering">Structural Engineering &amp; BNBC Compliance</option>
+                  <option value="Interior Design & Execution">Interior Design &amp; Execution</option>
+                  <option value="Renovation & Remodeling">Renovation &amp; Remodeling</option>
+                  <option value="Turnkey Projects">Turnkey Construction (Concept to Completion)</option>
+                  <option value="Project Management">Project Management &amp; Site Supervision</option>
+                  <option value="Real Estate Development">Real Estate Development / Residential Units</option>
                 </select>
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="patron-notes">REQUIREMENTS OR COMMENTS</label>
-                <textarea id="patron-notes" class="form-textarea" placeholder="Floor preference, family requirements, site visit schedule..."></textarea>
+                <label class="form-label" for="patron-notes">PROJECT DETAILS, LOCATION OR REQUIREMENTS</label>
+                <textarea id="patron-notes" class="form-textarea" placeholder="Describe your plot size, existing building, timeline, or design requirement in Chattogram..."></textarea>
               </div>
 
-              <button type="submit" class="btn btn-champagne" style="width: 100%; height: 3.5rem; margin-top: 0.5rem;">
-                <span>START A CONVERSATION</span>
-                <span class="material-symbols-outlined btn-arrow-icon">send</span>
-              </button>
+              <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                <button type="submit" class="btn btn-champagne" style="flex: 1; height: 3.5rem;">
+                  <span id="btn-submit-text">START YOUR PROJECT</span>
+                  <span class="material-symbols-outlined btn-arrow-icon">arrow_forward</span>
+                </button>
+                <a href="https://wa.me/8801749349299" target="_blank" rel="noopener" class="btn btn-secondary" style="height: 3.5rem; border-color: rgba(255,255,255,0.3); color: var(--color-ivory);">
+                  <span class="material-symbols-outlined" style="font-size: 18px;">chat</span>
+                  <span>TALK TO BEC</span>
+                </a>
+              </div>
             </form>
           </div>
         </div>
+
+        <!-- Monumental Final Brand Statement -->
+        <div style="margin-top: 5rem; padding-top: 4rem; border-top: 1px solid rgba(216,209,197,0.15); text-align: center;">
+          <span class="label-caps" style="color: var(--color-champagne); letter-spacing: 0.3em; display: block; margin-bottom: 1rem;">
+            BROTHER’S ENGINEERING &amp; CONSTRUCTION
+          </span>
+          <h2 class="display-hero" style="font-size: clamp(1.8rem, 4vw, 3rem); color: var(--color-ivory); max-width: 28ch; margin: 0 auto; line-height: 1.25;" id="final-brand-statement">
+            WE DON'T JUST BUILD STRUCTURES.<br>
+            <span class="gold-gradient-text">WE BUILD SPACES FOR PEOPLE TO LIVE, WORK, GROW AND BELONG.</span>
+          </h2>
+          <p class="body-sm font-mono" style="color: rgba(244,240,232,0.7); margin-top: 1.5rem; letter-spacing: 0.12em; text-transform: uppercase;">
+            Engineering • Construction • Architecture • Interiors • Development<br>
+            <span style="color: var(--color-champagne);">Chattogram, Bangladesh</span>
+          </p>
+        </div>
       </div>
     </section>
+
   </main>
 
   <!-- ==========================================================================
@@ -1273,8 +904,8 @@
             BUILDING PLACES. CREATING LEGACIES.
           </p>
           <p class="footer-brand-desc" style="margin-top: 0.75rem;">
-            Residential Development · Chattogram, Bangladesh.<br>
-            Thoughtfully planned residences. Carefully selected land. Engineering built for generations.
+            Full-Service Engineering & Construction · Chattogram, Bangladesh.<br>
+            Civil Engineering • Architectural Design • Interior Execution • Turnkey Projects
           </p>
         </div>
 
@@ -1282,25 +913,29 @@
           <h4 class="footer-col-title">NAVIGATION</h4>
           <ul class="footer-links-list">
             <li class="footer-link-item"><a href="#hero">Overview</a></li>
-            <li class="footer-link-item"><a href="#approach">Our Approach & Ownership</a></li>
-            <li class="footer-link-item"><a href="#featured">Featured Project</a></li>
-            <li class="footer-link-item"><a href="#projects">Developments</a></li>
-            <li class="footer-link-item"><a href="#living">Living Spaces</a></li>
-            <li class="footer-link-item"><a href="#architecture">Architecture</a></li>
-            <li class="footer-link-item"><a href="#how-we-build">How We Build</a></li>
-            <li class="footer-link-item"><a href="#engineering">Engineering & On-Site</a></li>
-            <li class="footer-link-item"><a href="#philosophy">Philosophy & Manifesto</a></li>
-            <li class="footer-link-item"><a href="#cartography">Location</a></li>
+            <li class="footer-link-item"><a href="#about">About BEC</a></li>
+            <li class="footer-link-item"><a href="#services">What We Do</a></li>
+            <li class="footer-link-item"><a href="#design-to-build">Design-to-Build</a></li>
+            <li class="footer-link-item"><a href="#process">Process</a></li>
+            <li class="footer-link-item"><a href="#projects">Selected Work</a></li>
+            <li class="footer-link-item"><a href="#construction">Construction Rigor</a></li>
+            <li class="footer-link-item"><a href="#interiors">Interiors</a></li>
+            <li class="footer-link-item"><a href="#trust">Why BEC</a></li>
+            <li class="footer-link-item"><a href="#leadership">Leadership</a></li>
+            <li class="footer-link-item"><a href="#cartography">Offices</a></li>
             <li class="footer-link-item"><a href="#contact">Contact</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-col-title">DEVELOPMENTS</h4>
+          <h4 class="footer-col-title">CORE SERVICES</h4>
           <ul class="footer-links-list">
-            <li class="footer-link-item"><a href="#featured" onclick="openProjectModal('bdm-shopnaloy')">BEC Shopnaloy (Rd 14)</a></li>
-            <li class="footer-link-item"><a href="#projects" onclick="openProjectModal('bdm-shopno-nebash')">BEC Shopno Nebash (Rd 11)</a></li>
-            <li class="footer-link-item"><a href="#projects" onclick="openProjectModal('bdm-future-parcel')">Upcoming Agrabad Parcel</a></li>
+            <li class="footer-link-item"><a href="#services">Building Construction</a></li>
+            <li class="footer-link-item"><a href="#services">Architectural &amp; Structural Design</a></li>
+            <li class="footer-link-item"><a href="#services">Interior Design &amp; Execution</a></li>
+            <li class="footer-link-item"><a href="#design-to-build">Design-to-Build Projects</a></li>
+            <li class="footer-link-item"><a href="#services">Turnkey Civil Delivery</a></li>
+            <li class="footer-link-item"><a href="#services">Renovation &amp; Remodeling</a></li>
           </ul>
         </div>
 
@@ -1321,7 +956,7 @@
       </div>
 
       <div class="footer-bottom-bar">
-        <span>© 2026 BROTHER’S ENGINEERING & CONSTRUCTION (BEC). ALL RIGHTS RESERVED. RESIDENTIAL DEVELOPMENT · CHATTOGRAM, BANGLADESH.</span>
+        <span>© 2026 BROTHER’S ENGINEERING &amp; CONSTRUCTION (BEC). ALL RIGHTS RESERVED. FULL-SERVICE ENGINEERING, CONSTRUCTION &amp; INTERIORS · CHATTOGRAM, BANGLADESH.</span>
         <span>PORTAL: BECDEVELOPER.COM · GITHUB: BROTHERSEC.GITHUB.IO</span>
       </div>
     </div>
@@ -1347,7 +982,7 @@
         <div>
           <div class="modal-tabs">
             <button class="modal-tab-btn active" id="tab-btn-render" onclick="switchModalTab('render')">ARCHITECTURAL FACADE</button>
-            <button class="modal-tab-btn" id="tab-btn-plan" onclick="switchModalTab('plan')">FLOOR PLAN & CUTAWAY</button>
+            <button class="modal-tab-btn" id="tab-btn-plan" onclick="switchModalTab('plan')">FLOOR PLAN &amp; CUTAWAY</button>
             <button class="modal-tab-btn" id="tab-btn-twilight" onclick="switchModalTab('twilight')">ELEVATION VIEW</button>
           </div>
 
@@ -1359,7 +994,7 @@
 
         <!-- Specifications Grid Table -->
         <div>
-          <span class="label-caps" style="color: var(--color-charcoal); display: block; margin-bottom: 1rem;">VERIFIED SPECIFICATIONS & ALLOTMENT DETAILS</span>
+          <span class="label-caps" style="color: var(--color-charcoal); display: block; margin-bottom: 1rem;">VERIFIED SPECIFICATIONS &amp; ALLOTMENT DETAILS</span>
           <div class="specs-table-grid" id="modal-specs-grid">
             <!-- Dynamically populated via app.js -->
           </div>
@@ -1370,7 +1005,7 @@
           <p class="body-sm" id="modal-project-desc" style="max-width: 60ch; color: var(--color-charcoal-dim);"></p>
           <div style="display: flex; gap: 1rem;">
             <button class="btn btn-champagne" onclick="enquireFromModal()">
-              <span>RESERVE RESIDENCE</span>
+              <span>START PROJECT WITH BEC</span>
               <span class="material-symbols-outlined btn-arrow-icon">call</span>
             </button>
             <button class="btn btn-secondary" onclick="closeProjectModal()">
@@ -1394,21 +1029,21 @@
        MOBILE STICKY QUICKBAR (Phone Viewport Navigation)
        ========================================================================== -->
   <nav class="mobile-quickbar" aria-label="Mobile Bottom Quick Navigation">
-    <a href="#projects" class="quickbar-tab active">
+    <a href="#services" class="quickbar-tab active">
+      <span class="material-symbols-outlined">design_services</span>
+      <span>SERVICES</span>
+    </a>
+    <a href="#design-to-build" class="quickbar-tab">
+      <span class="material-symbols-outlined">engineering</span>
+      <span>BUILD</span>
+    </a>
+    <a href="#projects" class="quickbar-tab">
       <span class="material-symbols-outlined">apartment</span>
-      <span>PROJECTS</span>
+      <span>WORK</span>
     </a>
-    <a href="#engineering" class="quickbar-tab">
-      <span class="material-symbols-outlined">construction</span>
-      <span>ON-SITE</span>
-    </a>
-    <a href="#approach" class="quickbar-tab">
-      <span class="material-symbols-outlined">savings</span>
-      <span>40% SAVE</span>
-    </a>
-    <a href="#cartography" class="quickbar-tab">
-      <span class="material-symbols-outlined">map</span>
-      <span>MAP</span>
+    <a href="#trust" class="quickbar-tab">
+      <span class="material-symbols-outlined">verified</span>
+      <span>WHY BEC</span>
     </a>
     <a href="#contact" class="quickbar-tab">
       <span class="material-symbols-outlined">call</span>

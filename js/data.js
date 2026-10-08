@@ -1,7 +1,7 @@
 /**
- * BEC (BROTHER’S ENGINEERING & CONSTRUCTION) — ARCHITECTURAL DATA ARCHITECTURE
- * Clean, typed CMS-ready registry for projects, blueprints, specifications,
- * construction milestones, journal essays, and office locations.
+ * BEC (BROTHER’S ENGINEERING & CONSTRUCTION) — CORE DATA ARCHITECTURE
+ * Structured data registry for services, design-to-build workflows,
+ * projects, process milestones, interiors, trust pillars, and corporate offices.
  */
 
 const BDM_DATA = {
@@ -9,24 +9,29 @@ const BDM_DATA = {
     name: "Brother’s Engineering & Construction",
     shortName: "BEC",
     bengaliName: "ব্রাদার্স ইঞ্জিনিয়ারিং অ্যান্ড কনস্ট্রাকশন",
-    tagline: "Building Places. Creating Legacies.",
-    bengaliTagline: "স্থায়ী ঐতিহ্য ও উন্নত জীবনযাত্রার প্রতিশ্রুতি",
-    headline: "We Build More Than Homes. We Build a Sense of Belonging.",
-    bengaliHeadline: "আমরা শুধু ঘর বানাই না, গড়ে তুলি আপন ঠিকানা।",
-    subline: "Thoughtfully planned residences. Carefully selected land. Engineering built for generations.",
-    bengaliSubline: "পরিমিত পরিকল্পনার আবাসন। সতর্কতার সাথে নির্বাচিত জমি। প্রজন্ম ধরে টিকে থাকার প্রকৌশল।",
-    mission: "Brother’s Engineering & Construction (BEC) creates residential spaces where architecture, ownership and everyday family life come together with purpose.",
-    industry: "Architectural Real Estate Development",
-    territory: "Agrabad CDA Residential Area, Chattogram, Bangladesh",
-    coordinates: "22.3275° N, 91.8020° E",
+    tagline: "Engineered to Build. Designed to Last.",
+    bengaliTagline: "স্থায়িত্বের জন্য প্রকৌশল। দীর্ঘায়ুর জন্য নকশা।",
+    subline: "From Concept to Completion. Your Vision. Our Engineering. One Complete Build.",
+    bengaliSubline: "পরিকল্পনা থেকে সমাপ্তি। আপনার স্বপ্ন, আমাদের প্রকৌশল।",
+    centralIdea: "From an Idea to a Finished Space.",
+    bengaliCentralIdea: "একটি ধারণা থেকে একটি পরিপূর্ণ স্থাপনা।",
+    headline: "We Design. We Build. We Deliver.",
+    bengaliHeadline: "আমরা নকশা করি। আমরা নির্মাণ করি। আমরা পৌঁছে দেই।",
+    experienceHeadline: "A new name in the market. 15+ years of practical industry experience behind the people who lead it.",
+    bengaliExperienceHeadline: "বাজারে নতুন নাম, কিন্তু নেতৃত্বের পেছনে রয়েছে ১৫+ বছরের বাস্তব নির্মাণ অভিজ্ঞতা।",
+    experienceYears: "15+",
+    experienceStatement: "15+ years of industry experience within our leadership and project expertise.",
+    bengaliExperienceStatement: "আমাদের নেতৃত্ব এবং প্রকল্প অভিজ্ঞতায় রয়েছে ১৫+ বছরের শিল্প জ্ঞান।",
+    industry: "Full-Service Engineering, Construction & Interior Firm",
+    territory: "Chattogram, Bangladesh",
     logoUrl: "assets/logo-white.png",
     heroImage: "assets/projects/shopnaloy-hero.jpg"
   },
 
   hotlines: [
     { label: "Primary & WhatsApp", number: "+880 1749-349299", raw: "+8801749349299", whatsapp: true },
-    { label: "Sales Hotline 02", number: "+880 1828-178962", raw: "+8801828178962", whatsapp: false },
-    { label: "Sales Hotline 03", number: "+880 1815-366393", raw: "+8801815366393", whatsapp: false }
+    { label: "Engineering Desk", number: "+880 1828-178962", raw: "+8801828178962", whatsapp: false },
+    { label: "Project Consultation", number: "+880 1815-366393", raw: "+8801815366393", whatsapp: false }
   ],
 
   offices: [
@@ -37,7 +42,7 @@ const BDM_DATA = {
       address: "2574, Haji Achi Mia Bari (2nd Floor), Port Connecting Road, Nayabazar Bishwaroad, Halishahar, Chattogram",
       bengaliAddress: "২৫৭৪, হাজী আছি মিঞা বাড়ি (২য় তলা), পোর্ট কানেক্টিং রোড, নয়াবাজার বিশ্বরোড, হালিশহর, চট্টগ্রাম",
       coords: "22.3385° N, 91.7915° E",
-      category: "Headquarters & Documentation"
+      category: "Headquarters & Project Planning"
     },
     {
       id: "eidgah",
@@ -46,7 +51,210 @@ const BDM_DATA = {
       address: "2813 / C, Al Helal Bhaban, Eidgah Kacha Rasta Matha, Halishahar Road, Pahartali, Chattogram",
       bengaliAddress: "২৮১৩ / সি, আল হেলাল ভবন, ঈদগাহ কাঁচা রাস্তা মাথা, হালিশহর রোড, পাহাড়তলী, চট্টগ্রাম",
       coords: "22.3491° N, 91.8029° E",
-      category: "Customer Relations & Engineering"
+      category: "Engineering Supervision & Client Relations"
+    }
+  ],
+
+  services: [
+    {
+      number: "01",
+      title: "BUILDING CONSTRUCTION",
+      bengaliTitle: "ভবন নির্মাণ",
+      icon: "apartment",
+      desc: "From foundations to finishing, we manage construction with attention to structural quality, workmanship, materials and execution.",
+      bengaliDesc: "ভিত্তি থেকে ফিনিশিং—কাঠামোগত গুণমান, কারিগরি দক্ষতা, মানসম্পন্ন উপাদান ও সময়ানুবর্তিতার সাথে আমরা প্রতিটি নির্মাণ পরিচালনা করি।",
+      scope: "Residential buildings, commercial spaces and purpose-built projects.",
+      bengaliScope: "আবাসিক ভবন, বাণিজ্যিক স্থাপনা এবং বিশেষায়িত নির্মাণ প্রকল্প।"
+    },
+    {
+      number: "02",
+      title: "ARCHITECTURAL DESIGN",
+      bengaliTitle: "স্থাপত্য নকশা",
+      icon: "architecture",
+      desc: "Good construction starts with good planning. We develop practical architectural concepts that balance aesthetics, functionality, site conditions, budget and the way people will actually use the space.",
+      bengaliDesc: "পরিকল্পিত নির্মাণের মূল ভিত্তি সঠিক স্থাপত্য নকশা। সৌন্দর্য, কার্যকারিতা, সাইটের অবস্থা ও বাজেটের নিখুঁত সমন্বয়ে আমরা বাস্তবসম্মত ডিজাইন তৈরি করি।",
+      scope: "Spatial planning, exterior facade design, 3D visualizations and municipal approvals.",
+      bengaliScope: "স্পেস প্ল্যানিং, বাহ্যিক ফাসাদ ডিজাইন, থ্রিডি ভিজ্যুয়ালাইজেশন ও অনুমোদন।"
+    },
+    {
+      number: "03",
+      title: "STRUCTURAL ENGINEERING",
+      bengaliTitle: "কাঠামোগত প্রকৌশল",
+      icon: "engineering",
+      desc: "Behind every beautiful building is an engineering system designed to perform. Our approach considers structural integrity, durability, safety and appropriate engineering solutions for each project.",
+      bengaliDesc: "প্রতিটি নান্দনিক ভবনের পেছনে থাকে দক্ষ প্রকৌশল। আমরা ভবনের নিরাপত্তা, দীর্ঘস্থায়িত্ব এবং সিসমিক সহনশীলতাকে সর্বোচ্চ প্রাধান্য দিই।",
+      scope: "BNBC 2020 compliance, seismic zone detailing, soil mechanics & rebar load calculations.",
+      bengaliScope: "বিএনবিসি ২০২০ মানদণ্ড, সিসমিক জোন বিশ্লেষণ ও লোড ক্যালকুলেশন।"
+    },
+    {
+      number: "04",
+      title: "INTERIOR DESIGN & EXECUTION",
+      bengaliTitle: "ইন্টেরিয়র ডিজাইন ও বাস্তবায়ন",
+      icon: "chair",
+      desc: "A building is not complete when the walls are finished. We create and execute interiors that bring together layout, lighting, materials, furniture, finishes and functionality — from residential interiors to commercial environments.",
+      bengaliDesc: "দেয়াল তোলা শেষ হলেই ভবনের কাজ শেষ হয় না। লেআউট, লাইটিং, টেক্সচার ও ফার্নিচারের সঠিক মেলবন্ধনে আমরা প্রতিটি অভ্যন্তরীণ পরিসরকে প্রাণবন্ত করে তুলি।",
+      scope: "Home interiors, corporate office spaces, retail showrooms & custom cabinetry.",
+      bengaliScope: "আবাসিক ইন্টেরিয়র, করপোরেট অফিস, শোরুম ও কাস্টম ক্যাবিনেট্রি।"
+    },
+    {
+      number: "05",
+      title: "RENOVATION & REMODELING",
+      bengaliTitle: "সংস্কার ও আধুনিকায়ন",
+      icon: "construction",
+      desc: "Existing space can become something completely different. We help clients renovate, remodel and modernize existing properties while respecting the structure, budget and purpose of the space.",
+      bengaliDesc: "পুরোনো যেকোনো স্থানকে নতুন রূপ দেওয়া সম্ভব। ভবনের মূল কাঠামোর নিরাপত্তা বজায় রেখে বাজেট ও আধুনিক চাহিদার আলোকে আমরা সংস্কার সম্পন্ন করি।",
+      scope: "Structural strengthening, facade overhauls, floorplan reconfiguration & modern MEP updates.",
+      bengaliScope: "কাঠামো মজবুতকরণ, ফাসাদ আধুনিকায়ন ও ফ্লোরপ্ল্যান রূপান্তর।"
+    },
+    {
+      number: "06",
+      title: "TURNKEY PROJECTS",
+      bengaliTitle: "টার্নকি নির্মাণ প্রকল্প",
+      icon: "key",
+      desc: "One team from concept to completion. From design coordination and material planning to construction, finishing and interior execution, BEC can manage the complete project journey.",
+      bengaliDesc: "পরিকল্পনা থেকে চাবি হস্তান্তর—একটি একক দায়বদ্ধ দল। ড্রয়িং, মালামাল সংগ্রহ, সিভিল কনস্ট্রাকশন ও ইন্টেরিয়র সবকিছু এক ছাতার নিচে।",
+      scope: "Single point of accountability, fixed budget controls & timely handover.",
+      bengaliScope: "একটি একক জবাবদিহিতা, নিয়ন্ত্রিত বাজেট ও সময়মতো চাবি হস্তান্তর।"
+    },
+    {
+      number: "07",
+      title: "PROJECT MANAGEMENT",
+      bengaliTitle: "প্রকল্প ব্যবস্থাপনা ও তদারকি",
+      icon: "assignment_turned_in",
+      desc: "Construction becomes easier when someone takes responsibility for keeping everything moving. We coordinate people, materials, schedules, contractors and site activities to keep projects organized and progressing.",
+      bengaliDesc: "নির্মাণকাজ সহজ হয় যখন কেউ তা সঠিক নিয়মে এগিয়ে নেওয়ার সম্পূর্ণ দায়িত্ব নেয়। দক্ষ প্রকৌশলী দ্বারা সাইটের প্রতিটি ধাপ সার্বক্ষণিক তদারকি করা হয়।",
+      scope: "Site supervision, procurement tracking, contractor coordination & quality inspection.",
+      bengaliScope: "সাইট সুপারভিশন, প্রকিউরমেন্ট ট্র্যাকিং ও গুণগত মান যাচাই।"
+    },
+    {
+      number: "08",
+      title: "REAL ESTATE DEVELOPMENT",
+      bengaliTitle: "রিয়েল এস্টেট ডেভেলপমেন্ট",
+      icon: "domain",
+      desc: "We also develop selected properties with a focus on practical planning, engineering quality, thoughtful architecture and long-term value.",
+      bengaliDesc: "আমরা চট্টগ্রামের বাছাইকৃত স্থানে আধুনিক আবাসিক প্রকল্প গড়ে তুলি—যেখানে জমির সরাসরি অধিকার, উন্নত স্থাপত্য ও স্থায়ী মূল্য নিশ্চিত করা হয়।",
+      scope: "Carefully vetted land parcels, transparent deed structures & low-density living.",
+      bengaliScope: "বাছাইকৃত জমি, স্বচ্ছ সাব-কবলা রেজিস্ট্রি ও নিরিবিলি পারিবারিক পরিবেশ।"
+    }
+  ],
+
+  designToBuildSteps: [
+    { step: "01", name: "IDEA", desc: "Your requirement, sketch or vision." },
+    { step: "02", name: "DESIGN", desc: "Architectural concepts & functional layout." },
+    { step: "03", name: "ENGINEERING", desc: "Structural, MEP & foundation analysis." },
+    { step: "04", name: "APPROVAL", desc: "Statutory & municipal regulatory clearances." },
+    { step: "05", name: "CONSTRUCTION", desc: "Disciplined ground-to-roof civil execution." },
+    { step: "06", name: "INTERIOR", desc: "Finishes, custom joinery & living spaces." },
+    { step: "07", name: "HANDOVER", desc: "Finished space ready for life or business." }
+  ],
+
+  processStages: [
+    {
+      step: "01",
+      title: "DISCOVER",
+      bengaliTitle: "অনুসন্ধান ও বোঝাপড়া",
+      desc: "Understand the site, requirements, budget, purpose and vision.",
+      bengaliDesc: "সাইটের বাস্তব অবস্থা, ক্লায়েন্টের লক্ষ্য, বাজেট এবং ভবিষ্যতের প্রয়োজনীয়তা গভীরভাবে অনুধাবন করা।"
+    },
+    {
+      step: "02",
+      title: "DESIGN",
+      bengaliTitle: "পরিকল্পনা ও নকশা প্রণয়ন",
+      desc: "Develop the architectural, structural and interior direction.",
+      bengaliDesc: "স্থাপত্যের নান্দনিকতা, স্ট্রাকচারাল স্থায়িত্ব এবং ইন্টেরিয়র লেআউটের সমন্বিত ব্লুপ্রিন্ট তৈরি।"
+    },
+    {
+      step: "03",
+      title: "PLAN",
+      bengaliTitle: "প্রকৌশল ও বাজেট সমন্বয়",
+      desc: "Coordinate engineering, materials, costs, timelines and execution.",
+      bengaliDesc: "মালামালের গুণগত মান নির্ধারণ, সুনির্দিষ্ট বাজেট শিট এবং কাজের সময়সীমা বিন্যাস।"
+    },
+    {
+      step: "04",
+      title: "BUILD",
+      bengaliTitle: "শৃঙ্খলাবদ্ধ সাইট নির্মাণ",
+      desc: "Bring the design to life through disciplined site execution.",
+      bengaliDesc: "অভিজ্ঞ প্রকৌশলীদের উপস্থিতিতে কঠোর মান নিয়ন্ত্রণে সাইটের মূল নির্মাণকাজ সম্পাদন।"
+    },
+    {
+      step: "05",
+      title: "FINISH",
+      bengaliTitle: "ইন্টেরিয়র ও নিখুঁত ফিনিশিং",
+      desc: "Complete interiors, finishing details and final quality checks.",
+      bengaliDesc: "আলোকসজ্জা, পেইন্ট, ক্যাবিনেট্রি ও স্যানিটারি ফিটিংসের নিখুঁত ফিনিশিং ও পরীক্ষণ।"
+    },
+    {
+      step: "06",
+      title: "HANDOVER",
+      bengaliTitle: "পরিপূর্ণ সমাপ্তি ও হস্তান্তর",
+      desc: "Deliver a finished space ready for the life, business or purpose it was designed for.",
+      bengaliDesc: "পরিবার বা ব্যবসায়ের ব্যবহারের জন্য সম্পূর্ণ প্রস্তুত অবস্থায় আনুষ্ঠানিকভাবে স্থাপনা হস্তান্তর।"
+    }
+  ],
+
+  constructionFlow: [
+    "SITE PREPARATION",
+    "FOUNDATION",
+    "STRUCTURE",
+    "MASONRY",
+    "MEP INFRASTRUCTURE",
+    "FINISHING",
+    "INTERIOR",
+    "FINAL HANDOVER"
+  ],
+
+  interiorCategories: [
+    { title: "HOME INTERIORS", desc: "Calm, functional living rooms, bedrooms and family sanctuaries." },
+    { title: "OFFICE INTERIORS", desc: "Modern, productive corporate workspaces and conference suites." },
+    { title: "RETAIL & COMMERCIAL", desc: "Customer-centric commercial interiors and distinctive display layouts." },
+    { title: "KITCHEN & LIVING", desc: "Ergonomic modular kitchens with durable materials and smart storage." },
+    { title: "CUSTOM SPACES", desc: "Specialized prayer enclaves, private library rooms and lounge terraces." },
+    { title: "RENOVATION", desc: "Transforming tired, dated spaces into modern, functional environments." }
+  ],
+
+  whyChooseBec: [
+    {
+      num: "01",
+      title: "EXPERIENCED LEADERSHIP",
+      bengaliTitle: "অভিজ্ঞ নেতৃত্ব",
+      desc: "More than 15 years of practical industry experience behind the people leading the company.",
+      bengaliDesc: "কোম্পানির বর্তমান কাঠামোর পেছনের মূল নেতৃত্বের রয়েছে মাঠপর্যায়ে ১৫+ বছরের বাস্তব কাজের অভিজ্ঞতা।"
+    },
+    {
+      num: "02",
+      title: "END-TO-END CAPABILITY",
+      bengaliTitle: "সম্পূর্ণ সমাধান",
+      desc: "Design, engineering, construction and interior execution under one coordinated team.",
+      bengaliDesc: "নকশা, প্রকৌশল, সাইট নির্মাণ ও অভ্যন্তরীণ সজ্জা—সবকিছু একটি একক সমন্বিত দলের দায়িত্বে।"
+    },
+    {
+      num: "03",
+      title: "PRACTICAL ENGINEERING",
+      bengaliTitle: "বাস্তবসম্মত প্রকৌশল",
+      desc: "Solutions designed around real site conditions, usability and long-term performance.",
+      bengaliDesc: "কাগজের ড্রয়িং ছাড়িয়ে বাস্তব সাইটের মাটির অবস্থা, আবহাওয়া ও স্থায়িত্বের ওপর ভিত্তি করে তৈরি সমাধান।"
+    },
+    {
+      num: "04",
+      title: "CLEAR COMMUNICATION",
+      bengaliTitle: "স্বচ্ছ যোগাযোগ",
+      desc: "Clients should know what is happening, what comes next and what decisions are required.",
+      bengaliDesc: "কাজের অগ্রগতি, ভবিষ্যৎ ধাপ এবং প্রয়োজনীয় সিদ্ধান্ত সম্পর্কে ক্লায়েন্টকে সার্বক্ষণিক অবগত রাখা।"
+    },
+    {
+      num: "05",
+      title: "ATTENTION TO DETAIL",
+      bengaliTitle: "নিখুঁত যত্ন",
+      desc: "From structural work to the final finish, small decisions shape the final result.",
+      bengaliDesc: "মাটির নিচের পাইলিং থেকে দেয়ালের শেষ রঙের পরত—প্রতিটি ক্ষুদ্র বিষয়ে সতর্ক দৃষ্টি।"
+    },
+    {
+      num: "06",
+      title: "ACCOUNTABILITY",
+      bengaliTitle: "পূর্ণ দায়বদ্ধতা",
+      desc: "We aim to take responsibility for the work we commit to — not simply pass clients from one contractor to another.",
+      bengaliDesc: "আমরা আমাদের কাজের জন্য সরাসরি দায়বদ্ধ থাকি—ক্লায়েন্টকে এক ঠিকাদার থেকে অন্য ঠিকাদারে ঠেলে দিই না।"
     }
   ],
 
@@ -58,8 +266,8 @@ const BDM_DATA = {
       bengaliName: "বিইসি স্বপ্নালয়",
       status: "Active Construction",
       bengaliStatus: "নির্মাণাধীন প্রকল্প",
-      statusBadge: "ACTIVE PILING & SUBSTRUCTURE",
-      category: "Bespoke Residential Residences",
+      statusBadge: "ACTIVE CONSTRUCTION · PILING & SUBSTRUCTURE",
+      category: "Residential & Purpose-Built Development",
       location: "Plot 727 · Road 14 · Agrabad CDA · Chattogram",
       bengaliLocation: "প্লট ৭২৭ · রোড ১৪ · আগ্রাবাদ সিডিএ · চট্টগ্রাম",
       heroImage: "assets/projects/shopnaloy-hero.jpg",
@@ -70,19 +278,19 @@ const BDM_DATA = {
       landSize: "3.75 Katha",
       roadWidth: "40 Feet Frontage",
       floors: "G + 8 Storeys (9 Levels)",
-      totalUnits: "Only 15 Residences (2 Units / Floor)",
-      landSharePerUnit: "164 Sq. Ft. Deeded Land Share",
+      totalUnits: "15 Residences (2 Units / Floor)",
+      landSharePerUnit: "164 Sq. Ft. Registered Land Share",
       configuration: "3 Bed · 3 Bath · 3 Balconies",
-      bookingShare: "Booking & Land Registry Share",
+      bookingShare: "Direct Consultation with BEC",
       features: [
         "40-foot-wide road access in peaceful Road 14 sector",
         "Direct registered Sub-Kabala land deed before construction begins",
-        "Strictly two residences per floor for maximum privacy and ventilation",
-        "8'x8' high-speed passenger lift with Automatic Rescue Device (ARD)",
+        "Strictly two residences per floor for maximum cross-ventilation and privacy",
+        "High-speed 8'x8' passenger lift with Automatic Rescue Device (ARD)",
         "Covered ground floor parking bays and dedicated standby generator",
         "Landscaped communal rooftop terrace garden with seating pergola"
       ],
-      description: "A residential development conceived around space, privacy and a sense of permanence. Set along a 40-foot-wide road, Shopnaloy brings together only two residences per floor, creating a more private residential environment with generous natural light, airflow and outdoor space."
+      description: "A residential project demonstrating our commitment to practical planning, low-density living, and rigorous civil engineering. Set along a 40-foot-wide road in Agrabad CDA."
     },
     {
       id: "bdm-shopno-nebash",
@@ -106,14 +314,14 @@ const BDM_DATA = {
       totalUnits: "18 Residences (2 Units / Floor)",
       landSharePerUnit: "Proportionate Deeded Land Share",
       configuration: "4 Bed · 4 Bath · 3 Balconies",
-      bookingShare: "Consult BEC for Allocation",
+      bookingShare: "Consult BEC for Details",
       features: [
         "5.00 Katha prime rectangular plot with optimal North-South orientation",
         "Strictly 2 expansive executive apartments per floor for maximum privacy",
         "Engineered in consultation with Mahi Engineering Services",
         "Dual fire egress staircases in strict adherence to BNBC & CDA safety codes",
         "Dedicated utility balconies and cross-ventilated kitchen zones",
-        "Direct deed registration eliminating developer speculative risk"
+        "Direct deed registration eliminating speculative developer risk"
       ],
       description: "Conceived around generous family living on Road 11 in Agrabad CDA. Featuring two residences per floor, expansive four-bedroom layouts, and direct deeded land co-ownership."
     },
@@ -122,9 +330,9 @@ const BDM_DATA = {
       index: "03",
       name: "Agrabad Signature Parcel III",
       bengaliName: "আগ্রাবাদ সিগনেচার পার্সেল ৩",
-      status: "Land Acquisition / Design Review",
-      bengaliStatus: "জমি অধিগ্রহণ ও ডিজাইন পর্যালোচনা",
-      statusBadge: "UPCOMING SIGNATURE DEVELOPMENT",
+      status: "Design & Planning Phase",
+      bengaliStatus: "ডিজাইন ও পরিকল্পনা পর্যায়",
+      statusBadge: "UPCOMING DESIGN-TO-BUILD PROJECT",
       category: "Future Land-Share Development",
       location: "Agrabad CDA Residential Area · Chattogram",
       bengaliLocation: "আগ্রাবাদ সিডিএ আ/এ · চট্টগ্রাম",
@@ -132,229 +340,19 @@ const BDM_DATA = {
       twilightImage: "assets/projects/parcel-site.jpg",
       floorPlanImage: "assets/projects/shopnonebash-plan.jpg",
       planType: "Master Site Schematic (Under CDA Review)",
-      unitSize: "To Be Announced",
+      unitSize: "Custom Tailored Allocations",
       landSize: "Planned 6.00+ Katha Parcel",
       roadWidth: "Planned 40 Feet Road Frontage",
       floors: "G + 9 Planned",
       totalUnits: "Limited Fractional Allotments",
       landSharePerUnit: "Registered Sub-Kabala",
-      configuration: "3 & 4 Bedroom Premium Configurations",
-      bookingShare: "Priority Waiting List Open",
       features: [
-        "Prime Agrabad CDA sector with unhindered sunlight exposure",
-        "Direct joint-venture participation under BEC's transparent land-share model",
-        "Pre-launch subscriber registrations now being received",
-        "Full structural engineering vetting prior to financial drawdown"
+        "Prime location in central Agrabad CDA residential corridor",
+        "Turnkey design-to-build collaboration with prospective owners",
+        "Earthquake-resistant RCC framed structural design (BNBC 2020)",
+        "Integrated modern MEP infrastructure and standby power backup"
       ],
-      description: "In alignment with Brother’s Engineering & Construction's commitment to strictly real, verifiable developments, this upcoming signature parcel is currently undergoing land due diligence and CDA architectural review. Interested patrons may pre-register for priority allocation."
-    }
-  ],
-
-  homeSpaces: [
-    {
-      id: "light",
-      tag: "LIGHT",
-      bengaliTag: "প্রাকৃতিক আলো",
-      title: "Let the Day In.",
-      bengaliTitle: "দিনের আলো ঘরে প্রবেশ করতে দিন",
-      image: "assets/living/living.jpg",
-      alt: "Generous openings and natural daylight deep in luxury living spaces",
-      desc: "Generous openings and thoughtful orientation bring natural daylight deep into the living spaces, creating interiors that feel open, calm and alive.",
-      bengaliDesc: "খোলামেলা জানালা ও সঠিক দিকবিন্যাস লিভিং স্পেসের গভীরে প্রাকৃতিক আলো এনে দেয়, যা ঘরকে করে তোলে শান্ত, উজ্জ্বল ও প্রাণবন্ত।"
-    },
-    {
-      id: "air",
-      tag: "AIR",
-      bengaliTag: "মুক্ত বাতাস",
-      title: "Let the City Breathe Out.",
-      bengaliTitle: "চট্টগ্রামের সতেজ উপকূলীয় বাতাস",
-      image: "assets/living/balcony.jpg",
-      alt: "Deep sheltered balcony with tranquil view and natural tropical coastal airflow",
-      desc: "Thoughtful planning and open aspects encourage natural airflow, bringing Chattogram's coastal breeze into the home.",
-      bengaliDesc: "পরিকল্পিত বিন্যাস ও উন্মুক্ত বারান্দা ভবনে প্রাকৃতিক বাতাস চলাচলে সহায়তা করে এবং ঘরের ভেতর এনে দেয় প্রশান্তির ছোঁয়া।"
-    },
-    {
-      id: "privacy",
-      tag: "PRIVACY",
-      bengaliTag: "ব্যক্তিগত গোপনীয়তা",
-      title: "Space to Live Your Own Way.",
-      bengaliTitle: "নিরাপদ ও নিজস্ব ব্যক্তিগত পরিসর",
-      image: "assets/living/master.jpg",
-      alt: "Peaceful personal bedroom sanctuary designed for quiet comfort",
-      desc: "Fewer residences per floor create a quieter environment and a stronger sense of personal space.",
-      bengaliDesc: "প্রতি ফ্লোরে মাত্র দুটি ফ্ল্যাট নিশ্চিত করে নিরিবিলি পরিবেশ এবং পরিবারের সদস্যদের জন্য একান্ত নিজস্ব স্বাচ্ছন্দ্য।"
-    },
-    {
-      id: "togetherness",
-      tag: "TOGETHERNESS",
-      bengaliTag: "পারিবারিক বন্ধন",
-      title: "The Heart of the Home.",
-      bengaliTitle: "পারিবারিক আনন্দ ও অন্তরঙ্গ সময়",
-      image: "assets/living/dining.jpg",
-      alt: "Generous family dining hall designed for shared meals and celebrations",
-      desc: "Living and dining spaces are designed around the moments that matter — family dinners, celebrations, conversations and ordinary evenings that become treasured memories.",
-      bengaliDesc: "লিভিং ও ডাইনিং স্পেস সাজানো হয়েছে পরিবারের সুন্দর মুহূর্তগুলোকে ঘিরে—একসাথে রাতের খাবার, ঘরোয়া আলাপ আর অগণিত স্মৃতি।"
-    }
-  ],
-
-  howWeBuild: [
-    {
-      step: "01",
-      title: "LAND",
-      subtitle: "Start with the Right Foundation.",
-      bengaliTitle: "সঠিক ভিত্তি থেকে শুরু",
-      desc: "We carefully evaluate location, road access, land configuration and legal documentation before development begins.",
-      specs: "Rigorous Legal Vetting · Direct Deed Access"
-    },
-    {
-      step: "02",
-      title: "ARCHITECTURE",
-      subtitle: "Plan for People, Not Just Floor Area.",
-      bengaliTitle: "মানুষের স্বাচ্ছন্দ্যের জন্য নকশা",
-      desc: "Our layouts prioritize natural light, ventilation, privacy and practical family living.",
-      specs: "Strictly 2 Units / Floor · 100% Daylight"
-    },
-    {
-      step: "03",
-      title: "ENGINEERING",
-      subtitle: "Design for the Years Ahead.",
-      bengaliTitle: "আগামীর স্থায়িত্বের নিশ্চয়তা",
-      desc: "Structural systems, materials and construction methods are selected and supervised with long-term durability in mind.",
-      specs: "BNBC & CDA Compliant · Seismic Engineering"
-    },
-    {
-      step: "04",
-      title: "CONSTRUCTION",
-      subtitle: "Build with Discipline.",
-      bengaliTitle: "শৃঙ্খলার সাথে সুদৃঢ় নির্মাণ",
-      desc: "Construction progresses through structured stages, documentation and on-site supervision — keeping the process visible and accountable.",
-      specs: "On-Site Supervision · Structured Milestones"
-    },
-    {
-      step: "05",
-      title: "HANDOVER",
-      subtitle: "From Our Hands to Your Home.",
-      bengaliTitle: "আমাদের হাত থেকে আপনার ঠিকানায়",
-      desc: "The final stage is not simply handing over a key. It is delivering a place prepared for the life that comes next.",
-      specs: "Permanent Building Quality · Society Setup"
-    }
-  ],
-
-  philosophy: [
-    {
-      number: "I",
-      tag: "CAREFULLY SELECTED LAND",
-      bengaliTag: "সতর্ক জমি নির্বাচন",
-      title: "Places of Long-Term Value",
-      bengaliTitle: "স্থায়ী মূল্যের সঠিক স্থান",
-      desc: "Places chosen with long-term residential value in mind. We look beyond the plot itself — considering accessibility, surroundings, and everyday convenience.",
-      bengaliDesc: "শুধুমাত্র একটি প্লট নয়—আমরা যাচাই করি যোগাযোগ ব্যবস্থা, পারিপার্শ্বিক পরিবেশ এবং পরিবারের দৈনন্দিন স্বাচ্ছন্দ্য।",
-      guarantee: "Planned CDA Sectors · 30–40 Ft Road Access"
-    },
-    {
-      number: "II",
-      tag: "THOUGHTFUL ARCHITECTURE",
-      bengaliTag: "পরিমিত স্থাপত্য নকশা",
-      title: "Shaped Around Real Life",
-      bengaliTitle: "বাস্তব জীবনের উপযোগী ফ্লোরপ্ল্যান",
-      desc: "Spaces designed around light, air, privacy and family life. Clean proportions and considered layouts that age gracefully without chasing fleeting trends.",
-      bengaliDesc: "আলো, বাতাস ও পারিবারিক প্রাইভেসির চমৎকার সমন্বয়। সময়ের সাথে যা তার সৌন্দর্য ও কার্যকারিতা হারায় না।",
-      guarantee: "Strictly 2 Units / Floor · Dual-Aspect Daylight"
-    },
-    {
-      number: "III",
-      tag: "ENGINEERING DISCIPLINE",
-      bengaliTag: "কঠোর প্রকৌশল শৃঙ্খলা",
-      title: "Built for Generations",
-      bengaliTitle: "প্রজন্মের পর প্রজন্ম টিকে থাকার নিশ্চয়তা",
-      desc: "Structural and construction decisions made with long-term performance in mind. Supervised to withstand coastal conditions and regional seismic loads.",
-      bengaliDesc: "উপকূলীয় পরিবেশ ও ভূমিকম্প সহনশীলতা মাথায় রেখে দক্ষ প্রকৌশলীদের সরাসরি তত্ত্বাবধানে প্রতিটি স্তরের নির্মাণ।",
-      guarantee: "BNBC Seismic Codes · High-Yield Tested Rebar"
-    },
-    {
-      number: "IV",
-      tag: "TRANSPARENT PROCESS",
-      bengaliTag: "স্বচ্ছ প্রক্রিয়া ও সরাসরি মালিকানা",
-      title: "Direct Connection to Land",
-      bengaliTitle: "জমির সাথে সরাসরি স্থায়ী সম্পর্ক",
-      desc: "Clear information about land, construction and development. Direct registered land ownership through Sub-Kabala before construction begins.",
-      bengaliDesc: "নির্মাণ শুরু হওয়ার পূর্বেই সাব-কবলা রেজিস্ট্রি। কোনো লুকানো চার্জ ছাড়া সম্পূর্ণ স্বচ্ছ ও নির্ভরযোগ্য উন্নয়ন পদ্ধতি।",
-      guarantee: "Direct Sub-Kabala Deed · Zero Developer Margin"
-    }
-  ],
-
-  amenities: [
-    {
-      id: "lift",
-      icon: "elevator",
-      tag: "VERTICAL TRANSPORT",
-      bengaliTag: "আধুনিক লিফট",
-      title: "High-Speed 8'x8' ARD Lift",
-      bengaliTitle: "উন্নত ও নিরাপদ ৮'×৮' লিফট",
-      image: "assets/amenities/lift.jpg",
-      alt: "Modern luxury passenger elevator and marble lobby",
-      desc: "Spacious passenger elevator equipped with Automatic Rescue Device (ARD) and emergency battery backup to prevent entrapment during grid interruptions.",
-      bengaliDesc: "স্বয়ংক্রিয় রেসকিউ ডিভাইস (ARD) এবং সার্বক্ষণিক ব্যাটারি ব্যাকআপযুক্ত সুপরিসর প্যাসেঞ্জার লিফট।"
-    },
-    {
-      id: "parking",
-      icon: "directions_car",
-      tag: "GROUND REALM",
-      bengaliTag: "গ্রাউন্ড পার্কিং",
-      title: "Covered Ground Parking",
-      bengaliTitle: "নিরাপদ গ্রাউন্ড পার্কিং বে",
-      image: "assets/amenities/parking.jpg",
-      alt: "Covered well-lit residential parking garage bays",
-      desc: "Generous individual parking bays with smooth vehicular turning radiuses, non-skid surface flooring, drainage curbs, and 24/7 security guard post.",
-      bengaliDesc: "প্রতিটি গাড়ির জন্য পর্যাপ্ত জায়গা, সহজে গাড়ি ঘোরানোর প্রশস্ত স্পেস এবং সার্বক্ষণিক সিকিউরিটি পোস্ট।"
-    },
-    {
-      id: "rooftop",
-      icon: "park",
-      tag: "COMMUNAL SKYLINE",
-      bengaliTag: "মনোরম ছাদ বাগান",
-      title: "Landscaped Rooftop (ছাদ বাগান)",
-      bengaliTitle: "সবুজ ছাদ বাগান ও ওয়াকওয়ে",
-      image: "assets/amenities/rooftop.jpg",
-      alt: "Landscaped rooftop terrace with pergolas and seating area",
-      desc: "Communal rooftop terrace sanctuary featuring shaded pergolas, lush tropical planters, walking pavers, and unhindered Chattogram skyline vistas.",
-      bengaliDesc: "বসার জন্য শেডযুক্ত পারগোলা, বাহারি গাছের টব ও শিশুদের নিরাপদে ঘুরে বেড়ানোর জন্য উন্মুক্ত মনোরম ছাদ।"
-    },
-    {
-      id: "prayer-hall",
-      icon: "mosque",
-      tag: "SPIRITUAL & COMMUNITY",
-      bengaliTag: "নামাজের স্থান",
-      title: "Prayer Enclave & Community Space",
-      bengaliTitle: "শান্তিময় নামাজের স্থান ও কমিউনিটি স্পেস",
-      image: "assets/amenities/prayer.jpg",
-      alt: "Serene prayer enclave and quiet community meeting space",
-      desc: "A peaceful, air-conditioned prayer enclave on the ground level, paired with a versatile multi-purpose community room for building society assemblies.",
-      bengaliDesc: "নিচতলায় শান্তিময় নামাজের জায়গা এবং ফ্ল্যাট মালিকদের সাধারণ সভা ও ঘরোয়া আয়োজনের জন্য কমিউনিটি রুম।"
-    },
-    {
-      id: "reservoirs",
-      icon: "water_drop",
-      tag: "WATER INFRASTRUCTURE",
-      bengaliTag: "পানির নিশ্চয়তা",
-      title: "Dual Concrete Reservoirs",
-      bengaliTitle: "দ্বিগুণ ধারণক্ষমতার ওয়াটার রিজার্ভার",
-      image: "assets/amenities/reservoirs.jpg",
-      alt: "Engineered reinforced concrete water reservoirs and commercial pump system",
-      desc: "Massive underground water reservoir combined with reinforced overhead rooftop tanks and dual commercial booster pumps ensuring 24/7 unhindered water pressure.",
-      bengaliDesc: "বিশাল আন্ডারগ্রাউন্ড ও রুফটপ ওভারহেড ওয়াটার ট্যাংক এবং উচ্চমানের ডাবল পাম্প, যা দেবে ২৪ ঘণ্টা পানির নিশ্চয়তা।"
-    },
-    {
-      id: "security-power",
-      icon: "security",
-      tag: "SAFETY & CONTINUITY",
-      bengaliTag: "সার্বক্ষণিক নিরাপত্তা",
-      title: "24/7 CCTV & Standby Generator",
-      bengaliTitle: "২৪ ঘণ্টা সিসিটিভি ও পাওয়ার ব্যাকআপ",
-      image: "assets/amenities/security.jpg",
-      alt: "High-definition security surveillance camera and soundproof backup generator",
-      desc: "HD security surveillance covering boundary perimeter, entry gate, lift lobbies, and parking bays, paired with an automatic soundproof standby generator.",
-      bengaliDesc: "প্রধান গেট, লিফট ও পার্কিং জোনে ফুল এইচডি সিসিটিভি ক্যামেরা এবং লোডশেডিংয়ে স্বয়ংক্রিয় সাউন্ডপ্রুফ জেনারেটর।"
+      description: "Upcoming purpose-planned residential and commercial development in Agrabad CDA, reflecting our design-to-build capabilities from raw ground to final delivery."
     }
   ]
 };

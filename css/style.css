@@ -603,7 +603,7 @@ button, input, select, textarea {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: brightness(0.70) contrast(1.08);
+  filter: brightness(0.95) contrast(1.02);
 }
 
 .hero-bg-image {
@@ -620,9 +620,10 @@ button, input, select, textarea {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(17, 17, 15, 0.72) 0%,
-    rgba(17, 17, 15, 0.35) 45%,
-    rgba(17, 17, 15, 0.88) 100%
+    rgba(17, 17, 15, 0.32) 0%,
+    rgba(17, 17, 15, 0.05) 35%,
+    rgba(17, 17, 15, 0.38) 72%,
+    rgba(17, 17, 15, 0.78) 100%
   );
 }
 
@@ -663,8 +664,9 @@ button, input, select, textarea {
 .hero-subtext {
   max-width: 52ch;
   font-size: 1.125rem;
-  color: rgba(244, 240, 232, 0.92);
+  color: rgba(244, 240, 232, 0.95);
   line-height: 1.7;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.9);
 }
 
 .hero-trust-chips {
@@ -2063,7 +2065,7 @@ button, input, select, textarea {
     height: 100%;
     object-fit: cover;
     object-position: 60% center;
-    filter: brightness(0.78) contrast(1.06);
+    filter: brightness(0.95) contrast(1.02);
     transform: none;
   }
 
@@ -2072,10 +2074,10 @@ button, input, select, textarea {
     inset: 0;
     background: linear-gradient(
       to bottom,
-      rgba(17, 17, 15, 0.40) 0%,
-      rgba(17, 17, 15, 0.12) 30%,
-      rgba(17, 17, 15, 0.58) 65%,
-      rgba(17, 17, 15, 0.92) 100%
+      rgba(17, 17, 15, 0.25) 0%,
+      rgba(17, 17, 15, 0.03) 30%,
+      rgba(17, 17, 15, 0.38) 65%,
+      rgba(17, 17, 15, 0.78) 100%
     );
   }
 

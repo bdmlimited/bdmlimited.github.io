@@ -478,8 +478,8 @@ function selectMapLocation(locKey) {
     descElem.textContent = "Positioned on Road 11, Agrabad CDA. A tranquil 5 Katha parcel with optimal orientation and modern 4-bedroom executive residences.";
   } else if (locKey === 'hq') {
     tagElem.textContent = "CENTRAL ADMINISTRATION & PLANNING";
-    titleElem.textContent = "BEC CORPORATE OFFICES";
-    descElem.textContent = "Two strategically positioned corporate coordination suites in Halishahar (Nayabazar Port Connecting Rd) and Pahartali (Eidgah Al Helal Bhaban) serving our clients.";
+    titleElem.textContent = "BEC CORPORATE OFFICE";
+    descElem.textContent = "Our corporate coordination and engineering office at 2813/C, Al Helal Bhaban, Eidgah, Halishahar Road, Pahartali, Chattogram.";
   }
 }
 

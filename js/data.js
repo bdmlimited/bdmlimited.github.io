@@ -36,22 +36,13 @@ const BDM_DATA = {
 
   offices: [
     {
-      id: "nayabazar",
-      title: "Corporate Office 01 (Nayabazar / Halishahar)",
-      bengaliTitle: "প্রধান কার্যালয় ০১ (নয়াবাজার / হালিশহর)",
-      address: "2574, Haji Achi Mia Bari (2nd Floor), Port Connecting Road, Nayabazar Bishwaroad, Halishahar, Chattogram",
-      bengaliAddress: "২৫৭৪, হাজী আছি মিঞা বাড়ি (২য় তলা), পোর্ট কানেক্টিং রোড, নয়াবাজার বিশ্বরোড, হালিশহর, চট্টগ্রাম",
-      coords: "22.3385° N, 91.7915° E",
-      category: "Headquarters & Project Planning"
-    },
-    {
       id: "eidgah",
-      title: "Corporate Office 02 (Eidgah / Pahartali)",
-      bengaliTitle: "কার্যালয় ০২ (ঈদগাহ / পাহাড়তলী)",
+      title: "Corporate Office (Eidgah / Pahartali)",
+      bengaliTitle: "প্রধান কার্যালয় (ঈদগাহ / পাহাড়তলী)",
       address: "2813 / C, Al Helal Bhaban, Eidgah Kacha Rasta Matha, Halishahar Road, Pahartali, Chattogram",
       bengaliAddress: "২৮১৩ / সি, আল হেলাল ভবন, ঈদগাহ কাঁচা রাস্তা মাথা, হালিশহর রোড, পাহাড়তলী, চট্টগ্রাম",
       coords: "22.3491° N, 91.8029° E",
-      category: "Engineering Supervision & Client Relations"
+      category: "Corporate Headquarters & Engineering Supervision"
     }
   ],
 

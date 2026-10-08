@@ -489,10 +489,18 @@ function setLanguage(lang) {
   const btnEn = document.getElementById('btn-lang-en');
   const btnBn = document.getElementById('btn-lang-bn');
 
+  const heroEyebrow = document.getElementById('hero-eyebrow');
   const heroHeadline = document.getElementById('hero-headline');
+  const heroStrapline = document.getElementById('hero-strapline');
   const heroSubtext = document.getElementById('hero-subtext');
+  const heroHudLocation = document.getElementById('hero-hud-location');
   const heroCtaExplore = document.getElementById('hero-cta-explore');
   const heroCtaEnquire = document.getElementById('hero-cta-enquire');
+  const heroDiscover = document.getElementById('hero-discover');
+  const heroPillar1 = document.getElementById('hero-pillar-1');
+  const heroPillar2 = document.getElementById('hero-pillar-2');
+  const heroPillar3 = document.getElementById('hero-pillar-3');
+  const heroPillar4 = document.getElementById('hero-pillar-4');
   const introTitle = document.getElementById('intro-title');
   const introDesc1 = document.getElementById('intro-desc-1');
   const cardLegalTitle = document.getElementById('card-legal-title');
@@ -509,10 +517,18 @@ function setLanguage(lang) {
     if (btnEn) btnEn.classList.remove('active');
 
     // Hero (Bengali)
-    if (heroHeadline) heroHeadline.innerHTML = "যেখানে ভূমি হয়ে ওঠে আপনার <span class=\"gold-gradient-text\">পারিবারিক উত্তরাধিকার।</span>";
-    if (heroSubtext) heroSubtext.innerHTML = "একটি বাড়ি কেবল কোনো ঠিকানা নয়।<br>এখানে সকালের সূচনা হয়, পরিবার একত্রিত হয়, সন্তানেরা বড় হয় এবং স্মৃতিগুলো চিরস্থায়ী হয়ে থাকে।<br><br>ব্রাদার্স ইঞ্জিনিয়ারিং অ্যান্ড কনস্ট্রাকশন (বিইসি)-এ আমরা অনন্য দৃষ্টিভঙ্গিতে কাজ করি — সুপরিকল্পিত ভূমি, পরিশীলিত স্থাপত্য, স্বচ্ছ মালিকানা ও সুশৃঙ্খল নির্মাণ।";
+    if (heroHudLocation) heroHudLocation.textContent = "আগ্রাবাদ সিডিএ · চট্টগ্রাম";
+    if (heroEyebrow) heroEyebrow.textContent = "ল্যান্ড-শেয়ার আবাসন · সিডিএ অনুমোদিত";
+    if (heroHeadline) heroHeadline.innerHTML = "উন্নত জীবনযাত্রার সুপরিকল্পিত আবাসন।<br><span class=\"gold-gradient-text\">পারিবারিক উত্তরাধিকার।</span>";
+    if (heroStrapline) heroStrapline.textContent = "যেখানে ভূমি হয়ে ওঠে আপনার পারিবারিক ঐতিহ্য।";
+    if (heroSubtext) heroSubtext.innerHTML = "একটি বাড়ি কেবল কোনো ঠিকানা নয়। এখানে সকালের সূচনা হয় এবং স্মৃতিগুলো চিরস্থায়ী হয়ে থাকে।<br><br>ব্রাদার্স ইঞ্জিনিয়ারিং অ্যান্ড কনস্ট্রাকশন (বিইসি / বিডিএম লিমিটেড)-এ আমরা আগ্রাবাদ সিডিএ-তে গড়ে তুলছি সুপরিকল্পিত আবাসন—সরাসরি সাব-কবলা রেজিস্ট্রি, সিডিএ অনুমোদিত স্থাপত্য, ভূমিকম্প সহনশীল প্রকৌশল এবং ৪০% সাশ্রয়ী মালিকানা।";
+    if (heroPillar1) heroPillar1.textContent = "জমির সরাসরি সাব-কবলা রেজিস্ট্রি";
+    if (heroPillar2) heroPillar2.textContent = "সিডিএ অনুমোদিত কাঠামোগত নকশা";
+    if (heroPillar3) heroPillar3.textContent = "ভূমিকম্প সহনশীল সিসমিক জোন ২";
+    if (heroPillar4) heroPillar4.textContent = "৪০% সাশ্রয়ী নির্মাণ ব্যয় (মালিকানা)";
     if (heroCtaExplore) heroCtaExplore.textContent = "প্রকল্পসমূহ দেখুন";
     if (heroCtaEnquire) heroCtaEnquire.textContent = "যোগাযোগ করুন";
+    if (heroDiscover) heroDiscover.textContent = "বিইসি পরিচিতি";
     
     // Intro & Ownership (Bengali)
     if (introTitle) introTitle.innerHTML = "কেবল আরেকটি ঠিকানা নয়।";
@@ -532,10 +548,18 @@ function setLanguage(lang) {
     if (btnBn) btnBn.classList.remove('active');
 
     // Hero (English)
-    if (heroHeadline) heroHeadline.innerHTML = "WHERE LAND BECOMES <span class=\"gold-gradient-text\">LEGACY.</span>";
-    if (heroSubtext) heroSubtext.innerHTML = "A home is more than an address.<br><br>It is where mornings begin, families gather, children grow and memories quietly become part of the walls.<br><br>At Brother’s Engineering & Construction (BEC), we approach residential development differently — with carefully selected land, considered architecture, transparent ownership and disciplined construction.";
-    if (heroCtaExplore) heroCtaExplore.textContent = "EXPLORE OUR PROJECTS";
+    if (heroHudLocation) heroHudLocation.textContent = "AGRABAD CDA · CHATTOGRAM";
+    if (heroEyebrow) heroEyebrow.textContent = "LAND SHARE APARTMENTS · CDA APPROVED";
+    if (heroHeadline) heroHeadline.innerHTML = "BUILDING PLACES FOR BETTER LIVING.<br><span class=\"gold-gradient-text\">CREATING LEGACIES.</span>";
+    if (heroStrapline) heroStrapline.textContent = "WHERE LAND BECOMES YOUR FAMILY’S HERITAGE.";
+    if (heroSubtext) heroSubtext.innerHTML = "A home is more than an address. It is where mornings begin and memories quietly become part of the walls.<br><br>At Brother’s Engineering & Construction (BEC / BDM Limited), we develop thoughtfully planned residences in Agrabad CDA, Chattogram — uniting direct deeded land-share ownership, earthquake-resistant engineering, and authentic family living with 40% cost-basis savings.";
+    if (heroPillar1) heroPillar1.textContent = "DIRECT SUB-REGISTRY SHARE (ভূমির সাব-কবলা)";
+    if (heroPillar2) heroPillar2.textContent = "CDA APPROVED STRUCTURAL PLAN";
+    if (heroPillar3) heroPillar3.textContent = "SEISMIC ZONE 2 ENGINEERED";
+    if (heroPillar4) heroPillar4.textContent = "SUPERVISED OWNER COST BASIS (৪০% সাশ্রয়ী)";
+    if (heroCtaExplore) heroCtaExplore.textContent = "EXPLORE SELECTED WORK";
     if (heroCtaEnquire) heroCtaEnquire.textContent = "START A CONVERSATION";
+    if (heroDiscover) heroDiscover.textContent = "DISCOVER BEC";
 
     // Intro & Ownership (English)
     if (introTitle) introTitle.innerHTML = "NOT JUST ANOTHER ADDRESS.";

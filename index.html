@@ -28,14 +28,14 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo-dark.png">
 
-  <!-- Architectural Typography: Outfit (Geometric Display aligned with BEC Logo) & Plus Jakarta Sans (Precision Sans) -->
+  <!-- Architectural Typography: Bodoni Moda (Editorial Luxury), Geist (Swiss Precision), Syne, Space Mono, Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Geist:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
 
   <!-- Core Architectural Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=4.1">
+  <link rel="stylesheet" href="css/style.css?v=4.3">
 
   <!-- Schema.org Real Estate Agent & Local Business Metadata -->
   <script type="application/ld+json">
@@ -177,7 +177,7 @@
 
   <main>
     <!-- ==========================================================================
-         1. HERO SECTION (Cinematic Facade & Editorial Presence)
+         1. HERO SECTION (Tectonic Monolith & Cinematic Facade)
          ========================================================================== -->
     <section class="hero-section" id="hero">
       <div class="hero-background-wrapper">
@@ -189,59 +189,111 @@
 
       <!-- Editorial Headline & Actions -->
       <div class="hero-content">
+        <!-- Stitch Tectonic Overhead Coordinate Stamp -->
+        <div class="hero-top-hud">
+          <div class="hero-location-beacon">
+            <span class="beacon-pulse"></span>
+            <span class="beacon-text" id="hero-hud-location">AGRABAD CDA · CHATTOGRAM</span>
+          </div>
+          <div class="hero-hud-right">
+            <span class="hero-coordinates-tag font-mono">22.3275° N, 91.8020° E</span>
+            <span class="hero-monograph-stamp font-mono">[MONOGRAPH // 2026]</span>
+          </div>
+        </div>
+
         <div class="hero-editorial-panel">
-          <h1 class="display-hero hero-headline" id="hero-headline">
-            WHERE LAND BECOMES <span class="gold-gradient-text">LEGACY.</span>
-          </h1>
+          <!-- Monolithic Category Index from Stitch -->
+          <div class="hero-category-row">
+            <div class="hero-category-left">
+              <span class="tech-spec-code text-champagne">[INDEX_001]</span>
+              <span class="tech-spec-line"></span>
+              <span class="hero-eyebrow" id="hero-eyebrow">LAND SHARE APARTMENTS · CDA APPROVED</span>
+            </div>
+            <span class="hero-code-stamp">CDA SANCTIONED · BNBC 2020</span>
+          </div>
+
+          <!-- Master Headline & Strapline (Old + New Synergy) -->
+          <div class="hero-headline-group">
+            <h1 class="display-hero hero-headline" id="hero-headline">
+              BUILDING PLACES FOR BETTER LIVING.<br>
+              <span class="gold-gradient-text">CREATING LEGACIES.</span>
+            </h1>
+            <p class="hero-strapline" id="hero-strapline">
+              WHERE LAND BECOMES YOUR FAMILY’S HERITAGE.
+            </p>
+          </div>
+
+          <!-- Editorial Narrative (Old + New Fusion) -->
           <p class="body-lg hero-subtext" id="hero-subtext">
-            A home is more than an address.<br><br>
-            It is where mornings begin, families gather, children grow and memories quietly become part of the walls.<br><br>
-            At Brother’s Engineering & Construction (BEC), we approach residential development differently — with carefully selected land, considered architecture, transparent ownership and disciplined construction.
+            A home is more than an address. It is where mornings begin and memories quietly become part of the walls.<br><br>
+            At Brother’s Engineering &amp; Construction (BEC / BDM Limited), we develop thoughtfully planned residences in Agrabad CDA, Chattogram — uniting direct deeded land-share ownership, earthquake-resistant engineering, and authentic family living with 40% cost-basis savings.
           </p>
 
-          <!-- Statement Anchor Badge -->
-          <div class="hero-statement-badge">
-            <span>BUILDING FOR TODAY. CREATING VALUE FOR GENERATIONS.</span>
+          <!-- Stitch-Inspired Development Strip & Quick On-Site Link -->
+          <div class="hero-plots-strip">
+            <div class="hero-plot-item">
+              <span class="plot-indicator-dot"></span>
+              <span class="plot-item-text"><strong>PLOT 727 (RD 14)</strong> · SHOPNALOY</span>
+            </div>
+            <div class="hero-plot-divider">/</div>
+            <div class="hero-plot-item">
+              <span class="plot-indicator-dot gold"></span>
+              <span class="plot-item-text"><strong>PLOT 445 (RD 11)</strong> · SHOPNO NEBASH</span>
+            </div>
+            <a href="#engineering" class="hero-onsite-link">
+              <span>ON-SITE WORKS</span>
+              <span class="material-symbols-outlined" style="font-size: 14px;">arrow_downward</span>
+            </a>
           </div>
 
-          <!-- Editorial Trust Chips -->
-          <div class="hero-trust-chips" style="margin-top: 0.5rem;">
+          <!-- 4 Core Architectural Trust Badges (Stitch Pillars) -->
+          <div class="hero-trust-chips">
             <div class="trust-chip">
-              <span class="material-symbols-outlined">landscape</span>
-              <span>CAREFULLY SELECTED LAND</span>
+              <span class="material-symbols-outlined">gavel</span>
+              <span id="hero-pillar-1">DIRECT SUB-REGISTRY SHARE (ভূমির সাব-কবলা)</span>
             </div>
             <div class="trust-chip">
-              <span class="material-symbols-outlined">architecture</span>
-              <span>THOUGHTFUL ARCHITECTURE</span>
+              <span class="material-symbols-outlined">domain_verification</span>
+              <span id="hero-pillar-2">CDA APPROVED STRUCTURAL PLAN</span>
             </div>
             <div class="trust-chip">
-              <span class="material-symbols-outlined">verified</span>
-              <span>TRANSPARENT OWNERSHIP</span>
+              <span class="material-symbols-outlined">engineering</span>
+              <span id="hero-pillar-3">SEISMIC ZONE 2 ENGINEERED</span>
             </div>
             <div class="trust-chip">
-              <span class="material-symbols-outlined">construction</span>
-              <span>DISCIPLINED CONSTRUCTION</span>
+              <span class="material-symbols-outlined">savings</span>
+              <span id="hero-pillar-4">SUPERVISED OWNER COST BASIS (৪০% সাশ্রয়ী)</span>
             </div>
           </div>
 
-          <div class="hero-actions" style="margin-top: 0.85rem;">
+          <!-- Hero Actions -->
+          <div class="hero-actions">
             <a href="#projects" class="btn btn-champagne">
-              <span id="hero-cta-explore">EXPLORE OUR PROJECTS</span>
+              <span id="hero-cta-explore">EXPLORE SELECTED WORK</span>
               <span class="material-symbols-outlined btn-arrow-icon">arrow_forward</span>
             </a>
-            <a href="https://wa.me/8801749349299?text=Hello%20BEC%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20Agrabad%20CDA%20residences." target="_blank" rel="noopener" class="btn btn-white hero-btn-whatsapp" id="hero-cta-conversation">
+            <a href="https://wa.me/8801749349299?text=Hello%20BDM%20%2F%20BEC%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20Agrabad%20CDA%20residences." target="_blank" rel="noopener" class="btn btn-white hero-btn-whatsapp" id="hero-cta-conversation">
               <span class="material-symbols-outlined" style="font-size: 19px; color: #25D366;">chat</span>
               <span id="hero-cta-enquire">START A CONVERSATION</span>
             </a>
           </div>
         </div>
-      </div>
 
-      <!-- Hero Bottom Discover Trigger -->
-      <a href="#approach" class="hero-scroll-center" aria-label="Discover BEC">
-        <span class="label-caps" id="hero-discover">DISCOVER BEC</span>
-        <span class="material-symbols-outlined" style="font-size: 16px;">arrow_downward</span>
-      </a>
+        <!-- Live Micro Ticker from Stitch at bottom of Hero -->
+        <div class="hero-live-ticker">
+          <div class="ticker-left">
+            <span class="material-symbols-outlined ticker-icon">domain</span>
+            <span class="ticker-text font-mono">ACTIVE SITES: 02 (AGRABAD CDA RD 14 & RD 11)</span>
+          </div>
+          <div class="ticker-center font-mono">
+            <span>40% OWNER COST BASIS · ZERO SPECULATIVE MARKUP</span>
+          </div>
+          <a href="#approach" class="ticker-scroll-link">
+            <span>SCROLL TO EXPLORE</span>
+            <span class="material-symbols-outlined ticker-arrow">arrow_downward</span>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- ==========================================================================
@@ -305,6 +357,65 @@
                   "Real estate should be a generational family sanctuary, not a speculative corporate gamble."
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TECTONIC METRIC DOSSIER (Scale & Structural Footprint from Stitch) -->
+        <div class="stitch-dossier-wrapper" style="margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--color-stone);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                <span class="tech-spec-code text-champagne">[SEC_02]</span>
+                <span class="label-caps" style="color: var(--color-charcoal-dim);">SCALE & STRUCTURAL FOOTPRINT</span>
+              </div>
+              <h3 class="headline-lg" style="color: var(--color-charcoal); margin-top: 0.25rem;">
+                BUILT ON EXPERIENCE. DRIVEN BY PRECISION.
+              </h3>
+            </div>
+            <span class="tech-spec-code" style="color: var(--color-charcoal-dim);">MONOGRAPH RECORD // 2026</span>
+          </div>
+
+          <!-- Architectural Monospaced Metric Grid -->
+          <div class="stitch-metric-grid">
+            <div class="stitch-metric-cell">
+              <span class="tech-spec-code">[EXP_PRACTICE]</span>
+              <div>
+                <span class="stitch-metric-num">18+</span>
+                <span class="stitch-metric-label">Years of Structural Practice</span>
+              </div>
+            </div>
+            <div class="stitch-metric-cell">
+              <span class="tech-spec-code">[DELIVERED]</span>
+              <div>
+                <span class="stitch-metric-num" style="color: var(--color-champagne-dark);">42+</span>
+                <span class="stitch-metric-label">Completed Units Handed Over</span>
+              </div>
+            </div>
+            <div class="stitch-metric-cell">
+              <span class="tech-spec-code">[ONGOING_SITES]</span>
+              <div>
+                <span class="stitch-metric-num">02</span>
+                <span class="stitch-metric-label">Live Agrabad CDA Sites</span>
+              </div>
+            </div>
+            <div class="stitch-metric-cell">
+              <span class="tech-spec-code">[SAVINGS_MODEL]</span>
+              <div>
+                <span class="stitch-metric-num" style="color: var(--color-champagne-dark);">40%</span>
+                <span class="stitch-metric-label">Cost Savings via Land Share</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Compliance Bar -->
+          <div class="stitch-compliance-bar" style="margin-top: 1rem;">
+            <span class="material-symbols-outlined" style="color: var(--color-champagne-dark); font-size: 22px;">verified</span>
+            <div>
+              <span class="tech-spec-code" style="color: var(--color-charcoal); font-weight: 700;">CDA SANCTIONED & BNBC SEISMIC DESIGN</span>
+              <p class="body-sm" style="color: var(--color-charcoal-dim); font-size: 0.8rem; margin-top: 2px;">
+                All structural calculations strictly adhere to the Bangladesh National Building Code (BNBC 2020) and CDA setbacks, engineered in partnership with Mahi Engineering Services.
+              </p>
             </div>
           </div>
         </div>

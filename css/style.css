@@ -21,11 +21,11 @@
   --color-border: #D8D1C5;
   --color-border-dark: #2A2A26;
   
-  /* Typography Tokens — Harmonized with the BEC Architectural Geometric Monogram */
-  --font-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
-  --font-headline: 'Outfit', 'Plus Jakarta Sans', sans-serif;
-  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'Space Grotesk', monospace;
+  /* Typography Tokens — Bodoni Moda (Editorial Quiet Luxury) & Geist (Precision Swiss Sans) */
+  --font-display: 'Bodoni Moda', 'Syne', serif;
+  --font-headline: 'Bodoni Moda', 'Syne', serif;
+  --font-body: 'Geist', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Space Mono', 'Space Grotesk', monospace;
   
   /* Layout Spacing */
   --gutter: 2rem;
@@ -637,11 +637,89 @@ button, input, select, textarea {
   align-items: flex-start;
 }
 
+/* Stitch Architectural HUD Bar */
+.hero-top-hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 52rem;
+  margin-bottom: 0.85rem;
+  gap: 1rem;
+}
+
+.hero-location-beacon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: rgba(17, 17, 15, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(216, 209, 197, 0.25);
+  padding: 0.4rem 0.85rem;
+}
+
+.beacon-pulse {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-champagne);
+  border-radius: 50% !important;
+  box-shadow: 0 0 0 0 rgba(185, 162, 122, 0.7);
+  animation: beaconPulseAnim 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@keyframes beaconPulseAnim {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(185, 162, 122, 0.7);
+  }
+  70% {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 8px rgba(185, 162, 122, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(185, 162, 122, 0);
+  }
+}
+
+.beacon-text {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  color: var(--color-ivory);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.hero-hud-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-coordinates-tag,
+.hero-monograph-stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(17, 17, 15, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(216, 209, 197, 0.18);
+  padding: 0.4rem 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--color-champagne-light);
+  font-weight: 500;
+}
+
 .hero-editorial-panel {
   max-width: 52rem;
-  background: rgba(14, 14, 12, 0.40);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(14, 14, 12, 0.42);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(216, 209, 197, 0.22);
   border-left: 3px solid var(--color-champagne);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
@@ -651,26 +729,88 @@ button, input, select, textarea {
   gap: 1.25rem;
 }
 
+.hero-category-row,
+.hero-eyebrow-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(216, 209, 197, 0.15);
+}
+
+.hero-category-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.tech-spec-code {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.tech-spec-line {
+  display: inline-block;
+  width: 1.75rem;
+  height: 1px;
+  background-color: rgba(185, 162, 122, 0.4);
+}
+
+.text-champagne {
+  color: var(--color-champagne) !important;
+}
+
 .hero-eyebrow {
   color: var(--color-champagne);
-  letter-spacing: 0.25em;
+  letter-spacing: 0.22em;
   font-weight: 600;
-  font-family: var(--font-body);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.hero-code-stamp {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: rgba(244, 240, 232, 0.65);
+  text-transform: uppercase;
+}
+
+.hero-headline-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 
 .hero-headline {
-  max-width: 24ch;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.70);
+  max-width: 26ch;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.75);
   font-family: var(--font-display);
-  font-size: clamp(2.25rem, 4.8vw, 3.85rem);
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: -0.01em;
+  font-size: clamp(2.35rem, 5vw, 4.15rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
   color: #FFFFFF;
 }
 
 .hero-headline .gold-gradient-text {
   display: inline-block;
+  font-weight: 600;
+}
+
+.hero-strapline {
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 1.4vw, 1.25rem);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--color-champagne);
+  text-transform: uppercase;
 }
 
 .hero-subtext {
@@ -680,6 +820,62 @@ button, input, select, textarea {
   line-height: 1.7;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
   font-family: var(--font-body);
+}
+
+/* Stitch Development Strip & Quick On-Site Link */
+.hero-plots-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  padding: 0.65rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(216, 209, 197, 0.18);
+}
+
+.hero-plot-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-ivory);
+  letter-spacing: 0.05em;
+}
+
+.plot-indicator-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-champagne);
+  border-radius: 50% !important;
+}
+
+.plot-indicator-dot.gold {
+  background-color: #E2C08D;
+}
+
+.hero-plot-divider {
+  color: rgba(216, 209, 197, 0.3);
+  font-size: 0.8rem;
+}
+
+.hero-onsite-link {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.15em;
+  color: var(--color-champagne);
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.hero-onsite-link:hover {
+  color: var(--color-white);
+  transform: translateY(1px);
 }
 
 .hero-trust-chips {
@@ -745,6 +941,152 @@ button, input, select, textarea {
 
 .hero-scroll-btn:hover {
   color: var(--color-white);
+}
+
+/* ==========================================================================
+   STITCH LIVE MICRO TICKER (Hero Footer Anchor)
+   ========================================================================== */
+.hero-live-ticker {
+  width: 100%;
+  max-width: 52rem;
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(14, 14, 12, 0.70);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(216, 209, 197, 0.20);
+  padding: 0.6rem 1.15rem;
+  gap: 1rem;
+}
+
+.ticker-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ticker-icon {
+  font-size: 16px;
+  color: var(--color-champagne);
+}
+
+.ticker-text {
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  color: rgba(244, 240, 232, 0.90);
+  text-transform: uppercase;
+}
+
+.ticker-center {
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  color: var(--color-champagne-light);
+  text-transform: uppercase;
+}
+
+.ticker-scroll-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--color-champagne);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.ticker-scroll-link:hover {
+  color: var(--color-white);
+  transform: translateY(1px);
+}
+
+.ticker-arrow {
+  font-size: 14px;
+  animation: bounceAnim 2s infinite;
+}
+
+@keyframes bounceAnim {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(3px);
+  }
+  60% {
+    transform: translateY(1px);
+  }
+}
+
+/* ==========================================================================
+   STITCH TECTONIC METRIC DOSSIER (Section 02)
+   ========================================================================== */
+.stitch-dossier-wrapper {
+  width: 100%;
+}
+
+.stitch-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background-color: var(--color-stone);
+  border: 1px solid var(--color-stone);
+  margin-top: 1rem;
+}
+
+.stitch-metric-cell {
+  background-color: var(--color-white);
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 8.5rem;
+  transition: background-color var(--transition-normal);
+}
+
+.stitch-metric-cell:hover {
+  background-color: var(--color-ivory-light);
+}
+
+.stitch-metric-cell .tech-spec-code {
+  font-size: 0.6875rem;
+  color: var(--color-charcoal-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.stitch-metric-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-charcoal);
+  letter-spacing: -0.02em;
+}
+
+.stitch-metric-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-charcoal-dim);
+  margin-top: 0.4rem;
+}
+
+.stitch-compliance-bar {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-stone);
+  border-left: 3px solid var(--color-champagne-dark);
+  padding: 1rem 1.25rem;
 }
 
 /* ==========================================================================
@@ -2095,32 +2437,47 @@ button, input, select, textarea {
     );
   }
 
-  .hero-top-bar {
-    padding-top: 0;
-    margin-bottom: 0.25rem;
+  .hero-top-hud {
     width: 100%;
-    justify-content: flex-start;
-  }
-  .hero-badge {
-    padding: 0.35rem 0.75rem;
-    font-size: 0.58rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
     gap: 0.5rem;
   }
-  .hero-coordinates {
-    display: none !important; /* Prevent clash on small screens */
+  .hero-location-beacon {
+    padding: 0.3rem 0.6rem;
+    gap: 0.45rem;
+  }
+  .beacon-text {
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+  }
+  .hero-hud-right {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .hero-coordinates-tag {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
+  }
+  .hero-monograph-stamp {
+    display: none !important; /* Hide secondary stamp on mobile for clean breathing room */
   }
   .hero-content {
     margin-top: auto;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     width: 100%;
   }
   .hero-editorial-panel {
-    background: rgba(14, 14, 12, 0.45) !important;
-    backdrop-filter: blur(5px) !important;
-    -webkit-backdrop-filter: blur(5px) !important;
+    background: rgba(14, 14, 12, 0.48) !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
     border: 1px solid rgba(216, 209, 197, 0.22) !important;
     border-left: 3px solid var(--color-champagne) !important;
-    border-radius: 4px !important;
+    border-radius: 0 !important;
     padding: 1.35rem 1.15rem !important;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.40) !important;
     gap: 0.85rem;
@@ -2128,21 +2485,38 @@ button, input, select, textarea {
     display: flex;
     flex-direction: column;
   }
+  .hero-category-row,
+  .hero-eyebrow-row {
+    padding-bottom: 0.35rem;
+  }
   .hero-eyebrow {
-    font-size: 0.625rem;
-    letter-spacing: 0.16em;
+    font-size: 0.58rem;
+    letter-spacing: 0.14em;
+  }
+  .hero-code-stamp {
+    font-size: 0.54rem;
+    letter-spacing: 0.1em;
+  }
+  .hero-headline-group {
+    gap: 0.2rem;
   }
   .hero-headline {
-    font-size: clamp(1.75rem, 6.8vw, 2.25rem);
-    line-height: 1.15;
-    letter-spacing: -0.01em;
+    font-size: clamp(1.85rem, 6.8vw, 2.35rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
     max-width: 100%;
     color: #FFFFFF;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
-    font-weight: 700;
+    font-weight: 500;
   }
   .hero-headline .gold-gradient-text {
     display: inline-block;
+    font-weight: 600;
+  }
+  .hero-strapline {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    font-weight: 500;
   }
   .hero-subtext {
     font-size: 0.825rem;
@@ -2159,6 +2533,22 @@ button, input, select, textarea {
   .hero-subtext br + br {
     display: none;
   }
+  .hero-plots-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.68rem;
+    border-radius: 0 !important;
+  }
+  .hero-plot-divider {
+    display: none;
+  }
+  .hero-onsite-link {
+    margin-left: 0;
+    margin-top: 0.15rem;
+    font-size: 0.62rem;
+  }
   .hero-statement-badge {
     padding: 0.35rem 0.65rem;
     font-size: 0.58rem;
@@ -2168,6 +2558,7 @@ button, input, select, textarea {
     text-align: center;
     width: fit-content;
     max-width: 100%;
+    border-radius: 0 !important;
   }
   .hero-trust-chips {
     display: flex;
@@ -2181,7 +2572,7 @@ button, input, select, textarea {
     gap: 0.3rem;
     background: rgba(255, 255, 255, 0.07);
     border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 3px;
+    border-radius: 0 !important;
   }
   .trust-chip .material-symbols-outlined {
     font-size: 14px;
@@ -2203,7 +2594,7 @@ button, input, select, textarea {
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 0 !important;
     gap: 0.45rem;
   }
   .hero-footer-bar,
